@@ -1,0 +1,23 @@
+<div class="recipe">
+  <h3>List of recipe</h3>
+  <form>
+    <mat-form-field>
+      <mat-label>Recipe name</mat-label>
+      <input type="text" matInput [formControl]="searchFormControl" (input)="filterRecipes()">
+    </mat-form-field>
+  </form>
+
+  <div class="list">
+    <div class="list-item" *ngFor="let recipe of recipeList" [routerLink]="'recipe/' + recipe._id">
+      <span>#{{recipe._id}} {{recipe.name}}</span>
+      <div class="list-item-buttons">
+        <button mat-icon-button (click)="removeRecipe(recipe)">
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
