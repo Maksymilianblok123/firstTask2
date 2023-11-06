@@ -36,9 +36,9 @@ export class ListComponent {
 
   recipeList: any[] = this.recipesService.recipeList;
 
-  removeRecipe(_id: any) {
+  removeRecipe(recipe: Recipe) {
     const dialogRef = this.dialog.open(ConfirmationModalComponent, {
-      data: { text: `Czy napewno chcesz usunąć przepis '${_id}'` },
+      data: { text: `Czy napewno chcesz usunąć przepis '${recipe.name}'` },
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
