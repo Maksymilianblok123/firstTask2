@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {NgForOf} from "@angular/common";
@@ -28,19 +28,27 @@ import {ConfirmationModalComponent} from "../shared/components/confirmation-moda
 })
 export class ListComponent {
   searchFormControl = new FormControl('', [Validators.required, Validators.email]);
-  recipeList: any[] = this.recipesService.recipeList;
+  recipeListInit: Recipe[] = [];
+  recipeList: Recipe[] = [];
 
   constructor(
       private recipesService: RecipesService,
       private dialog: MatDialog,
       private router: Router,
+      private cdr: ChangeDetectorRef,
   ) {}
 
 ngOnInit() {
-    this.recipesService.getRecipes()
-        .subscribe((recipes) => {
-          console.log(recipes)
-        })
+    this.getRecipes();
+}
+
+getRecipes() {
+  this.recipesService.getRecipes()
+      .subscribe((recipes: Recipe[]) => {
+        this.recipeListInit = recipes
+        this.recipeList = recipes
+        this.cdr.detectChanges();
+      })
 }
 
   removeRecipe(recipe: Recipe) {
@@ -51,13 +59,21 @@ ngOnInit() {
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
         console.log('usuniete')
+        console.log(result)
+        this.recipesService.deleteRecipe(recipe._id)
+            .subscribe(res => {
+              console.log(`Usunięto element ${recipe.name}`)
+              this.getRecipes()
+            }, err => {
+              console.error('Wystąpił błąd podczas usuwania')
+            })
       }
     });
   }
 
   // #todo dodać debounce time
   filterRecipes() {
-    this.recipeList = this.recipesService.recipeList.filter((recipe) => {
+    this.recipeList = this.recipeListInit.filter((recipe) => {
       return recipe.name.toLowerCase().includes(<string>this.searchFormControl.value?.toLowerCase())
     })
   }

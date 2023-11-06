@@ -34,12 +34,15 @@ export class RecipeDetailsComponent {
   ) {}
 
   ngOnInit() {
-    this.subscriptions.add(
-        this.route.params.subscribe((params: Params) => {
-          this.activeRecipe = this.recipeService.getRecipeById(params['id'])
-          this.cdr.detectChanges();
-        })
-    )
+      this.subscriptions.add(
+          this.route.params.subscribe((params: Params) => {
+              this.recipeService.getRecipe(params['id'])
+                  .subscribe((res) => {
+                      this.activeRecipe = res;
+                  })
+              this.cdr.detectChanges();
+          })
+      )
   }
 
   ngOnDestroy() {
@@ -57,6 +60,8 @@ export class RecipeDetailsComponent {
         dialogRef.afterClosed().subscribe((result: boolean) => {
             if (result) {
                 console.log('usuniete')
+                console.log(recipe._id)
+                this.recipeService.deleteRecipe(recipe._id)
             }
         });
     }

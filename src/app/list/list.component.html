@@ -9,7 +9,7 @@
 
   <div class="list">
     <div class="list-item" *ngFor="let recipe of recipeList" [routerLink]="'recipe/' + recipe._id">
-      <span>#{{recipe._id}} {{recipe.name}}</span>
+      <span>{{recipe.name}}</span>
       <div class="list-item-buttons">
         <button mat-icon-button (click)="removeRecipe(recipe)">
           <mat-icon>delete</mat-icon>
