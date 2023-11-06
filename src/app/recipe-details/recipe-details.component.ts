@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {ActivatedRoute, Params, Router} from "@angular/router";
+import {ActivatedRoute, Params, Router, RouterLink} from "@angular/router";
 import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {Subscription} from "rxjs";
@@ -17,7 +17,8 @@ import {NgForOf} from "@angular/common";
     imports: [
         MatButtonModule,
         MatIconModule,
-        NgForOf
+        NgForOf,
+        RouterLink
     ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -28,7 +29,8 @@ export class RecipeDetailsComponent {
       private route: ActivatedRoute,
       private recipeService: RecipesService,
       private cdr: ChangeDetectorRef,
-      private dialog: MatDialog
+      private dialog: MatDialog,
+      private router: Router,
   ) {}
 
   ngOnInit() {
@@ -57,5 +59,9 @@ export class RecipeDetailsComponent {
                 console.log('usuniete')
             }
         });
+    }
+
+    navigateToEdit(_id: string | undefined) {
+        this.router.navigate(['recipe/' + _id +'/edit'])
     }
 }
