@@ -9,6 +9,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialog} from "@angular/material/dialog";
 import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-list',
@@ -36,6 +37,7 @@ export class ListComponent {
       private dialog: MatDialog,
       private router: Router,
       private cdr: ChangeDetectorRef,
+      private _snackBar: MatSnackBar
   ) {}
 
 ngOnInit() {
@@ -58,10 +60,9 @@ getRecipes() {
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-        console.log('usuniete')
-        console.log(result)
         this.recipesService.deleteRecipe(recipe._id)
             .subscribe(res => {
+              this._snackBar.open(`Usunięto element ${recipe.name}`, `OK`)
               console.log(`Usunięto element ${recipe.name}`)
               this.getRecipes()
             }, err => {
@@ -71,14 +72,16 @@ getRecipes() {
     });
   }
 
-  // #todo dodać debounce time
+  recipeId(index: number, item: Recipe){
+    return item.name;
+  }
   filterRecipes() {
     this.recipeList = this.recipeListInit.filter((recipe) => {
       return recipe.name.toLowerCase().includes(<string>this.searchFormControl.value?.toLowerCase())
     })
   }
 
-  navigateToEdit(_id: any) {
+  navigateToEdit(_id: string) {
     this.router.navigate(['recipe/' + _id +'/edit'])
   }
 }

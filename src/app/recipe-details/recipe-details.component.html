@@ -1,10 +1,7 @@
 <div class="title-area">
     <h1>{{activeRecipe?.name}}</h1>
     <div class="item-buttons">
-        <button mat-icon-button (click)="removeRecipe(activeRecipe)">
-            <mat-icon>delete</mat-icon>
-        </button>
-        <button mat-icon-button  (click)="navigateToEdit(activeRecipe?._id)">
+        <button mat-icon-button  (click)="navigateToEdit(activeRecipe._id)">
             <mat-icon>edit</mat-icon>
         </button>
     </div>

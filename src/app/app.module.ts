@@ -12,11 +12,16 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { RecipeListItemComponent } from './recipe-list-item/recipe-list-item.component';
+import { RecipeItemAddComponent } from './recipe-item-add/recipe-item-add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeDetailsEditComponent,
+    RecipeListItemComponent,
+    RecipeItemAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     MatInputModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

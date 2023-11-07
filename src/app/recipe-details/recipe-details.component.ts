@@ -1,12 +1,9 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {ActivatedRoute, Params, Router, RouterLink} from "@angular/router";
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input} from '@angular/core';
+import {Router, RouterLink} from "@angular/router";
 import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
-import {Subscription} from "rxjs";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
-import {MatDialog} from "@angular/material/dialog";
 import {NgForOf} from "@angular/common";
 
 @Component({
@@ -23,50 +20,23 @@ import {NgForOf} from "@angular/common";
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsComponent {
-  activeRecipe: Recipe | undefined;
-  subscriptions = new Subscription();
+  activeRecipe!: Recipe;
   constructor(
-      private route: ActivatedRoute,
       private recipeService: RecipesService,
       private cdr: ChangeDetectorRef,
-      private dialog: MatDialog,
       private router: Router,
   ) {}
+  @Input() id: string = '';
 
   ngOnInit() {
-      this.subscriptions.add(
-          this.route.params.subscribe((params: Params) => {
-              this.recipeService.getRecipe(params['id'])
-                  .subscribe((res) => {
-                      this.activeRecipe = res;
-                  })
-              this.cdr.detectChanges();
-          })
-      )
+    this.recipeService.getRecipe(this.id)
+      .subscribe((res) => {
+        this.activeRecipe = res;
+        this.cdr.detectChanges();
+      })
   }
 
-  ngOnDestroy() {
-      this.subscriptions.unsubscribe()
-  }
-
-    removeRecipe(recipe?: Recipe) {
-      if(!recipe){
-          return
-      }
-        const dialogRef = this.dialog.open(ConfirmationModalComponent, {
-            data: { text: `Czy napewno chcesz usunąć przepis '${recipe.name}'` },
-        });
-
-        dialogRef.afterClosed().subscribe((result: boolean) => {
-            if (result) {
-                console.log('usuniete')
-                console.log(recipe._id)
-                this.recipeService.deleteRecipe(recipe._id)
-            }
-        });
-    }
-
-    navigateToEdit(_id: string | undefined) {
-        this.router.navigate(['recipe/' + _id +'/edit'])
+    navigateToEdit(id: string ) {
+        this.router.navigate([`recipe/${id}/edit`])
     }
 }

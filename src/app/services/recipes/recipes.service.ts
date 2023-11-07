@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class RecipesService {
-  private apiEndpoint = 'https://crudcrud.com/api/d2f6f2920c974697a54da361abb9189e/recipe';
+  private apiEndpoint = 'https://crudcrud.com/api/040f92356d27402ca8dd90e69162b591/recipe';
 
   constructor(private http: HttpClient) { }
 
@@ -20,10 +20,9 @@ export class RecipesService {
   }
 
   deleteRecipe(id: string): Observable<any> {
-    console.log('test')
     return this.http.delete(`${this.apiEndpoint}/${id}`);
   }
-  updateRecipe(id: string, body: any): Observable<any> {
-    return this.http.post(`${this.apiEndpoint}/${id}`, body);
+  updateRecipe(body: Recipe): Observable<any> {
+    return this.http.put(`${this.apiEndpoint}/${body._id}`, body);
   }
 }

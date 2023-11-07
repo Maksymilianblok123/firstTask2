@@ -1,42 +1,71 @@
-import {ChangeDetectorRef, Component} from '@angular/core';
-import {ActivatedRoute, Params} from "@angular/router";
-import {Subscription} from "rxjs";
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {RecipesService} from "../services/recipes/recipes.service";
 import {Ingredient} from "../shared/interfaces/ingredient/ingredient";
+import {FormArray, FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-recipe-details-edit',
   templateUrl: './recipe-details-edit.component.html',
-  styleUrls: ['./recipe-details-edit.component.scss']
+  styleUrls: ['./recipe-details-edit.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsEditComponent {
-  activeRecipe: Recipe | undefined;
-  subscriptions = new Subscription();
+  @Input() id: string = '';
+  activeRecipe!: Recipe;
+  activeRecipeForm!: FormGroup;
   constructor(
-      private route: ActivatedRoute,
       private recipeService: RecipesService,
-      private cdr: ChangeDetectorRef,
-) {
-  }
+      private formBuilder: FormBuilder,
+      private _snackBar: MatSnackBar
+) {}
 
   ngOnInit() {
-    this.subscriptions.add(
-        this.route.params.subscribe((params: Params) => {
-          this.recipeService.getRecipe(params['id'])
-              .subscribe((res) => {
-                  this.activeRecipe = res;
-              })
-          this.cdr.detectChanges();
-        })
-    )
+    this.activeRecipeForm = this.formBuilder.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      preparationTimeInMinutes: ['', Validators.required],
+      description: [''],
+      ingredients: this.formBuilder.array([]),
+      _id: ['']
+    });
+
+    this.recipeService.getRecipe(this.id).subscribe((res: Recipe) => {
+      this.activeRecipe = res;
+      this.activeRecipeForm.patchValue({
+        name: res.name,
+        description: res.description,
+        preparationTimeInMinutes: res.preparationTimeInMinutes,
+        _id: res._id,
+      });
+
+      this.setIngredients(res.ingredients);
+    });
   }
 
-    editQnt(quantity: number) {
-        console.log(quantity)
-    }
+  setIngredients(ingredients: Ingredient[]) {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    ingredientFormArray.clear();
 
-    removeItem(item: Ingredient) {
-        console.log(item)
+    if (ingredients && ingredients.length > 0) {
+      ingredients.forEach((ingredient) => {
+        ingredientFormArray.push(
+          this.formBuilder.group({
+            name: [ingredient.name],
+            quantity: [ingredient.quantity],
+            _id: [ingredient._id],
+          })
+        );
+      });
     }
+  }
+
+
+
+  save() {
+    this.recipeService.updateRecipe(this.activeRecipeForm.value)
+      .subscribe(res => {
+        this._snackBar.open('Edited item', 'OK');
+      })
+  }
 }

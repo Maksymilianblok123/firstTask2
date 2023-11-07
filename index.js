@@ -1,4 +1,4 @@
-fetch('https://crudcrud.com/api/d2f6f2920c974697a54da361abb9189e/recipe', {
+fetch('https://crudcrud.com/api/040f92356d27402ca8dd90e69162b591/recipe', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
@@ -11,12 +11,12 @@ fetch('https://crudcrud.com/api/d2f6f2920c974697a54da361abb9189e/recipe', {
             {
                 _id: 'asdafsgsr1231dsada',
                 "name": "Pie Crust",
-                "quantity": "2 (store-bought or homemade)"
+                "quantity": "2"
             },
             {
                 _id: 'xdgdfedtewrq12',
                 "name": "Apples",
-                "quantity": "6 cups, peeled, cored, and sliced"
+                "quantity": "6"
             },
             {
                 _id: 'asfshfghdascsd',

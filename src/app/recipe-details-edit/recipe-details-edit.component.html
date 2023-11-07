@@ -1,36 +1,23 @@
-<div>
+<form [formGroup]="activeRecipeForm">
+  <div>
     <mat-form-field>
-        <mat-label>Recipe name</mat-label>
-        <input required [minLength]="3" matInput [defaultValue]="activeRecipe?.name || null" placeholder="Recipe name">
+      <mat-label>Recipe name</mat-label>
+      <input matInput formControlName="name" placeholder="Recipe name">
     </mat-form-field>
-</div>
-<div>
+  </div>
+  <div>
     <mat-form-field>
-        <mat-label>Preparations time (minutes)}</mat-label>
-        <input required matInput [defaultValue]="activeRecipe?.preparationTimeInMinutes || null" placeholder="Preparation time (minutes)">
+      <mat-label>Preparation time (minutes)</mat-label>
+      <input matInput formControlName="preparationTimeInMinutes" placeholder="Preparation time (minutes)">
     </mat-form-field>
-</div>
-<div>
+  </div>
+  <div>
     <mat-form-field>
-        <mat-label>Description</mat-label>
-        <textarea matInput name="" id="" cols="80" rows="5"></textarea>
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" id="" cols="80" rows="5"></textarea>
     </mat-form-field>
-</div>
+  </div>
+</form>
 
-<div class="ingredients">
-    <h3>Ingredients list:</h3>
-    <div class="ingredients-list">
-        <p *ngFor="let item of activeRecipe?.ingredients">
-            {{item.name}} : <strong>{{item.quantity}}</strong>
-            <span class="action-buttons">
-            <button mat-icon-button (click)="removeItem(item)">
-                <mat-icon>delete</mat-icon>
-            </button>
-            <button mat-icon-button  (click)="editQnt(item.quantity)">
-                <mat-icon>edit</mat-icon>
-            </button>
-            </span>
-        </p>
-    </div>
-</div>
+<button mat-button (click)="save()">Zapisz zmiany</button>
 
