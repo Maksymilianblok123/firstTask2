@@ -36,10 +36,7 @@ export class ListComponent {
 
   constructor(
       private recipesService: RecipesService,
-      private dialog: MatDialog,
-      private router: Router,
       private cdr: ChangeDetectorRef,
-      private _snackBar: MatSnackBar
   ) {}
 
 ngOnInit() {

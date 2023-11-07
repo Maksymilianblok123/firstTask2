@@ -8,7 +8,7 @@
   </form>
 
   <div class="list">
-    <div class="list-item" *ngFor="let recipe of recipeList; trackBy: recipeId" [routerLink]="'recipe/' + recipe._id">
+    <div class="list__item" *ngFor="let recipe of recipeList; trackBy: recipeId" [routerLink]="'recipe/' + recipe._id">
       <app-recipe-list-item [recipe]="recipe"></app-recipe-list-item>
     </div>
   </div>
