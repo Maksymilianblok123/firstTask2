@@ -2,13 +2,21 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {RecipesService} from "../services/recipes/recipes.service";
 import {Ingredient} from "../shared/interfaces/ingredient/ingredient";
-import {FormArray, FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
   selector: 'app-recipe-details-edit',
   templateUrl: './recipe-details-edit.component.html',
   styleUrls: ['./recipe-details-edit.component.scss'],
+  standalone: true,
+  imports: [
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsEditComponent {

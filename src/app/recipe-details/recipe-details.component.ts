@@ -28,12 +28,20 @@ export class RecipeDetailsComponent {
   ) {}
   @Input() id: string = '';
 
-  ngOnInit() {
+  getActiveRecipe() {
     this.recipeService.getRecipe(this.id)
       .subscribe((res) => {
         this.activeRecipe = res;
         this.cdr.detectChanges();
       })
+  }
+
+  ngOnInit() {
+    this.getActiveRecipe()
+  }
+
+  ngOnChanges() {
+    this.getActiveRecipe()
   }
 
     navigateToEdit(id: string ) {

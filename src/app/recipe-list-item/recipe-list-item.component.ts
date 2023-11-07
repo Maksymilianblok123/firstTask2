@@ -1,11 +1,10 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
 import {Router} from "@angular/router";
 import {RecipesService} from "../services/recipes/recipes.service";
-import {FormBuilder} from "@angular/forms";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {MatDialog} from "@angular/material/dialog";
 
@@ -21,6 +20,7 @@ import {MatDialog} from "@angular/material/dialog";
 })
 export class RecipeListItemComponent {
   @Input() recipe!: Recipe;
+  @Output() onItemRemove = new EventEmitter<string>();
 
   constructor(
     private router: Router,
@@ -40,6 +40,7 @@ export class RecipeListItemComponent {
         this.recipeService.deleteRecipe(recipe._id)
           .subscribe(() => {
             this._snackBar.open(`Usunięto element ${recipe.name}`, `OK`)
+            this.onItemRemove.emit(recipe._id)
           }, () => {
             this._snackBar.open(`Wystąpił błąd podczas usuwania`, `OK`)
           })

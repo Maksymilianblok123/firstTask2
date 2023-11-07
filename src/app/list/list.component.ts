@@ -60,4 +60,12 @@ getRecipes() {
       return recipe.name.toLowerCase().includes(<string>this.searchFormControl.value?.toLowerCase())
     })
   }
+
+  removeItemFromList($event: string) {
+    console.log($event)
+    this.recipeListInit.filter((recipe) => {
+      return recipe._id !== $event;
+    })
+    this.cdr.detectChanges();
+  }
 }

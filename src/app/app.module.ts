@@ -19,8 +19,6 @@ import { RecipeItemAddComponent } from './recipe-item-add/recipe-item-add.compon
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeDetailsEditComponent,
-    RecipeItemAddComponent,
   ],
   imports: [
     BrowserModule,
