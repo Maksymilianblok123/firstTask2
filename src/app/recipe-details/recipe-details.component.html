@@ -1,4 +1,4 @@
-<div class="title-area">
+<div class="title">
     <h1>{{activeRecipe?.name}}</h1>
     <div class="item-buttons">
         <button mat-icon-button  (click)="navigateToEdit(activeRecipe._id)">
@@ -7,17 +7,18 @@
     </div>
 </div>
 
-<div class="basic-info">
-<p>Preparation time: <strong>{{activeRecipe?.preparationTimeInMinutes}} minutes</strong></p>
-<p>{{activeRecipe?.description}}</p>
-</div>
+<div class="description">
+  <p>Preparation time: <strong>{{activeRecipe?.preparationTimeInMinutes}} minutes</strong></p>
+  <p>{{activeRecipe?.description}}</p>
 
-<div class="ingredients">
+
+  <div>
     <h3>Ingredients list:</h3>
-    <div class="ingredients-list">
-        <p *ngFor="let item of activeRecipe?.ingredients">
-            {{item.name}} : <strong>{{item.quantity}}</strong>
-        </p>
+    <div>
+      <p *ngFor="let item of activeRecipe?.ingredients">
+        {{item.name}} : <strong>{{item.quantity}}</strong>
+      </p>
     </div>
+  </div>
 </div>
 

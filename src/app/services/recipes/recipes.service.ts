@@ -7,7 +7,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class RecipesService {
-  private apiEndpoint = 'https://crudcrud.com/api/4f35d292350445db81c5ff5be593ffa1/recipe';
+  private apiEndpoint = 'https://crudcrud.com/api/5eb40ab72ff744bb8f5c5615e334fe09/recipe';
 
   constructor(private http: HttpClient) { }
 
