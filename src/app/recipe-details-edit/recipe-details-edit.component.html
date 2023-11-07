@@ -1,4 +1,5 @@
 <form [formGroup]="activeRecipeForm">
+  <h2>Editing '{{activeRecipe.name}}'</h2>
   <div>
     <mat-form-field>
       <mat-label>Recipe name</mat-label>
@@ -19,5 +20,5 @@
   </div>
 </form>
 
-<button mat-button (click)="save()" color="warn">Save changes</button>
+<button mat-button (click)="save()">Save changes</button>
 
