@@ -1,10 +1,10 @@
-fetch('https://crudcrud.com/api/040f92356d27402ca8dd90e69162b591/recipe', {
+fetch('https://crudcrud.com/api/4f35d292350445db81c5ff5be593ffa1/recipe', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-        "name": "Apple Pie33333",
+        "name": "Apple Pie3331133",
         "preparationTimeInMinutes": 60,
         "description": "Homemade apple pie with a flaky crust and sweet apple filling.",
         "ingredients": [

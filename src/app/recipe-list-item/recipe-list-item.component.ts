@@ -32,17 +32,17 @@ export class RecipeListItemComponent {
 
   removeRecipe(recipe: Recipe) {
     const dialogRef = this.dialog.open(ConfirmationModalComponent, {
-      data: { text: `Czy napewno chcesz usunąć przepis '${recipe.name}'` },
+      data: { text: `Are you sure, that you want to delete '${recipe.name}'` },
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
         this.recipeService.deleteRecipe(recipe._id)
           .subscribe(() => {
-            this._snackBar.open(`Usunięto element ${recipe.name}`, `OK`)
+            this._snackBar.open(`Removed element ${recipe.name}`, `OK`)
             this.onItemRemove.emit(recipe._id)
           }, () => {
-            this._snackBar.open(`Wystąpił błąd podczas usuwania`, `OK`)
+            this._snackBar.open(`Error while saving`, `OK`)
           })
       }
     });

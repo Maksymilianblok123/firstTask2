@@ -30,7 +30,7 @@ import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.comp
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ListComponent {
-  searchFormControl = new FormControl('', [Validators.required, Validators.email]);
+  searchFormControl = new FormControl('');
   recipeListInit: Recipe[] = [];
   recipeList: Recipe[] = [];
 
@@ -52,8 +52,8 @@ getRecipes() {
       })
 }
 
-  recipeId(index: number, item: Recipe){
-    return item.name;
+  trackById(index: number, item: Recipe){
+    return item._id;
   }
   filterRecipes() {
     this.recipeList = this.recipeListInit.filter((recipe) => {
