@@ -9,17 +9,7 @@
 
   <div class="list">
     <div class="list-item" *ngFor="let recipe of recipeList; trackBy: recipeId" [routerLink]="'recipe/' + recipe._id">
-      <app-recipe-list-item></app-recipe-list-item>
-      <span>{{recipe.name}}</span>
-      <div class="list-item-buttons">
-        <button mat-icon-button (click)="removeRecipe(recipe)">
-          <mat-icon>delete</mat-icon>
-        </button>
-        <button mat-icon-button
-                (click)="navigateToEdit(recipe._id); $event.stopPropagation()">
-          <mat-icon>edit</mat-icon>
-        </button>
-      </div>
+      <app-recipe-list-item [recipe]="recipe"></app-recipe-list-item>
     </div>
   </div>
 </div>

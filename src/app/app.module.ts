@@ -20,7 +20,6 @@ import { RecipeItemAddComponent } from './recipe-item-add/recipe-item-add.compon
   declarations: [
     AppComponent,
     RecipeDetailsEditComponent,
-    RecipeListItemComponent,
     RecipeItemAddComponent,
   ],
   imports: [
