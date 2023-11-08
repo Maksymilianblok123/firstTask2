@@ -1,16 +1,15 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {FormControl, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
+import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {NgForOf} from "@angular/common";
-import {Router, RouterLink} from "@angular/router";
+import {RouterLink} from "@angular/router";
 import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import {MatDialog} from "@angular/material/dialog";
-import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
+import {Store} from "@ngxs/store";
+import {GetRecipes} from "../state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-list',
@@ -35,21 +34,18 @@ export class ListComponent {
   recipeList: Recipe[] = [];
 
   constructor(
-      private recipesService: RecipesService,
       private cdr: ChangeDetectorRef,
-  ) {}
+      private readonly store: Store
+  ) {
+  }
 
 ngOnInit() {
-    this.getRecipes();
-}
+  this.store.dispatch(new GetRecipes());
 
-getRecipes() {
-  this.recipesService.getRecipes()
-      .subscribe((recipes: Recipe[]) => {
-        this.recipeListInit = recipes
-        this.recipeList = recipes
-        this.cdr.detectChanges();
-      })
+  this.store.select((state) => state.recipes).subscribe(state => {
+    this.recipeList = state.recipes;
+    this.cdr.detectChanges();
+  });
 }
 
   trackById(index: number, item: Recipe){
@@ -62,7 +58,6 @@ getRecipes() {
   }
 
   removeItemFromList($event: string) {
-    console.log($event)
     this.recipeListInit.filter((recipe) => {
       return recipe._id !== $event;
     })
