@@ -4,6 +4,7 @@ import { Recipe } from '../../shared/interfaces/recipe/recipe';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe } from './recipes.actions';
+import {environment} from "../../../environments/environment";
 
 interface SelectorArg {
   getName?: string | (() => string);
@@ -15,7 +16,7 @@ export interface RecipesStateModel extends SelectorArg {
 }
 
 @State<RecipesStateModel>({
-  name: 'recipes', // State name
+  name: 'recipes',
   defaults: {
     recipes: [],
   },
@@ -24,7 +25,7 @@ export interface RecipesStateModel extends SelectorArg {
 export class RecipesState {
   constructor(private http: HttpClient) {}
 
-  private apiEndpoint = 'https://crudcrud.com/api/4e792512535140a082bf592eed0d4bc0/recipe';
+  private apiEndpoint = environment.api;
 
   @Action(GetRecipes)
   getRecipes(ctx: StateContext<RecipesStateModel>) {
