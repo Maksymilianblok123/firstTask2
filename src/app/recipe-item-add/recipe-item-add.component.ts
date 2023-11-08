@@ -79,6 +79,7 @@ export class RecipeItemAddComponent {
       this.store.dispatch(new AddRecipe(newRecipe))
         .subscribe(() => {
           this._snackBar.open('Dodano nowy przepis', 'OK')
+          this.recipeForm.reset();
         })
     }
   }
