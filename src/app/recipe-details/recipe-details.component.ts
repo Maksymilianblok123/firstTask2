@@ -1,10 +1,11 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {NgForOf} from "@angular/common";
+import {Store} from "@ngxs/store";
+import {GetRecipe} from "../state/recipe/recipes.actions";
 
 @Component({
     selector: 'app-recipe-details',
@@ -22,14 +23,14 @@ import {NgForOf} from "@angular/common";
 export class RecipeDetailsComponent {
   activeRecipe!: Recipe;
   constructor(
-      private recipeService: RecipesService,
       private cdr: ChangeDetectorRef,
       private router: Router,
+      private readonly store: Store
   ) {}
   @Input() id: string = '';
 
   getActiveRecipe() {
-    this.recipeService.getRecipe(this.id)
+    this.store.dispatch(new GetRecipe(this.id))
       .subscribe((res) => {
         this.activeRecipe = res;
         this.cdr.detectChanges();

@@ -3,7 +3,6 @@ import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";

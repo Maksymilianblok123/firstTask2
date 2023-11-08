@@ -4,9 +4,10 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
 import {Router} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {MatDialog} from "@angular/material/dialog";
+import {DeleteRecipe} from "../state/recipe/recipes.actions";
+import {Store} from "@ngxs/store";
 
 @Component({
   selector: 'app-recipe-list-item',
@@ -24,9 +25,9 @@ export class RecipeListItemComponent {
 
   constructor(
     private router: Router,
-    private recipeService: RecipesService,
     private _snackBar: MatSnackBar,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private readonly store: Store
   ) {}
 
 
@@ -37,7 +38,8 @@ export class RecipeListItemComponent {
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-        this.recipeService.deleteRecipe(recipe._id)
+
+        this.store.dispatch(new DeleteRecipe(recipe._id))
           .subscribe(() => {
             this._snackBar.open(`Removed element ${recipe.name}`, `OK`)
             this.onItemRemove.emit(recipe._id)

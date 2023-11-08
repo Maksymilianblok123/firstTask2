@@ -12,8 +12,9 @@ import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {NgForOf} from "@angular/common";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
+import {AddRecipe, DeleteRecipe} from "../state/recipe/recipes.actions";
+import {Store} from "@ngxs/store";
 
 @Component({
   selector: 'app-recipe-item-add',
@@ -38,8 +39,8 @@ export class RecipeItemAddComponent {
 
   constructor(
     private fb: FormBuilder,
-    private recipesService: RecipesService,
     private _snackBar: MatSnackBar,
+    private readonly store: Store
   ) {}
 
   ngOnInit(): void {
@@ -75,8 +76,7 @@ export class RecipeItemAddComponent {
   onSubmit() {
     if (this.recipeForm.valid) {
       const newRecipe: Recipe = this.recipeForm.value;
-      console.log('New Recipe:', newRecipe);
-      this.recipesService.addRecipe(newRecipe)
+      this.store.dispatch(new AddRecipe(newRecipe))
         .subscribe(() => {
           this._snackBar.open('Dodano nowy przepis', 'OK')
         })
