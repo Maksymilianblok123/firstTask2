@@ -1,0 +1,26 @@
+<form [formGroup]="activeRecipeForm" class="flex-center">
+  <h2>Editing '{{activeRecipe.name}}'</h2>
+  <div>
+    <mat-form-field>
+      <mat-label>Recipe name</mat-label>
+      <input matInput formControlName="name" placeholder="Recipe name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Preparation time (minutes)</mat-label>
+      <input matInput formControlName="preparationTimeInMinutes" placeholder="Preparation time (minutes)">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" id="" cols="80" rows="5"></textarea>
+    </mat-form-field>
+  </div>
+  <div>
+    <button mat-button (click)="save()" type="button">Save changes</button>
+    <button mat-button [routerLink]="['../../../recipe/' + activeRecipe._id]" color="warn" class="warning" type="button">Cancel changes</button>
+  </div>
+</form>
+
