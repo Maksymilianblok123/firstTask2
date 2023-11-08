@@ -32,7 +32,6 @@ export class RecipesState {
       .get<Recipe[]>(this.apiEndpoint)
       .pipe(
         tap((recipes) => {
-          console.log('tutaj');
           ctx.patchState({ recipes });
         })
       );
@@ -44,7 +43,6 @@ export class RecipesState {
       .get<Recipe>(`${this.apiEndpoint}/${payload}`)
       .pipe(
         tap((recipe) => {
-          // Handle the retrieved recipe as needed
         })
       );
   }
@@ -55,7 +53,6 @@ export class RecipesState {
       .delete(`${this.apiEndpoint}/${payload}`)
       .pipe(
         tap(() => {
-          // Handle the deletion as needed
         })
       );
   }
@@ -66,7 +63,6 @@ export class RecipesState {
       .put(`${this.apiEndpoint}/${payload._id}`, payload)
       .pipe(
         tap(() => {
-          // Handle the update as needed
         })
       );
   }
@@ -77,7 +73,6 @@ export class RecipesState {
       .post(this.apiEndpoint, payload)
       .pipe(
         tap(() => {
-          // Handle the addition as needed
         })
       );
   }
