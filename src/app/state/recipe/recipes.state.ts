@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe } from './recipes.actions';
 import {environment} from "../../../environments/environment";
-import {RecipesService} from "../../shared/services/recipe/recipes.service";
+import {RecipesApiService} from "../../shared/services/recipe/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
 interface SelectorArg {
@@ -27,7 +27,7 @@ export interface RecipesStateModel extends SelectorArg {
 export class RecipesState {
   constructor(
     private http: HttpClient,
-    private recipesService: RecipesService,
+    private RecipesApiService: RecipesApiService,
     private _snackBar: MatSnackBar
   ) {}
 
@@ -44,7 +44,7 @@ export class RecipesState {
 
   @Action(GetRecipe)
   getRecipe(ctx: StateContext<RecipesStateModel>, { payload }: GetRecipe) {
-    return this.recipesService.getRecipe(payload).pipe(
+    return this.RecipesApiService.getRecipe(payload).pipe(
       tap((recipe) => {
       })
     );
@@ -52,7 +52,7 @@ export class RecipesState {
 
   @Action(DeleteRecipe)
   deleteRecipe(ctx: StateContext<RecipesStateModel>, { payload }: DeleteRecipe) {
-    return this.recipesService.deleteRecipe(payload).pipe(
+    return this.RecipesApiService.deleteRecipe(payload).pipe(
       tap(() => {
         this._snackBar.open(`Removed element`, `OK`)
       })
@@ -61,7 +61,7 @@ export class RecipesState {
 
   @Action(UpdateRecipe)
   updateRecipe(ctx: StateContext<RecipesStateModel>, { payload }: UpdateRecipe) {
-    return this.recipesService.updateRecipe(payload).pipe(
+    return this.RecipesApiService.updateRecipe(payload).pipe(
       tap(() => {
         this._snackBar.open('Edited item', 'OK');
       })
@@ -70,7 +70,7 @@ export class RecipesState {
 
   @Action(AddRecipe)
   addRecipe(ctx: StateContext<RecipesStateModel>, { payload }: AddRecipe) {
-    return this.recipesService.addRecipe(payload).pipe(
+    return this.RecipesApiService.addRecipe(payload).pipe(
       tap(() => {
         this._snackBar.open('Added new recipe', 'OK')
       })

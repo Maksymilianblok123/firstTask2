@@ -32,7 +32,7 @@ export class ListComponent {
   searchFormControl = new FormControl('');
   recipeListInit: Recipe[] = [];
   recipeList: Recipe[] = [];
-  recipes$ = this.store.select(state => state.recipes);
+  recipes$ = this.store.select(state => state.recipes.recipes);
 
   constructor(
       private cdr: ChangeDetectorRef,
