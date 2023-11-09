@@ -71,9 +71,6 @@ export class RecipeDetailsEditComponent {
       });
     }
   }
-
-
-
   save() {
     this.store.dispatch(new UpdateRecipe(this.activeRecipeForm.value))
       .subscribe(res => {

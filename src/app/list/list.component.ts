@@ -8,7 +8,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
 import {Store} from "@ngxs/store";
-import {GetRecipes} from "../state/recipe/recipes.actions";
+import {AddRecipe, DeleteRecipe, GetRecipes} from "../state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-list',
@@ -40,9 +40,9 @@ export class ListComponent {
   ) {
   }
 
-ngOnInit() {
-  this.store.dispatch(new GetRecipes());
-}
+  ngOnInit() {
+    this.store.dispatch(new GetRecipes());
+  }
 
   trackById(index: number, item: Recipe){
     return item._id;
@@ -53,11 +53,8 @@ ngOnInit() {
     })
   }
 
-  removeItemFromList($event: string) {
-    this.recipeListInit.filter((recipe) => {
-      return recipe._id !== $event;
-    })
-    this.cdr.detectChanges();
+  removeItemFromList(recipeId: string) {
+    this.store.dispatch(new DeleteRecipe(recipeId))
   }
 
 }

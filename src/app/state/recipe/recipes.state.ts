@@ -60,7 +60,16 @@ export class RecipesState {
   deleteRecipe(ctx: StateContext<RecipesStateModel>, { payload }: DeleteRecipe) {
     return this.RecipesApiService.deleteRecipe(payload).pipe(
       tap(() => {
-        this._snackBar.open(`Removed element`, `OK`)
+        ctx.setState((state) => {
+          const updatedState = {
+            ...state,
+            recipes: state.recipes.filter((recipe: Recipe) => {
+              return recipe._id !== payload
+            }),
+          };
+          this._snackBar.open(`Removed recipe with id ${payload}`, 'OK');
+          return updatedState;
+        });
       })
     );
   }
@@ -69,7 +78,16 @@ export class RecipesState {
   updateRecipe(ctx: StateContext<RecipesStateModel>, { payload }: UpdateRecipe) {
     return this.RecipesApiService.updateRecipe(payload).pipe(
       tap(() => {
-        this._snackBar.open('Edited item', 'OK');
+        ctx.setState((state) => {
+          const updatedState = {
+            ...state,
+            recipes: state.recipes.map((recipe) =>
+              recipe._id === payload._id ? payload : recipe
+            ),
+          };
+          this._snackBar.open(`Edited item ${payload}`, 'OK');
+          return updatedState;
+        });
       })
     );
   }
