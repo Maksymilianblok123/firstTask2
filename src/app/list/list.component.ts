@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
-import {NgForOf} from "@angular/common";
+import {CommonModule, NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
@@ -16,6 +16,7 @@ import {GetRecipes} from "../state/recipe/recipes.actions";
   styleUrls: ['./list.component.scss'],
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
@@ -31,6 +32,7 @@ export class ListComponent {
   searchFormControl = new FormControl('');
   recipeListInit: Recipe[] = [];
   recipeList: Recipe[] = [];
+  recipes$ = this.store.select(state => state.recipes);
 
   constructor(
       private cdr: ChangeDetectorRef,
@@ -40,11 +42,6 @@ export class ListComponent {
 
 ngOnInit() {
   this.store.dispatch(new GetRecipes());
-
-  this.store.select((state) => state.recipes).subscribe(state => {
-    this.recipeList = state.recipes;
-    this.cdr.detectChanges();
-  });
 }
 
   trackById(index: number, item: Recipe){
@@ -62,4 +59,5 @@ ngOnInit() {
     })
     this.cdr.detectChanges();
   }
+
 }

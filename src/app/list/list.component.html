@@ -7,9 +7,8 @@
       <input type="text" matInput [formControl]="searchFormControl" (input)="filterRecipes()">
     </mat-form-field>
   </form>
-
   <div class="list">
-    <div class="list__item" *ngFor="let recipe of recipeList; trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
+    <div class="list__item" *ngFor="let recipe of (recipes$ | async)" [routerLink]="'recipe/' + recipe._id">
       <app-recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></app-recipe-list-item>
     </div>
   </div>

@@ -14,6 +14,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {NgxsModule} from "@ngxs/store";
 import {RecipesState} from "./state/recipe/recipes.state";
+import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {RecipesState} from "./state/recipe/recipes.state";
     MatSnackBarModule,
     NgxsModule.forRoot([RecipesState], {
       developmentMode: true
-    })
+    }),
+    NgxsReduxDevtoolsPluginModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

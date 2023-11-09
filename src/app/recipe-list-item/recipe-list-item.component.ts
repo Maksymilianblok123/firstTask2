@@ -41,10 +41,7 @@ export class RecipeListItemComponent {
 
         this.store.dispatch(new DeleteRecipe(recipe._id))
           .subscribe(() => {
-            this._snackBar.open(`Removed element ${recipe.name}`, `OK`)
             this.onItemRemove.emit(recipe._id)
-          }, () => {
-            this._snackBar.open(`Error while saving`, `OK`)
           })
       }
     });

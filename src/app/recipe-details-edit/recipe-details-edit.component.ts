@@ -77,7 +77,6 @@ export class RecipeDetailsEditComponent {
   save() {
     this.store.dispatch(new UpdateRecipe(this.activeRecipeForm.value))
       .subscribe(res => {
-        this._snackBar.open('Edited item', 'OK');
       })
   }
 }

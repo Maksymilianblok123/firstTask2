@@ -1,10 +1,12 @@
-import { State, Action, StateContext } from '@ngxs/store';
+import {State, Action, StateContext, Selector} from '@ngxs/store';
 import { Injectable } from '@angular/core';
 import { Recipe } from '../../shared/interfaces/recipe/recipe';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe } from './recipes.actions';
 import {environment} from "../../../environments/environment";
+import {RecipesService} from "../../shared/services/recipe/recipes.service";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 interface SelectorArg {
   getName?: string | (() => string);
@@ -23,14 +25,16 @@ export interface RecipesStateModel extends SelectorArg {
 })
 @Injectable()
 export class RecipesState {
-  constructor(private http: HttpClient) {}
-
-  private apiEndpoint = environment.api;
+  constructor(
+    private http: HttpClient,
+    private recipesService: RecipesService,
+    private _snackBar: MatSnackBar
+  ) {}
 
   @Action(GetRecipes)
   getRecipes(ctx: StateContext<RecipesStateModel>) {
     return this.http
-      .get<Recipe[]>(this.apiEndpoint)
+      .get<Recipe[]>(environment.api)
       .pipe(
         tap((recipes) => {
           ctx.patchState({ recipes });
@@ -40,41 +44,41 @@ export class RecipesState {
 
   @Action(GetRecipe)
   getRecipe(ctx: StateContext<RecipesStateModel>, { payload }: GetRecipe) {
-    return this.http
-      .get<Recipe>(`${this.apiEndpoint}/${payload}`)
-      .pipe(
-        tap((recipe) => {
-        })
-      );
+    return this.recipesService.getRecipe(payload).pipe(
+      tap((recipe) => {
+      })
+    );
   }
 
   @Action(DeleteRecipe)
   deleteRecipe(ctx: StateContext<RecipesStateModel>, { payload }: DeleteRecipe) {
-    return this.http
-      .delete(`${this.apiEndpoint}/${payload}`)
-      .pipe(
-        tap(() => {
-        })
-      );
+    return this.recipesService.deleteRecipe(payload).pipe(
+      tap(() => {
+        this._snackBar.open(`Removed element`, `OK`)
+      })
+    );
   }
 
   @Action(UpdateRecipe)
   updateRecipe(ctx: StateContext<RecipesStateModel>, { payload }: UpdateRecipe) {
-    return this.http
-      .put(`${this.apiEndpoint}/${payload._id}`, payload)
-      .pipe(
-        tap(() => {
-        })
-      );
+    return this.recipesService.updateRecipe(payload).pipe(
+      tap(() => {
+        this._snackBar.open('Edited item', 'OK');
+      })
+    );
   }
 
   @Action(AddRecipe)
   addRecipe(ctx: StateContext<RecipesStateModel>, { payload }: AddRecipe) {
-    return this.http
-      .post(this.apiEndpoint, payload)
-      .pipe(
-        tap(() => {
-        })
-      );
+    return this.recipesService.addRecipe(payload).pipe(
+      tap(() => {
+        this._snackBar.open('Added new recipe', 'OK')
+      })
+    );
+  }
+
+  @Selector()
+  static filterRecipes(state: RecipesStateModel, searchTerm: string) {
+    return state.recipes.filter(recipe => recipe.name.includes(searchTerm));
   }
 }
