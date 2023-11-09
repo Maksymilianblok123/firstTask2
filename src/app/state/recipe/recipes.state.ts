@@ -21,6 +21,7 @@ export interface RecipesStateModel extends SelectorArg {
   name: 'recipes',
   defaults: {
     recipes: [],
+    activeRecipe: null
   },
 })
 @Injectable()
@@ -46,6 +47,11 @@ export class RecipesState {
   getRecipe(ctx: StateContext<RecipesStateModel>, { payload }: GetRecipe) {
     return this.RecipesApiService.getRecipe(payload).pipe(
       tap((recipe) => {
+        const state = ctx.getState();
+        ctx.setState({
+          ...state,
+          activeRecipe: recipe
+        });
       })
     );
   }
@@ -71,8 +77,15 @@ export class RecipesState {
   @Action(AddRecipe)
   addRecipe(ctx: StateContext<RecipesStateModel>, { payload }: AddRecipe) {
     return this.RecipesApiService.addRecipe(payload).pipe(
-      tap(() => {
-        this._snackBar.open('Added new recipe', 'OK')
+      tap((newRecipe) => {
+        ctx.setState((state) => {
+          const updatedState = {
+            ...state,
+            recipes: [...state.recipes, newRecipe],
+          };
+          this._snackBar.open('Added new recipe', 'OK');
+          return updatedState;
+        });
       })
     );
   }

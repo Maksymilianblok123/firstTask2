@@ -27,6 +27,6 @@ export class RecipesApiService {
   }
 
   addRecipe(newRecipe: Recipe) {
-    return this.http.post(environment.api, newRecipe);
+    return this.http.post<Recipe>(environment.api, newRecipe);
   }
 }
