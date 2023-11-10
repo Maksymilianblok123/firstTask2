@@ -15,6 +15,7 @@ import {NgForOf} from "@angular/common";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {AddRecipe, DeleteRecipe} from "../state/recipe/recipes.actions";
 import {Store} from "@ngxs/store";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
   selector: 'app-recipe-item-add',
@@ -40,7 +41,8 @@ export class RecipeItemAddComponent {
   constructor(
     private fb: FormBuilder,
     private _snackBar: MatSnackBar,
-    private readonly store: Store
+    private readonly store: Store,
+    private recipeFacade: RecipesFacade
   ) {}
 
   ngOnInit(): void {
@@ -76,7 +78,7 @@ export class RecipeItemAddComponent {
   onSubmit() {
     if (this.recipeForm.valid) {
       const newRecipe: Recipe = this.recipeForm.value;
-      this.store.dispatch(new AddRecipe(newRecipe))
+      this.recipeFacade.addRecipe(newRecipe)
         .subscribe(() => {
           this.recipeForm.reset();
         })

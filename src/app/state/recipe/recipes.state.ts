@@ -17,6 +17,7 @@ export interface RecipesStateModel extends SelectorArg {
 
 }
 
+export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
 @State<RecipesStateModel>({
   name: 'recipes',
   defaults: {

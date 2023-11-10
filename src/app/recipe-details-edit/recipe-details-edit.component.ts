@@ -8,6 +8,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
 import {GetRecipe, UpdateRecipe} from "../state/recipe/recipes.actions";
 import {Store} from "@ngxs/store";
+import {CommonModule} from "@angular/common";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
   selector: 'app-recipe-details-edit',
@@ -18,18 +20,20 @@ import {Store} from "@ngxs/store";
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    RouterLink
+    RouterLink,
+    CommonModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsEditComponent {
   @Input() id: string = '';
-  activeRecipe!: Recipe;
   activeRecipeForm!: FormGroup;
+  activeRecipe$ = this.store.select(state => state.recipes.activeRecipe);
   constructor(
       private formBuilder: FormBuilder,
       private _snackBar: MatSnackBar,
-      private readonly store: Store
+      private readonly store: Store,
+      private recipesFacade: RecipesFacade,
 ) {}
 
   ngOnInit() {
@@ -41,9 +45,8 @@ export class RecipeDetailsEditComponent {
       _id: ['']
     });
 
-    this.store.dispatch(new GetRecipe(this.id))
+    this.recipesFacade.getRecipe(this.id)
       .subscribe((res: Recipe) => {
-        this.activeRecipe = res;
         this.activeRecipeForm.patchValue({
           name: res.name,
           description: res.description,
@@ -71,9 +74,9 @@ export class RecipeDetailsEditComponent {
       });
     }
   }
+
   save() {
-    this.store.dispatch(new UpdateRecipe(this.activeRecipeForm.value))
-      .subscribe(res => {
-      })
+    this.recipesFacade.updateRecipe(this.activeRecipeForm.value)
   }
+
 }

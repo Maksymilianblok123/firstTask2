@@ -9,6 +9,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
 import {Store} from "@ngxs/store";
 import {AddRecipe, DeleteRecipe, GetRecipes} from "../state/recipe/recipes.actions";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
   selector: 'app-list',
@@ -35,13 +36,13 @@ export class ListComponent {
   recipes$ = this.store.select(state => state.recipes.recipes);
 
   constructor(
-      private cdr: ChangeDetectorRef,
-      private readonly store: Store
+      private readonly store: Store,
+      private recipeFacade: RecipesFacade,
   ) {
   }
 
   ngOnInit() {
-    this.store.dispatch(new GetRecipes());
+    this.recipeFacade.getRecipes()
   }
 
   trackById(index: number, item: Recipe){
@@ -54,7 +55,7 @@ export class ListComponent {
   }
 
   removeItemFromList(recipeId: string) {
-    this.store.dispatch(new DeleteRecipe(recipeId))
+    this.recipeFacade.deleteRecipe(recipeId)
   }
 
 }

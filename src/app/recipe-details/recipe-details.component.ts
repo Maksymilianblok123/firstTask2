@@ -6,6 +6,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {NgForOf} from "@angular/common";
 import {Store} from "@ngxs/store";
 import {GetRecipe} from "../state/recipe/recipes.actions";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
     selector: 'app-recipe-details',
@@ -25,12 +26,13 @@ export class RecipeDetailsComponent {
   constructor(
       private cdr: ChangeDetectorRef,
       private router: Router,
-      private readonly store: Store
+      private readonly store: Store,
+      private recipesFacade: RecipesFacade
   ) {}
   @Input() id: string = '';
 
   getActiveRecipe() {
-    this.store.dispatch(new GetRecipe(this.id))
+    this.recipesFacade.getRecipe(this.id)
       .subscribe((res) => {
         this.activeRecipe = res;
         this.cdr.detectChanges();

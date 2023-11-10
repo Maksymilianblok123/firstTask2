@@ -11,22 +11,22 @@ export class RecipesApiService {
 
   constructor(private http: HttpClient) { }
 
-  getRecipes(): Observable<any> {
-    return this.http.get(`${environment.api}`);
+  getRecipes(): Observable<Recipe[]> {
+    return this.http.get<Recipe[]>(`${environment.api}`);
   }
 
-  getRecipe(id: string): Observable<any> {
-    return this.http.get(`${environment.api}/${id}`);
+  getRecipe(id: string): Observable<Recipe> {
+    return this.http.get<Recipe>(`${environment.api}/${id}`);
   }
 
   deleteRecipe(id: string): Observable<any> {
     return this.http.delete(`${environment.api}/${id}`);
   }
-  updateRecipe(body: Recipe): Observable<any> {
-    return this.http.put(`${environment.api}/${body._id}`, body);
+  updateRecipe(body: Recipe): Observable<Recipe> {
+    return this.http.put<Recipe>(`${environment.api}/${body._id}`, body);
   }
 
-  addRecipe(newRecipe: Recipe) {
+  addRecipe(newRecipe: Recipe): Observable<Recipe> {
     return this.http.post<Recipe>(environment.api, newRecipe);
   }
 }

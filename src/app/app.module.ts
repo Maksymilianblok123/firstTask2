@@ -15,6 +15,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {NgxsModule} from "@ngxs/store";
 import {RecipesState} from "./state/recipe/recipes.state";
 import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
+import {RecipesFacade} from "./state/recipe/recipes.fascade";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
     }),
     NgxsReduxDevtoolsPluginModule.forRoot()
   ],
-  providers: [],
+  providers: [RecipesFacade],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

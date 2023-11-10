@@ -8,6 +8,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
 import {MatDialog} from "@angular/material/dialog";
 import {DeleteRecipe} from "../state/recipe/recipes.actions";
 import {Store} from "@ngxs/store";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
   selector: 'app-recipe-list-item',
@@ -27,7 +28,8 @@ export class RecipeListItemComponent {
     private router: Router,
     private _snackBar: MatSnackBar,
     private dialog: MatDialog,
-    private readonly store: Store
+    private readonly store: Store,
+    private recipeFacade: RecipesFacade
   ) {}
 
 
@@ -38,11 +40,7 @@ export class RecipeListItemComponent {
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-
-        this.store.dispatch(new DeleteRecipe(recipe._id))
-          .subscribe(() => {
-            this.onItemRemove.emit(recipe._id)
-          })
+        this.recipeFacade.deleteRecipe(recipe._id)
       }
     });
   }
