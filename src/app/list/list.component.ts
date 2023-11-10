@@ -33,16 +33,16 @@ export class ListComponent {
   searchFormControl = new FormControl('');
   recipeListInit: Recipe[] = [];
   recipeList: Recipe[] = [];
-  recipes$ = this.store.select(state => state.recipes.recipes);
+  recipes$ = this._store.select(state => state.recipes.recipes);
 
   constructor(
-      private readonly store: Store,
-      private recipeFacade: RecipesFacade,
+      private readonly _store: Store,
+      private _recipeFacade: RecipesFacade,
   ) {
   }
 
   ngOnInit() {
-    this.recipeFacade.getRecipes()
+    this._recipeFacade.getRecipes()
   }
 
   trackById(index: number, item: Recipe){
@@ -55,7 +55,7 @@ export class ListComponent {
   }
 
   removeItemFromList(recipeId: string) {
-    this.recipeFacade.deleteRecipe(recipeId)
+    this._recipeFacade.deleteRecipe(recipeId)
   }
 
 }

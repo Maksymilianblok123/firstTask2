@@ -24,18 +24,15 @@ import {RecipesFacade} from "../state/recipe/recipes.fascade";
 export class RecipeDetailsComponent {
   activeRecipe!: Recipe;
   constructor(
-      private cdr: ChangeDetectorRef,
-      private router: Router,
-      private readonly store: Store,
-      private recipesFacade: RecipesFacade
+      private _router: Router,
+      private _recipesFacade: RecipesFacade
   ) {}
   @Input() id: string = '';
 
   getActiveRecipe() {
-    this.recipesFacade.getRecipe(this.id)
+    this._recipesFacade.getRecipe(this.id)
       .subscribe((res) => {
         this.activeRecipe = res;
-        this.cdr.detectChanges();
       })
   }
 
@@ -48,6 +45,6 @@ export class RecipeDetailsComponent {
   }
 
     navigateToEdit(id: string ) {
-        this.router.navigate([`recipe/${id}/edit`])
+        this._router.navigate([`recipe/${id}/edit`])
     }
 }

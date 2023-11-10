@@ -25,28 +25,26 @@ export class RecipeListItemComponent {
   @Output() onItemRemove = new EventEmitter<string>();
 
   constructor(
-    private router: Router,
-    private _snackBar: MatSnackBar,
-    private dialog: MatDialog,
-    private readonly store: Store,
-    private recipeFacade: RecipesFacade
+    private _router: Router,
+    private _dialog: MatDialog,
+    private _recipeFacade: RecipesFacade
   ) {}
 
 
   removeRecipe(recipe: Recipe) {
-    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+    const dialogRef = this._dialog.open(ConfirmationModalComponent, {
       data: { text: `Are you sure, that you want to delete '${recipe.name}'` },
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-        this.recipeFacade.deleteRecipe(recipe._id)
+        this._recipeFacade.deleteRecipe(recipe._id)
       }
     });
   }
 
 
   navigateToEdit(_id: string) {
-    this.router.navigate(['recipe/' + _id +'/edit'])
+    this._router.navigate(['recipe/' + _id +'/edit'])
   }
 }

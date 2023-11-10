@@ -39,23 +39,21 @@ export class RecipeItemAddComponent {
   });
 
   constructor(
-    private fb: FormBuilder,
-    private _snackBar: MatSnackBar,
-    private readonly store: Store,
-    private recipeFacade: RecipesFacade
+    private _fb: FormBuilder,
+    private _recipeFacade: RecipesFacade
   ) {}
 
   ngOnInit(): void {
-    this.recipeForm = this.fb.group({
+    this.recipeForm = this._fb.group({
       name: ['', Validators.required],
       preparationTimeInMinutes: [0, Validators.min(0)],
       description: [''],
-      ingredients: this.fb.array([this.createIngredientGroup()])
+      ingredients: this._fb.array([this.createIngredientGroup()])
     });
   }
 
   createIngredientGroup(): FormGroup {
-    return this.fb.group({
+    return this._fb.group({
       name: ['', Validators.required],
       quantity: [0, Validators.min(0)],
     });
@@ -78,7 +76,7 @@ export class RecipeItemAddComponent {
   onSubmit() {
     if (this.recipeForm.valid) {
       const newRecipe: Recipe = this.recipeForm.value;
-      this.recipeFacade.addRecipe(newRecipe)
+      this._recipeFacade.addRecipe(newRecipe)
         .subscribe(() => {
           this.recipeForm.reset();
         })

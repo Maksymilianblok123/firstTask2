@@ -28,14 +28,14 @@ export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
 @Injectable()
 export class RecipesState {
   constructor(
-    private http: HttpClient,
-    private RecipesApiService: RecipesApiService,
+    private _http: HttpClient,
+    private _recipesApiService: RecipesApiService,
     private _snackBar: MatSnackBar
   ) {}
 
   @Action(GetRecipes)
   getRecipes(ctx: StateContext<RecipesStateModel>) {
-    return this.http
+    return this._http
       .get<Recipe[]>(environment.api)
       .pipe(
         tap((recipes) => {
@@ -46,7 +46,7 @@ export class RecipesState {
 
   @Action(GetRecipe)
   getRecipe(ctx: StateContext<RecipesStateModel>, { payload }: GetRecipe) {
-    return this.RecipesApiService.getRecipe(payload).pipe(
+    return this._recipesApiService.getRecipe(payload).pipe(
       tap((recipe) => {
         const state = ctx.getState();
         ctx.setState({
@@ -59,7 +59,7 @@ export class RecipesState {
 
   @Action(DeleteRecipe)
   deleteRecipe(ctx: StateContext<RecipesStateModel>, { payload }: DeleteRecipe) {
-    return this.RecipesApiService.deleteRecipe(payload).pipe(
+    return this._recipesApiService.deleteRecipe(payload).pipe(
       tap(() => {
         ctx.setState((state) => {
           const updatedState = {
@@ -77,7 +77,7 @@ export class RecipesState {
 
   @Action(UpdateRecipe)
   updateRecipe(ctx: StateContext<RecipesStateModel>, { payload }: UpdateRecipe) {
-    return this.RecipesApiService.updateRecipe(payload).pipe(
+    return this._recipesApiService.updateRecipe(payload).pipe(
       tap(() => {
         ctx.setState((state) => {
           const updatedState = {
@@ -95,7 +95,7 @@ export class RecipesState {
 
   @Action(AddRecipe)
   addRecipe(ctx: StateContext<RecipesStateModel>, { payload }: AddRecipe) {
-    return this.RecipesApiService.addRecipe(payload).pipe(
+    return this._recipesApiService.addRecipe(payload).pipe(
       tap((newRecipe) => {
         ctx.setState((state) => {
           const updatedState = {

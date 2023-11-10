@@ -18,10 +18,10 @@ import {MatDialog} from "@angular/material/dialog";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent {
-  constructor(private dialog: MatDialog) {
+  constructor(private _dialog: MatDialog) {
   }
   openAuthorDialog(): void {
-    const dialogRef = this.dialog.open(AuthorDialogComponent, {
+    const dialogRef = this._dialog.open(AuthorDialogComponent, {
       width: '300px',
     });
   }

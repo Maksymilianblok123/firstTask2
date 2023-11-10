@@ -28,24 +28,24 @@ import {RecipesFacade} from "../state/recipe/recipes.fascade";
 export class RecipeDetailsEditComponent {
   @Input() id: string = '';
   activeRecipeForm!: FormGroup;
-  activeRecipe$ = this.store.select(state => state.recipes.activeRecipe);
+  activeRecipe$ = this._store.select(state => state.recipes.activeRecipe);
   constructor(
-      private formBuilder: FormBuilder,
+      private _formBuilder: FormBuilder,
       private _snackBar: MatSnackBar,
-      private readonly store: Store,
-      private recipesFacade: RecipesFacade,
+      private readonly _store: Store,
+      private _recipesFacade: RecipesFacade,
 ) {}
 
   ngOnInit() {
-    this.activeRecipeForm = this.formBuilder.group({
+    this.activeRecipeForm = this._formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       preparationTimeInMinutes: ['', Validators.required],
       description: [''],
-      ingredients: this.formBuilder.array([]),
+      ingredients: this._formBuilder.array([]),
       _id: ['']
     });
 
-    this.recipesFacade.getRecipe(this.id)
+    this._recipesFacade.getRecipe(this.id)
       .subscribe((res: Recipe) => {
         this.activeRecipeForm.patchValue({
           name: res.name,
@@ -65,7 +65,7 @@ export class RecipeDetailsEditComponent {
     if (ingredients && ingredients.length > 0) {
       ingredients.forEach((ingredient) => {
         ingredientFormArray.push(
-          this.formBuilder.group({
+          this._formBuilder.group({
             name: [ingredient.name],
             quantity: [ingredient.quantity],
             _id: [ingredient._id],
@@ -76,7 +76,7 @@ export class RecipeDetailsEditComponent {
   }
 
   save() {
-    this.recipesFacade.updateRecipe(this.activeRecipeForm.value)
+    this._recipesFacade.updateRecipe(this.activeRecipeForm.value)
   }
 
 }

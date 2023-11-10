@@ -20,25 +20,25 @@ export class RecipesFacade {
   @Select((state: { activeRecipe: Recipe; }) => state.activeRecipe)
   activeRecipe$!: Observable<Recipe>;
 
-  constructor(private store: Store) {}
+  constructor(private _store: Store) {}
 
   getRecipes() {
-    this.store.dispatch(new GetRecipes());
+    this._store.dispatch(new GetRecipes());
   }
 
   getRecipe(id: string) {
-    return this.store.dispatch(new GetRecipe(id));
+    return this._store.dispatch(new GetRecipe(id));
   }
 
   addRecipe(recipe: Recipe) {
-    return this.store.dispatch(new AddRecipe(recipe));
+    return this._store.dispatch(new AddRecipe(recipe));
   }
 
   updateRecipe(recipe: Recipe) {
-    this.store.dispatch(new UpdateRecipe(recipe));
+    this._store.dispatch(new UpdateRecipe(recipe));
   }
 
   deleteRecipe(id: string) {
-    this.store.dispatch(new DeleteRecipe(id));
+    this._store.dispatch(new DeleteRecipe(id));
   }
 }
