@@ -12,9 +12,6 @@ import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {NgForOf} from "@angular/common";
-import {MatSnackBar} from "@angular/material/snack-bar";
-import {AddRecipe, DeleteRecipe} from "../state/recipe/recipes.actions";
-import {Store} from "@ngxs/store";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({

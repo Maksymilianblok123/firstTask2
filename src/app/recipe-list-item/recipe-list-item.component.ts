@@ -4,10 +4,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
 import {Router} from "@angular/router";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {MatDialog} from "@angular/material/dialog";
-import {DeleteRecipe} from "../state/recipe/recipes.actions";
-import {Store} from "@ngxs/store";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({

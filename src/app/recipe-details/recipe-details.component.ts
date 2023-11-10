@@ -1,11 +1,9 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {NgForOf} from "@angular/common";
-import {Store} from "@ngxs/store";
-import {GetRecipe} from "../state/recipe/recipes.actions";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({

@@ -2,43 +2,46 @@ import { Injectable } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { Recipe } from '../../shared/interfaces/recipe/recipe';
-import {AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, RecipesState, UpdateRecipe} from './recipes.state'; // Import the state class
-
+import {
+  AddRecipe,
+  DeleteRecipe,
+  GetRecipe,
+  GetRecipes,
+  RecipesState,
+  UpdateRecipe
+} from './recipes.state';
 @Injectable({
   providedIn: 'root',
 })
 export class RecipesFacade {
-  // Change the type from 'typeof RecipesState' to 'RecipesState'
-  @Select(RecipesState) // Select the whole state
+  @Select(RecipesState)
   recipesState$!: Observable<RecipesState>;
 
-  // Access the 'recipes' property from the state
   @Select((state: { recipes: Recipe[]; }) => state.recipes)
   recipes$!: Observable<Recipe[]>;
 
-  // Access the 'activeRecipe' property from the state
   @Select((state: { activeRecipe: Recipe; }) => state.activeRecipe)
   activeRecipe$!: Observable<Recipe>;
 
   constructor(private _store: Store) {}
 
-  getRecipes() {
+  getRecipes(): void {
     this._store.dispatch(new GetRecipes());
   }
 
-  getRecipe(id: string) {
+  getRecipe(id: string): Observable<Recipe> {
     return this._store.dispatch(new GetRecipe(id));
   }
 
-  addRecipe(recipe: Recipe) {
+  addRecipe(recipe: Recipe): Observable<Recipe> {
     return this._store.dispatch(new AddRecipe(recipe));
   }
 
-  updateRecipe(recipe: Recipe) {
+  updateRecipe(recipe: Recipe): void {
     this._store.dispatch(new UpdateRecipe(recipe));
   }
 
-  deleteRecipe(id: string) {
+  deleteRecipe(id: string): void {
     this._store.dispatch(new DeleteRecipe(id));
   }
 }

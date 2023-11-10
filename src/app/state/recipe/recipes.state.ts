@@ -1,10 +1,8 @@
 import {State, Action, StateContext, Selector} from '@ngxs/store';
 import { Injectable } from '@angular/core';
 import { Recipe } from '../../shared/interfaces/recipe/recipe';
-import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 import { AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe } from './recipes.actions';
-import {environment} from "../../../environments/environment";
 import {RecipesApiService} from "../../shared/services/recipe/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
@@ -14,7 +12,7 @@ interface SelectorArg {
 }
 export interface RecipesStateModel extends SelectorArg {
   recipes: Recipe[];
-
+  activeRecipe: Recipe | null
 }
 
 export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
@@ -28,16 +26,13 @@ export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
 @Injectable()
 export class RecipesState {
   constructor(
-    private _http: HttpClient,
     private _recipesApiService: RecipesApiService,
     private _snackBar: MatSnackBar
   ) {}
 
   @Action(GetRecipes)
   getRecipes(ctx: StateContext<RecipesStateModel>) {
-    return this._http
-      .get<Recipe[]>(environment.api)
-      .pipe(
+    return this._recipesApiService.getRecipes().pipe(
         tap((recipes) => {
           ctx.patchState({ recipes });
         })
@@ -111,6 +106,6 @@ export class RecipesState {
 
   @Selector()
   static filterRecipes(state: RecipesStateModel, searchTerm: string) {
-    return state.recipes.filter(recipe => recipe.name.includes(searchTerm));
+    return state.recipes.filter(recipe => recipe.name.toLowerCase().includes(searchTerm.toLowerCase()));
   }
 }

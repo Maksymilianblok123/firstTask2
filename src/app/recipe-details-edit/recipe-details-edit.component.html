@@ -1,5 +1,5 @@
 <form [formGroup]="activeRecipeForm" class="flex-center">
-  <h2>Editing '{{(activeRecipe$ | async).name}}'</h2>
+  <h2>Editing '{{(activeRecipe$ | async)?.name}}'</h2>
   <div>
     <mat-form-field>
       <mat-label>Recipe name</mat-label>
@@ -20,7 +20,7 @@
   </div>
   <div>
     <button mat-button (click)="save()" type="button">Save changes</button>
-    <button mat-button [routerLink]="['../../../recipe/' + (activeRecipe$ | async)._id]" color="warn" class="warning" type="button">Cancel changes</button>
+    <button mat-button [routerLink]="['../../../recipe/' + (activeRecipe$ | async)?._id]" color="warn" class="warning" type="button">Cancel changes</button>
   </div>
 </form>
 

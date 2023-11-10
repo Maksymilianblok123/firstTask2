@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {CommonModule, NgForOf} from "@angular/common";
@@ -8,7 +8,6 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
 import {Store} from "@ngxs/store";
-import {AddRecipe, DeleteRecipe, GetRecipes} from "../state/recipe/recipes.actions";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
