@@ -3,46 +3,38 @@ import {Router, RouterLink} from "@angular/router";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import {NgForOf} from "@angular/common";
+import {AsyncPipe, CommonModule, NgForOf} from "@angular/common";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-recipe-details',
     templateUrl: './recipe-details.component.html',
     styleUrls: ['./recipe-details.component.scss'],
     standalone: true,
-    imports: [
-        MatButtonModule,
-        MatIconModule,
-        NgForOf,
-        RouterLink
-    ],
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    NgForOf,
+    RouterLink,
+    AsyncPipe,
+    CommonModule
+  ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsComponent {
-  activeRecipe!: Recipe;
+  activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _router: Router,
       private _recipesFacade: RecipesFacade
   ) {}
   @Input() id: string = '';
 
-  getActiveRecipe() {
-    this._recipesFacade.getRecipe(this.id)
-      .subscribe((res) => {
-        this.activeRecipe = res;
-      })
-  }
-
   ngOnInit() {
-    this.getActiveRecipe()
+    this.activeRecipe$ = this._recipesFacade.getRecipe(this.id);
   }
 
-  ngOnChanges() {
-    this.getActiveRecipe()
-  }
-
-    navigateToEdit(id: string ) {
+  navigateToEdit(id: string | undefined) {
         this._router.navigate([`recipe/${id}/edit`])
     }
 }

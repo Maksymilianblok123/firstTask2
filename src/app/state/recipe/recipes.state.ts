@@ -103,9 +103,4 @@ export class RecipesState {
       })
     );
   }
-
-  @Selector()
-  static filterRecipes(state: RecipesStateModel, searchTerm: string) {
-    return state.recipes.filter(recipe => recipe.name.toLowerCase().includes(searchTerm.toLowerCase()));
-  }
 }

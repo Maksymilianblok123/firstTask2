@@ -5,9 +5,9 @@ import {FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators} from
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
-import {Store} from "@ngxs/store";
 import {CommonModule} from "@angular/common";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-recipe-details-edit',
@@ -26,21 +26,22 @@ import {RecipesFacade} from "../state/recipe/recipes.fascade";
 export class RecipeDetailsEditComponent {
   @Input() id: string = '';
   activeRecipeForm!: FormGroup;
-  activeRecipe$ = this._store.select(state => state.recipes.activeRecipe);
+  activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _formBuilder: FormBuilder,
-      private  _store: Store,
       private _recipesFacade: RecipesFacade,
 ) {}
 
   ngOnInit() {
     this.activeRecipeForm = this._formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(3)]],
-      preparationTimeInMinutes: ['', Validators.required],
-      description: [''],
+      name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
+      preparationTimeInMinutes: [0, Validators.required],
+      description: ['', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]],
       ingredients: this._formBuilder.array([]),
       _id: ['']
     });
+
+    this.activeRecipe$ = this._recipesFacade.getRecipe(this.id);
 
     this._recipesFacade.getRecipe(this.id)
       .subscribe((res: Recipe) => {

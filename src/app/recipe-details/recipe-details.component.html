@@ -1,24 +1,24 @@
 <div class="title">
-    <h1>{{activeRecipe?.name}}</h1>
-    <div class="item-buttons">
-        <button mat-icon-button  (click)="navigateToEdit(activeRecipe._id)">
-            <mat-icon>edit</mat-icon>
-        </button>
-    </div>
+  <h1>{{ (activeRecipe$ | async)?.name }}</h1>
+  <div class="item-buttons">
+    <ng-container *ngIf="activeRecipe$ | async as activeRecipe">
+      <button mat-icon-button (click)="navigateToEdit(activeRecipe._id)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </ng-container>
+  </div>
 </div>
 
 <div class="description">
-  <p>Preparation time: <strong>{{activeRecipe?.preparationTimeInMinutes}} minutes</strong></p>
-  <p>{{activeRecipe?.description}}</p>
-
+  <p>Preparation time: <strong>{{ (activeRecipe$ | async)?.preparationTimeInMinutes }} minutes</strong></p>
+  <p>{{ (activeRecipe$ | async)?.description }}</p>
 
   <div>
     <h3>Ingredients list:</h3>
     <div>
-      <p *ngFor="let item of activeRecipe?.ingredients">
-        {{item.name}} : <strong>{{item.quantity}}</strong>
+      <p *ngFor="let item of (activeRecipe$ | async)?.ingredients || []">
+        {{ item.name }} : <strong>{{ item.quantity }}</strong>
       </p>
     </div>
   </div>
 </div>
-

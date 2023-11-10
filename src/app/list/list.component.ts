@@ -9,6 +9,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
 import {Store} from "@ngxs/store";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-list',
@@ -31,26 +32,24 @@ import {RecipesFacade} from "../state/recipe/recipes.fascade";
 export class ListComponent {
   searchFormControl = new FormControl('');
   recipeListInit: Recipe[] = [];
-  recipeList: Recipe[] = [];
-  recipes$ = this._store.select(state => state.recipes.recipes);
+  recipes$!: Observable<Recipe[]>;
 
   constructor(
-      private readonly _store: Store,
       private _recipeFacade: RecipesFacade,
   ) {
   }
 
   ngOnInit() {
+    this.recipes$ = this._recipeFacade.recipes$;
     this._recipeFacade.getRecipes()
+
+    this.searchFormControl.valueChanges.subscribe((searchTerm) => {
+      this._recipeFacade.updateSearchTerm(searchTerm);
+    });
   }
 
   trackById(index: number, item: Recipe){
     return item._id;
-  }
-  filterRecipes() {
-    this.recipeList = this.recipeListInit.filter((recipe) => {
-      return recipe.name.toLowerCase().includes(<string>this.searchFormControl.value?.toLowerCase())
-    })
   }
 
   removeItemFromList(recipeId: string) {

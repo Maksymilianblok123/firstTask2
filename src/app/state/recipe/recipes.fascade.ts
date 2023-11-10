@@ -7,9 +7,11 @@ import {
   DeleteRecipe,
   GetRecipe,
   GetRecipes,
-  RecipesState,
+  RecipesState, RecipesStateModel,
   UpdateRecipe
 } from './recipes.state';
+import {FilterRecipes} from "./recipes.actions";
+
 @Injectable({
   providedIn: 'root',
 })
@@ -43,5 +45,17 @@ export class RecipesFacade {
 
   deleteRecipe(id: string): void {
     this._store.dispatch(new DeleteRecipe(id));
+  }
+
+  updateSearchTerm(searchTerm: string | null): void {
+    this._store.dispatch(new FilterRecipes(searchTerm));
+  }
+
+  private static selectRecipes(state: RecipesStateModel): Recipe[] {
+    return state.recipes;
+  }
+
+  private static selectActiveRecipe(state: RecipesStateModel): Recipe {
+    return <Recipe>state.activeRecipe;
   }
 }
