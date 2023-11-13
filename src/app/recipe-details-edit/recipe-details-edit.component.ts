@@ -88,7 +88,7 @@ export class RecipeDetailsEditComponent {
       ingredients.forEach((ingredient: Ingredient) => {
         ingredientFormArray.push(
           this._formBuilder.group({
-            name: [ingredient.name],
+            name: [ingredient.name, Validators.required],
             quantity: [ingredient.quantity],
             _id: [ingredient._id],
           })
@@ -124,7 +124,6 @@ export class RecipeDetailsEditComponent {
   atLeastTwoIngredientsValidator(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } | null => {
       const ingredientsArray = this.activeRecipeForm?.value?.ingredients
-      console.log(ingredientsArray  )
       if (ingredientsArray && ingredientsArray.length >= 2) {
         return null;
       } else {

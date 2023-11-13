@@ -95,7 +95,6 @@ export class RecipeItemAddComponent {
   atLeastTwoIngredientsValidator(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } | null => {
       const ingredientsArray = this.recipeForm?.value?.ingredients
-      console.log(ingredientsArray)
       if (ingredientsArray && ingredientsArray.length >= 2) {
         return null;
       } else {
