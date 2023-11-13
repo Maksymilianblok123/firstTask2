@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
@@ -22,7 +22,7 @@ import {Observable} from "rxjs";
   ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class RecipeDetailsComponent {
+export class RecipeDetailsComponent implements OnInit {
   activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _router: Router,
@@ -31,7 +31,8 @@ export class RecipeDetailsComponent {
   @Input() id: string = '';
 
   ngOnInit() {
-    this.activeRecipe$ = this._recipesFacade.getRecipe(this.id);
+    this._recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
   }
 
   navigateToEdit(id: string | undefined) {

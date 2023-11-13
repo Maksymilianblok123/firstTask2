@@ -42,7 +42,8 @@ export class RecipeListItemComponent {
   }
 
 
-  navigateToEdit(_id: string) {
+  navigateToEdit(_id: string, event: MouseEvent) {
+    event.stopPropagation();
     this._router.navigate(['recipe/' + _id +'/edit'])
   }
 }
