@@ -48,8 +48,8 @@ export class RecipesFacade {
   }
 
   updateSearchTerm(searchTerm: string | null): void {
-    console.log('searchTerm')
-    console.log(searchTerm)
     this._store.dispatch(new FilterRecipes(searchTerm));
   }
+
+  public _recipesFacade!: RecipesFacade;
 }

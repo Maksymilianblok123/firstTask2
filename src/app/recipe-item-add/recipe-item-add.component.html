@@ -1,4 +1,4 @@
-<form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="recipeForm">
     <mat-form-field>
       <mat-label>Recipe name:</mat-label>
       <input matInput type="text" formControlName="name">
@@ -35,5 +35,5 @@
   </div>
   <button type="button" mat-button (click)="addIngredient()">Add Ingredient</button>
 
-  <button type="submit" mat-raised-button color="primary" [disabled]="!recipeForm.valid">Submit</button>
+  <button type="button"  mat-raised-button color="primary" [disabled]="!recipeForm.valid" (click)="onSubmit()">Submit</button>
 </form>

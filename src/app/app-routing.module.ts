@@ -20,6 +20,10 @@ const routes: Routes = [
       import('./recipe-details-edit/recipe-details-edit.component')
         .then(m => m.RecipeDetailsEditComponent)
   },
+  {
+    path: '**',
+    redirectTo: '/recipe/add',
+  },
 ];
 
 @NgModule({

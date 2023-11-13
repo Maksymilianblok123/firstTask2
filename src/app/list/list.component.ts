@@ -8,7 +8,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
-import {Observable} from "rxjs";
+import {Observable, Subscription} from "rxjs";
 import {Select} from "@ngxs/store";
 import {RecipesState} from "../state/recipe/recipes.state";
 
@@ -31,6 +31,7 @@ import {RecipesState} from "../state/recipe/recipes.state";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ListComponent {
+  subscriptions = new Subscription()
   searchFormControl = new FormControl('');
   @Select(RecipesState.filteredRecipes) filteredRecipes$!: Observable<Recipe[]>;
 
@@ -43,9 +44,11 @@ export class ListComponent {
   ngOnInit() {
     this._recipeFacade.getRecipes()
 
-    this.searchFormControl.valueChanges.subscribe((searchTerm: string | null) => {
-      this._recipeFacade.updateSearchTerm(searchTerm);
-    });
+    this.subscriptions.add(
+      this.searchFormControl.valueChanges.subscribe((searchTerm: string | null) => {
+        this._recipeFacade.updateSearchTerm(searchTerm);
+      })
+    )
   }
 
   trackById(index: number, item: Recipe){
@@ -54,6 +57,10 @@ export class ListComponent {
 
   removeItemFromList(recipeId: string) {
     this._recipeFacade.deleteRecipe(recipeId)
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.unsubscribe()
   }
 
 }

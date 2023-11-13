@@ -23,21 +23,18 @@ import {Observable} from "rxjs";
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeDetailsComponent implements OnInit {
-  activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _router: Router,
-      private _recipesFacade: RecipesFacade
+      public recipesFacade: RecipesFacade
   ) {}
   @Input() id: string = '';
 
   ngOnInit() {
-    this._recipesFacade.getRecipe(this.id);
-    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+    this.recipesFacade.getRecipe(this.id);
   }
 
   ngOnChanges() {
-    this._recipesFacade.getRecipe(this.id);
-    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+    this.recipesFacade.getRecipe(this.id);
   }
 
   navigateToEdit(id: string | undefined) {

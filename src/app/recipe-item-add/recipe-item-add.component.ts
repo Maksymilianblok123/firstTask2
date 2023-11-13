@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
 import {
   AbstractControl,
   FormArray,
@@ -35,21 +35,22 @@ export class RecipeItemAddComponent {
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]),
     preparationTimeInMinutes: new FormControl(0, [Validators.min(0), Validators.required]),
     description: new FormControl('', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]),
-    ingredients: new FormArray([this.createIngredientGroup()], [this.atLeastTwoIngredientsValidator()])
+    ingredients: new FormArray([this.createIngredientGroup()], this.atLeastTwoIngredientsValidator())
   });
 
   constructor(
     private _fb: FormBuilder,
     private _recipeFacade: RecipesFacade,
-    private _actions$: Actions
+    private _actions$: Actions,
+    private _cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
     this.recipeForm = this._fb.group({
-      name: ['', Validators.required],
-      preparationTimeInMinutes: [0, Validators.min(0)],
-      description: [''],
-      ingredients: this._fb.array([this.createIngredientGroup()])
+      name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
+      preparationTimeInMinutes: [0, [Validators.min(0), Validators.required]],
+      description: ['', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]],
+      ingredients: this._fb.array([this.createIngredientGroup()], [this.atLeastTwoIngredientsValidator()])
     });
 
     this._actions$
@@ -59,7 +60,8 @@ export class RecipeItemAddComponent {
       )
       .subscribe(() => {
         this.recipeForm.reset();
-        this.recipeForm.markAsUntouched()
+        this.recipeForm.markAsUntouched();
+        this._cdr.detectChanges();
       });
   }
 
@@ -93,6 +95,7 @@ export class RecipeItemAddComponent {
   atLeastTwoIngredientsValidator(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } | null => {
       const ingredientsArray = this.recipeForm?.value?.ingredients
+      console.log(ingredientsArray)
       if (ingredientsArray && ingredientsArray.length >= 2) {
         return null;
       } else {

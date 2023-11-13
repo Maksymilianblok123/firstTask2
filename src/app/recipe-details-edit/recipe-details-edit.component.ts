@@ -41,7 +41,7 @@ export class RecipeDetailsEditComponent {
   activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _formBuilder: FormBuilder,
-      private _recipesFacade: RecipesFacade,
+      public recipesFacade: RecipesFacade,
       private _actions$: Actions
 ) {}
 
@@ -54,8 +54,8 @@ export class RecipeDetailsEditComponent {
       _id: ['']
     });
 
-    this._recipesFacade.getRecipe(this.id);
-    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+    this.recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this.recipesFacade.activeRecipe$;
 
     this._actions$
       .pipe(
@@ -77,8 +77,7 @@ export class RecipeDetailsEditComponent {
   }
 
   ngOnChanges() {
-    this._recipesFacade.getRecipe(this.id);
-    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+    this.recipesFacade.getRecipe(this.id);
   }
 
   setIngredients(ingredients: Ingredient[]) {
@@ -119,12 +118,13 @@ export class RecipeDetailsEditComponent {
   }
 
   save() {
-    this._recipesFacade.updateRecipe(this.activeRecipeForm.value)
+    this.recipesFacade.updateRecipe(this.activeRecipeForm.value)
   }
 
   atLeastTwoIngredientsValidator(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } | null => {
       const ingredientsArray = this.activeRecipeForm?.value?.ingredients
+      console.log(ingredientsArray  )
       if (ingredientsArray && ingredientsArray.length >= 2) {
         return null;
       } else {
