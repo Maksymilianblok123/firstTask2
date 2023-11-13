@@ -23,7 +23,10 @@ export class RecipesApiService {
     return this._http.delete<void>(`${environment.api}/${id}`);
   }
   updateRecipe(body: Recipe): Observable<Recipe> {
-    return this._http.put<Recipe>(`${environment.api}/${body._id}`, body);
+    const updatedBody: any = { ...body };
+    delete updatedBody._id;
+
+    return this._http.put<Recipe>(`${environment.api}/${body._id}`, updatedBody);
   }
 
   addRecipe(newRecipe: Recipe): Observable<Recipe> {

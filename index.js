@@ -1,4 +1,4 @@
-fetch('https://crudcrud.com/api/a0d79397a5424b68bcb45809956ca20c/recipe', {
+fetch('https://crudcrud.com/api/835c774c64864949be3c51ba7b242376/recipe', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import {
   FormBuilder,
   FormControl,
   FormGroup,
-  ReactiveFormsModule,
+  ReactiveFormsModule, ValidatorFn,
   Validators
 } from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
@@ -32,16 +32,16 @@ import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
 export class RecipeItemAddComponent {
   private ngUnsubscribe = new Subject();
   recipeForm: FormGroup = new FormGroup({
-    name: new FormControl('', Validators.required),
-    preparationTimeInMinutes: new FormControl(0, Validators.min(0)),
-    description: new FormControl(''),
-    ingredients: new FormArray([this.createIngredientGroup()])
+    name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]),
+    preparationTimeInMinutes: new FormControl(0, [Validators.min(0), Validators.required]),
+    description: new FormControl('', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]),
+    ingredients: new FormArray([this.createIngredientGroup()], [this.atLeastTwoIngredientsValidator()])
   });
 
   constructor(
     private _fb: FormBuilder,
     private _recipeFacade: RecipesFacade,
-    private actions$: Actions
+    private _actions$: Actions
   ) {}
 
   ngOnInit(): void {
@@ -52,13 +52,14 @@ export class RecipeItemAddComponent {
       ingredients: this._fb.array([this.createIngredientGroup()])
     });
 
-    this.actions$
+    this._actions$
       .pipe(
         ofActionSuccessful(AddRecipeSuccess),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe(() => {
         this.recipeForm.reset();
+        this.recipeForm.markAsUntouched()
       });
   }
 
@@ -88,4 +89,16 @@ export class RecipeItemAddComponent {
       this._recipeFacade.addRecipe(this.recipeForm.value)
     }
   }
+
+  atLeastTwoIngredientsValidator(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      const ingredientsArray = this.recipeForm?.value?.ingredients
+      if (ingredientsArray && ingredientsArray.length >= 2) {
+        return null;
+      } else {
+        return { atLeastTwoIngredients: true };
+      }
+    };
+  }
+
 }

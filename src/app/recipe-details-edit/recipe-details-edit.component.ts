@@ -1,13 +1,23 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {Ingredient} from "../shared/interfaces/ingredient/ingredient";
-import {FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {
+  AbstractControl,
+  FormArray,
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  ValidatorFn,
+  Validators
+} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
-import {Observable} from "rxjs";
+import {Observable, Subject, takeUntil, withLatestFrom} from "rxjs";
+import {Actions, ofActionSuccessful} from "@ngxs/store";
+import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-recipe-details-edit',
@@ -23,13 +33,16 @@ import {Observable} from "rxjs";
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class RecipeDetailsEditComponent {
   @Input() id: string = '';
+  private ngUnsubscribe = new Subject();
   activeRecipeForm!: FormGroup;
   activeRecipe$: Observable<Recipe> | undefined
   constructor(
       private _formBuilder: FormBuilder,
       private _recipesFacade: RecipesFacade,
+      private _actions$: Actions
 ) {}
 
   ngOnInit() {
@@ -37,24 +50,36 @@ export class RecipeDetailsEditComponent {
       name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
       preparationTimeInMinutes: [0, Validators.required],
       description: ['', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]],
-      ingredients: this._formBuilder.array([]),
+      ingredients: this._formBuilder.array([], [this.atLeastTwoIngredientsValidator()]),
       _id: ['']
     });
 
-    this.activeRecipe$ = this._recipesFacade.getRecipe(this.id);
+    this._recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
 
-    this._recipesFacade.getRecipe(this.id)
-      .subscribe((res: Recipe) => {
-        this.activeRecipeForm.patchValue({
-          name: res.name,
-          description: res.description,
-          preparationTimeInMinutes: res.preparationTimeInMinutes,
-          _id: res._id,
-        });
-
-        this.setIngredients(res.ingredients);
+    this._actions$
+      .pipe(
+        ofActionSuccessful(AddRecipeSuccess),
+        withLatestFrom(this.activeRecipe$),
+        takeUntil(this.ngUnsubscribe)
+      )
+      .subscribe(([action, activeRecipe]) => {
+        if (activeRecipe) {
+          this.activeRecipeForm.patchValue({
+            name: activeRecipe.name,
+            description: activeRecipe.description,
+            preparationTimeInMinutes: activeRecipe.preparationTimeInMinutes,
+            _id: activeRecipe._id,
+          });
+          this.setIngredients(activeRecipe.ingredients);
+        }
       });
-    }
+  }
+
+  ngOnChanges() {
+    this._recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+  }
 
   setIngredients(ingredients: Ingredient[]) {
     const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
@@ -73,8 +98,38 @@ export class RecipeDetailsEditComponent {
     }
   }
 
+  addIngredient(): void {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    ingredientFormArray.push(
+      this._formBuilder.group({
+        name: [''],
+        quantity: [''],
+      })
+    );
+  }
+
+  removeIngredient(index: number): void {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    ingredientFormArray.removeAt(index);
+  }
+
+  getIngredientsControls(): AbstractControl[] {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    return ingredientFormArray.controls;
+  }
+
   save() {
     this._recipesFacade.updateRecipe(this.activeRecipeForm.value)
   }
 
+  atLeastTwoIngredientsValidator(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      const ingredientsArray = this.activeRecipeForm?.value?.ingredients
+      if (ingredientsArray && ingredientsArray.length >= 2) {
+        return null;
+      } else {
+        return { atLeastTwoIngredients: true };
+      }
+    };
+  }
 }

@@ -35,5 +35,5 @@
   </div>
   <button type="button" mat-button (click)="addIngredient()">Add Ingredient</button>
 
-  <button type="submit" mat-raised-button color="primary">Submit</button>
+  <button type="submit" mat-raised-button color="primary" [disabled]="!recipeForm.valid">Submit</button>
 </form>

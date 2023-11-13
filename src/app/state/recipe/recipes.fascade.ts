@@ -48,14 +48,8 @@ export class RecipesFacade {
   }
 
   updateSearchTerm(searchTerm: string | null): void {
+    console.log('searchTerm')
+    console.log(searchTerm)
     this._store.dispatch(new FilterRecipes(searchTerm));
-  }
-
-  private static selectRecipes(state: RecipesStateModel): Recipe[] {
-    return state.recipes;
-  }
-
-  private static selectActiveRecipe(state: RecipesStateModel): Recipe {
-    return <Recipe>state.activeRecipe;
   }
 }

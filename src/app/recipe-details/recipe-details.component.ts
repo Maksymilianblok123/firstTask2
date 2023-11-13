@@ -35,6 +35,11 @@ export class RecipeDetailsComponent implements OnInit {
     this.activeRecipe$ = this._recipesFacade.activeRecipe$;
   }
 
+  ngOnChanges() {
+    this._recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this._recipesFacade.activeRecipe$;
+  }
+
   navigateToEdit(id: string | undefined) {
         this._router.navigate([`recipe/${id}/edit`])
     }

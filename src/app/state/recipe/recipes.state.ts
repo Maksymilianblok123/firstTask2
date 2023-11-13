@@ -2,7 +2,15 @@ import {State, Action, StateContext, Selector} from '@ngxs/store';
 import { Injectable } from '@angular/core';
 import { Recipe } from '../../shared/interfaces/recipe/recipe';
 import { tap } from 'rxjs/operators';
-import {AddRecipe, AddRecipeSuccess, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe} from './recipes.actions';
+import {
+  AddRecipe,
+  AddRecipeSuccess,
+  DeleteRecipe,
+  FilterRecipes,
+  GetRecipe,
+  GetRecipes, GetRecipeSuccess,
+  UpdateRecipe
+} from './recipes.actions';
 import {RecipesApiService} from "../../shared/services/recipe/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
@@ -12,7 +20,8 @@ interface SelectorArg {
 }
 export interface RecipesStateModel extends SelectorArg {
   recipes: Recipe[];
-  activeRecipe: Recipe | null
+  activeRecipe: Recipe | null,
+  searchTerm: string | null
 }
 
 export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
@@ -20,7 +29,8 @@ export {UpdateRecipe, GetRecipes, GetRecipe, DeleteRecipe, AddRecipe}
   name: 'recipes',
   defaults: {
     recipes: [],
-    activeRecipe: null
+    activeRecipe: null,
+    searchTerm: null
   },
 })
 @Injectable()
@@ -42,12 +52,13 @@ export class RecipesState {
   @Action(GetRecipe)
   getRecipe(ctx: StateContext<RecipesStateModel>, { payload }: GetRecipe) {
     return this._recipesApiService.getRecipe(payload).pipe(
-      tap((recipe) => {
-        const state = ctx.getState();
+      tap((recipe: Recipe) => {
+        const state: RecipesStateModel = ctx.getState();
         ctx.setState({
           ...state,
           activeRecipe: recipe
         });
+        ctx.dispatch(new GetRecipeSuccess())
       })
     );
   }
@@ -55,11 +66,17 @@ export class RecipesState {
   @Action(DeleteRecipe)
   deleteRecipe(ctx: StateContext<RecipesStateModel>, { payload }: DeleteRecipe) {
     return this._recipesApiService.deleteRecipe(payload).pipe(
-      tap(() => {
-        ctx.setState((state) => {
+      tap((): void => {
+        ctx.setState((state: RecipesStateModel) => {
           const updatedState = {
             ...state,
-            recipes: state.recipes.filter((recipe: Recipe) => {
+            recipes: state.recipes.filter((recipe: Recipe): boolean => {
+              if(recipe._id === state.activeRecipe?._id && recipe._id === payload) {
+                ctx.setState({
+                  ...state,
+                  activeRecipe: null
+                });
+              }
               return recipe._id !== payload
             }),
           };
@@ -74,14 +91,14 @@ export class RecipesState {
   updateRecipe(ctx: StateContext<RecipesStateModel>, { payload }: UpdateRecipe) {
     return this._recipesApiService.updateRecipe(payload).pipe(
       tap(() => {
-        ctx.setState((state) => {
+        ctx.setState((state: RecipesStateModel) => {
           const updatedState = {
             ...state,
             recipes: state.recipes.map((recipe) =>
               recipe._id === payload._id ? payload : recipe
             ),
           };
-          this._snackBar.open(`Edited item ${payload}`, 'OK');
+          this._snackBar.open(`Edited recipe ${payload.name}`, 'OK');
           return updatedState;
         });
       })
@@ -92,7 +109,7 @@ export class RecipesState {
   addRecipe(ctx: StateContext<RecipesStateModel>, { payload }: AddRecipe) {
     return this._recipesApiService.addRecipe(payload).pipe(
       tap((newRecipe) => {
-        ctx.setState((state) => {
+        ctx.setState((state: RecipesStateModel) => {
           const updatedState = {
             ...state,
             recipes: [...state.recipes, newRecipe],
@@ -102,6 +119,27 @@ export class RecipesState {
         });
         ctx.dispatch(new AddRecipeSuccess())
       })
+    );
+  }
+
+  @Action(FilterRecipes)
+  filterRecipes(ctx: StateContext<RecipesStateModel>, action: FilterRecipes): void {
+    const state: RecipesStateModel = ctx.getState();
+    ctx.setState({
+      ...state,
+      searchTerm: action.searchTerm
+    });
+  }
+
+  @Selector()
+  static filteredRecipes(state: RecipesStateModel): Recipe[] {
+    const searchTerm : string | null = state.searchTerm;
+    if (!searchTerm) {
+      return state.recipes;
+    }
+
+    return state.recipes.filter((recipe: Recipe) =>
+      recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }
 }
