@@ -7,7 +7,6 @@ import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
-import {Store} from "@ngxs/store";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
 import {Observable} from "rxjs";
 
@@ -31,7 +30,6 @@ import {Observable} from "rxjs";
 })
 export class ListComponent {
   searchFormControl = new FormControl('');
-  recipeListInit: Recipe[] = [];
   recipes$!: Observable<Recipe[]>;
 
   constructor(
@@ -40,8 +38,12 @@ export class ListComponent {
   }
 
   ngOnInit() {
-    this.recipes$ = this._recipeFacade.recipes$;
     this._recipeFacade.getRecipes()
+    this.recipes$ = this._recipeFacade.recipes$;
+
+    this._recipeFacade.recipes$.subscribe(res => {
+      console.log(res)
+    })
 
     this.searchFormControl.valueChanges.subscribe((searchTerm) => {
       this._recipeFacade.updateSearchTerm(searchTerm);

@@ -2,7 +2,7 @@ import {State, Action, StateContext, Selector} from '@ngxs/store';
 import { Injectable } from '@angular/core';
 import { Recipe } from '../../shared/interfaces/recipe/recipe';
 import { tap } from 'rxjs/operators';
-import { AddRecipe, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe } from './recipes.actions';
+import {AddRecipe, AddRecipeSuccess, DeleteRecipe, GetRecipe, GetRecipes, UpdateRecipe} from './recipes.actions';
 import {RecipesApiService} from "../../shared/services/recipe/recipes.service";
 import {MatSnackBar} from "@angular/material/snack-bar";
 
@@ -100,6 +100,7 @@ export class RecipesState {
           this._snackBar.open('Added new recipe', 'OK');
           return updatedState;
         });
+        ctx.dispatch(new AddRecipeSuccess())
       })
     );
   }

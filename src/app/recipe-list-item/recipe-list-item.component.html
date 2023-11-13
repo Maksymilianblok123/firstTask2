@@ -1,7 +1,7 @@
 <div class="single-recipe-item">
   <strong>{{recipe.name}}</strong>
   <div class="single-recipe-item__buttons">
-    <button mat-icon-button (click)="removeRecipe(recipe)">
+    <button mat-icon-button (click)="removeRecipe(recipe, $event)">
       <mat-icon>delete</mat-icon>
     </button>
     <button mat-icon-button

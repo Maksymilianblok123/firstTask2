@@ -28,7 +28,8 @@ export class RecipeListItemComponent {
   ) {}
 
 
-  removeRecipe(recipe: Recipe) {
+  removeRecipe(recipe: Recipe, event: MouseEvent) {
+    event.stopPropagation();
     const dialogRef = this._dialog.open(ConfirmationModalComponent, {
       data: { text: `Are you sure, that you want to delete '${recipe.name}'` },
     });

@@ -1,3 +1,3 @@
 export const environment = {
-  api: 'https://crudcrud.com/api/d81245b806414860b64ab561ece84173/recipe'
+  api: 'https://crudcrud.com/api/a0d79397a5424b68bcb45809956ca20c/recipe'
 };

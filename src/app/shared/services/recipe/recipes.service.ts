@@ -19,8 +19,8 @@ export class RecipesApiService {
     return this._http.get<Recipe>(`${environment.api}/${id}`);
   }
 
-  deleteRecipe(id: string): Observable<any> {
-    return this._http.delete(`${environment.api}/${id}`);
+  deleteRecipe(id: string): Observable<void> {
+    return this._http.delete<void>(`${environment.api}/${id}`);
   }
   updateRecipe(body: Recipe): Observable<Recipe> {
     return this._http.put<Recipe>(`${environment.api}/${body._id}`, body);

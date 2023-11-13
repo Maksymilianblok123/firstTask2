@@ -8,11 +8,13 @@ import {
   ReactiveFormsModule,
   Validators
 } from "@angular/forms";
-import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {NgForOf} from "@angular/common";
 import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Actions, ofActionSuccessful} from "@ngxs/store";
+import {Subject, takeUntil} from "rxjs";
+import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-recipe-item-add',
@@ -28,6 +30,7 @@ import {RecipesFacade} from "../state/recipe/recipes.fascade";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RecipeItemAddComponent {
+  private ngUnsubscribe = new Subject();
   recipeForm: FormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     preparationTimeInMinutes: new FormControl(0, Validators.min(0)),
@@ -37,7 +40,8 @@ export class RecipeItemAddComponent {
 
   constructor(
     private _fb: FormBuilder,
-    private _recipeFacade: RecipesFacade
+    private _recipeFacade: RecipesFacade,
+    private actions$: Actions
   ) {}
 
   ngOnInit(): void {
@@ -47,6 +51,15 @@ export class RecipeItemAddComponent {
       description: [''],
       ingredients: this._fb.array([this.createIngredientGroup()])
     });
+
+    this.actions$
+      .pipe(
+        ofActionSuccessful(AddRecipeSuccess),
+        takeUntil(this.ngUnsubscribe)
+      )
+      .subscribe(() => {
+        this.recipeForm.reset();
+      });
   }
 
   createIngredientGroup(): FormGroup {
@@ -72,11 +85,7 @@ export class RecipeItemAddComponent {
 
   onSubmit() {
     if (this.recipeForm.valid) {
-      const newRecipe: Recipe = this.recipeForm.value;
-      this._recipeFacade.addRecipe(newRecipe)
-        .subscribe(() => {
-          this.recipeForm.reset();
-        })
+      this._recipeFacade.addRecipe(this.recipeForm.value)
     }
   }
 }

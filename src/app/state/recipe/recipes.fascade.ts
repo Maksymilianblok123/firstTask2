@@ -19,10 +19,10 @@ export class RecipesFacade {
   @Select(RecipesState)
   recipesState$!: Observable<RecipesState>;
 
-  @Select((state: { recipes: Recipe[]; }) => state.recipes)
+  @Select((state: { recipes: RecipesStateModel; }) => state.recipes.recipes)
   recipes$!: Observable<Recipe[]>;
 
-  @Select((state: { activeRecipe: Recipe; }) => state.activeRecipe)
+  @Select((state: { recipes: RecipesStateModel; }) => state.recipes.activeRecipe)
   activeRecipe$!: Observable<Recipe>;
 
   constructor(private _store: Store) {}

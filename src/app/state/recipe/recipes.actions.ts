@@ -24,6 +24,11 @@ export class AddRecipe {
   constructor(public payload: Recipe) {}
 }
 
+export class AddRecipeSuccess {
+  static readonly type = '[Recipes] Add Recipe Success';
+  constructor() {}
+}
+
 export class FilterRecipes {
   static readonly type = '[Recipes] Filter Recipes';
   constructor(public searchTerm: string | null) {}
