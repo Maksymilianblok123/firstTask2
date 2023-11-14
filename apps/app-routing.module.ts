@@ -5,19 +5,19 @@ const routes: Routes = [
   {
     path: 'recipe/add',
     loadComponent: () =>
-      import('./recipe-item-add/recipe-item-add.component')
+      import('../libs/feature-recipe-item-add/recipe-item-add.component')
         .then(m => m.RecipeItemAddComponent)
   },
   {
     path: 'recipe/:id',
     loadComponent: () =>
-      import('./recipe-details/recipe-details.component')
+      import('../libs/feature-recipe-details/recipe-details.component')
         .then(m => m.RecipeDetailsComponent)
   },
   {
     path: 'recipe/:id/edit',
     loadComponent: () =>
-      import('./recipe-details-edit/recipe-details-edit.component')
+      import('../libs/feature-recipe-details-edit/recipe-details-edit.component')
         .then(m => m.RecipeDetailsEditComponent)
   },
   {

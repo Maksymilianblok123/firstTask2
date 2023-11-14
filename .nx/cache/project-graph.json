@@ -11418,6 +11418,51 @@
     "NEwProject": [
       {
         "source": "NEwProject",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@ngxs/store",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:@ngxs/devtools-plugin",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "NEwProject",
         "target": "npm:@angular/animations",
         "type": "static"
       },
@@ -11428,52 +11473,12 @@
       },
       {
         "source": "NEwProject",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
         "target": "npm:@angular/compiler",
         "type": "static"
       },
       {
         "source": "NEwProject",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
         "target": "npm:@angular/platform-browser-dynamic",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@ngxs/store",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:rxjs",
         "type": "static"
       },
       {
@@ -11509,11 +11514,6 @@
       {
         "source": "NEwProject",
         "target": "npm:@angular/compiler-cli",
-        "type": "static"
-      },
-      {
-        "source": "NEwProject",
-        "target": "npm:@ngxs/devtools-plugin",
         "type": "static"
       },
       {

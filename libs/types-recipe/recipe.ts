@@ -1,4 +1,4 @@
-import {Ingredient} from "../ingredient/ingredient";
+import {Ingredient} from "./ingredient";
 
 export interface Recipe {
   _id: string,

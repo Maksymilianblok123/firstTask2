@@ -3,14 +3,14 @@ import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {CommonModule, NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";
-import {Recipe} from "../shared/interfaces/recipe/recipe";
+import {Recipe} from "../types-recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
-import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {RecipeListItemComponent} from "../ui-recipe-list-item/recipe-list-item.component";
+import {RecipesFacade} from "../data-access-recipes/state/state/recipe/recipes.fascade";
 import {Observable, Subscription} from "rxjs";
 import {Select} from "@ngxs/store";
-import {RecipesState} from "../state/recipe/recipes.state";
+import {RecipesState} from "../data-access-recipes/state/state/recipe/recipes.state";
 
 @Component({
   selector: 'app-list',

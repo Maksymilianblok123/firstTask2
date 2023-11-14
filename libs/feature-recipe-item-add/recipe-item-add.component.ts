@@ -11,10 +11,10 @@ import {
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {NgForOf} from "@angular/common";
-import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {RecipesFacade} from "../data-access-recipes/state/state/recipe/recipes.fascade";
 import {Actions, ofActionSuccessful} from "@ngxs/store";
 import {Subject, takeUntil} from "rxjs";
-import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
+import {AddRecipeSuccess} from "../data-access-recipes/state/state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-recipe-item-add',

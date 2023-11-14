@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {Recipe} from "../shared/interfaces/recipe/recipe";
-import {Ingredient} from "../shared/interfaces/ingredient/ingredient";
+import {Recipe} from "../types-recipe/recipe";
+import {Ingredient} from "../types-recipe/ingredient";
 import {
   AbstractControl,
   FormArray,
@@ -14,10 +14,10 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
 import {CommonModule} from "@angular/common";
-import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {RecipesFacade} from "../data-access-recipes/state/state/recipe/recipes.fascade";
 import {Observable, Subject, takeUntil, withLatestFrom} from "rxjs";
 import {Actions, ofActionSuccessful} from "@ngxs/store";
-import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
+import {AddRecipeSuccess} from "../data-access-recipes/state/state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-recipe-details-edit',

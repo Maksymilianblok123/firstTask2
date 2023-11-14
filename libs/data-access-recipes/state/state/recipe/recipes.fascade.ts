@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import { Recipe } from '../../shared/interfaces/recipe/recipe';
+import { Recipe } from '../../../../types-recipe/recipe';
 import {
   AddRecipe,
   DeleteRecipe,

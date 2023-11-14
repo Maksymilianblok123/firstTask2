@@ -1,10 +1,10 @@
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
-import {Recipe} from "../shared/interfaces/recipe/recipe";
+import {Recipe} from "../types-recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {AsyncPipe, CommonModule, NgForOf} from "@angular/common";
-import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {RecipesFacade} from "../data-access-recipes/state/state/recipe/recipes.fascade";
 import {Observable} from "rxjs";
 
 @Component({
