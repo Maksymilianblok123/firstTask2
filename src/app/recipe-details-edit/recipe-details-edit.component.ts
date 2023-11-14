@@ -1,12 +1,23 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {Recipe} from "../shared/interfaces/recipe/recipe";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {Ingredient} from "../shared/interfaces/ingredient/ingredient";
-import {FormArray, FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
-import {MatSnackBar} from "@angular/material/snack-bar";
+import {
+  AbstractControl,
+  FormArray,
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  ValidatorFn,
+  Validators
+} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterLink} from "@angular/router";
+import {CommonModule} from "@angular/common";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable, Subject, takeUntil, withLatestFrom} from "rxjs";
+import {Actions, ofActionSuccessful} from "@ngxs/store";
+import {AddRecipeSuccess} from "../state/recipe/recipes.actions";
 
 @Component({
   selector: 'app-recipe-details-edit',
@@ -17,40 +28,56 @@ import {RouterLink} from "@angular/router";
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    RouterLink
+    RouterLink,
+    CommonModule
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class RecipeDetailsEditComponent {
   @Input() id: string = '';
-  activeRecipe!: Recipe;
+  private ngUnsubscribe = new Subject();
   activeRecipeForm!: FormGroup;
+  activeRecipe$: Observable<Recipe> | undefined
   constructor(
-      private recipeService: RecipesService,
-      private formBuilder: FormBuilder,
-      private _snackBar: MatSnackBar
+      private _formBuilder: FormBuilder,
+      public recipesFacade: RecipesFacade,
+      private _actions$: Actions
 ) {}
 
   ngOnInit() {
-    this.activeRecipeForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.minLength(3)]],
-      preparationTimeInMinutes: ['', Validators.required],
-      description: [''],
-      ingredients: this.formBuilder.array([]),
+    this.activeRecipeForm = this._formBuilder.group({
+      name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
+      preparationTimeInMinutes: [0, Validators.required],
+      description: ['', [Validators.required, Validators.minLength(15), Validators.maxLength(255)]],
+      ingredients: this._formBuilder.array([], [this.atLeastTwoIngredientsValidator()]),
       _id: ['']
     });
 
-    this.recipeService.getRecipe(this.id).subscribe((res: Recipe) => {
-      this.activeRecipe = res;
-      this.activeRecipeForm.patchValue({
-        name: res.name,
-        description: res.description,
-        preparationTimeInMinutes: res.preparationTimeInMinutes,
-        _id: res._id,
-      });
+    this.recipesFacade.getRecipe(this.id);
+    this.activeRecipe$ = this.recipesFacade.activeRecipe$;
 
-      this.setIngredients(res.ingredients);
-    });
+    this._actions$
+      .pipe(
+        ofActionSuccessful(AddRecipeSuccess),
+        withLatestFrom(this.activeRecipe$),
+        takeUntil(this.ngUnsubscribe)
+      )
+      .subscribe(([action, activeRecipe]) => {
+        if (activeRecipe) {
+          this.activeRecipeForm.patchValue({
+            name: activeRecipe.name,
+            description: activeRecipe.description,
+            preparationTimeInMinutes: activeRecipe.preparationTimeInMinutes,
+            _id: activeRecipe._id,
+          });
+          this.setIngredients(activeRecipe.ingredients);
+        }
+      });
+  }
+
+  ngOnChanges() {
+    this.recipesFacade.getRecipe(this.id);
   }
 
   setIngredients(ingredients: Ingredient[]) {
@@ -58,10 +85,10 @@ export class RecipeDetailsEditComponent {
     ingredientFormArray.clear();
 
     if (ingredients && ingredients.length > 0) {
-      ingredients.forEach((ingredient) => {
+      ingredients.forEach((ingredient: Ingredient) => {
         ingredientFormArray.push(
-          this.formBuilder.group({
-            name: [ingredient.name],
+          this._formBuilder.group({
+            name: [ingredient.name, Validators.required],
             quantity: [ingredient.quantity],
             _id: [ingredient._id],
           })
@@ -70,12 +97,37 @@ export class RecipeDetailsEditComponent {
     }
   }
 
+  addIngredient(): void {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    ingredientFormArray.push(
+      this._formBuilder.group({
+        name: [''],
+        quantity: [''],
+      })
+    );
+  }
 
+  removeIngredient(index: number): void {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    ingredientFormArray.removeAt(index);
+  }
+
+  getIngredientsControls(): AbstractControl[] {
+    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    return ingredientFormArray.controls;
+  }
 
   save() {
-    this.recipeService.updateRecipe(this.activeRecipeForm.value)
-      .subscribe(res => {
-        this._snackBar.open('Edited item', 'OK');
-      })
+    this.recipesFacade.updateRecipe(this.activeRecipeForm.value)
+  }
+
+  atLeastTwoIngredientsValidator(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      if ((control as FormArray).controls.length >= 2) {
+        return null;
+      } else {
+        return { atLeastTwoIngredients: true };
+      }
+    };
   }
 }

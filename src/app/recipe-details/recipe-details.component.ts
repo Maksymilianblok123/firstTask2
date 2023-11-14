@@ -1,50 +1,43 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {Router, RouterLink} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import {NgForOf} from "@angular/common";
+import {AsyncPipe, CommonModule, NgForOf} from "@angular/common";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-recipe-details',
     templateUrl: './recipe-details.component.html',
     styleUrls: ['./recipe-details.component.scss'],
     standalone: true,
-    imports: [
-        MatButtonModule,
-        MatIconModule,
-        NgForOf,
-        RouterLink
-    ],
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    NgForOf,
+    RouterLink,
+    AsyncPipe,
+    CommonModule
+  ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class RecipeDetailsComponent {
-  activeRecipe!: Recipe;
+export class RecipeDetailsComponent implements OnInit {
   constructor(
-      private recipeService: RecipesService,
-      private cdr: ChangeDetectorRef,
-      private router: Router,
+      private _router: Router,
+      public recipesFacade: RecipesFacade
   ) {}
   @Input() id: string = '';
 
-  getActiveRecipe() {
-    this.recipeService.getRecipe(this.id)
-      .subscribe((res) => {
-        this.activeRecipe = res;
-        this.cdr.detectChanges();
-      })
-  }
-
   ngOnInit() {
-    this.getActiveRecipe()
+    this.recipesFacade.getRecipe(this.id);
   }
 
   ngOnChanges() {
-    this.getActiveRecipe()
+    this.recipesFacade.getRecipe(this.id);
   }
 
-    navigateToEdit(id: string ) {
-        this.router.navigate([`recipe/${id}/edit`])
+  navigateToEdit(id: string | undefined) {
+        this._router.navigate([`recipe/${id}/edit`])
     }
 }

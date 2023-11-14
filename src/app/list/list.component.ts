@@ -1,16 +1,16 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {FormControl, FormsModule, ReactiveFormsModule, Validators} from "@angular/forms";
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {FormControl, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
-import {NgForOf} from "@angular/common";
-import {Router, RouterLink} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
+import {CommonModule, NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 import {Recipe} from "../shared/interfaces/recipe/recipe";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import {MatDialog} from "@angular/material/dialog";
-import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.component";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
+import {Observable, Subscription} from "rxjs";
+import {Select} from "@ngxs/store";
+import {RecipesState} from "../state/recipe/recipes.state";
 
 @Component({
   selector: 'app-list',
@@ -18,6 +18,7 @@ import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.comp
   styleUrls: ['./list.component.scss'],
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     MatInputModule,
     ReactiveFormsModule,
@@ -30,42 +31,36 @@ import {RecipeListItemComponent} from "../recipe-list-item/recipe-list-item.comp
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ListComponent {
+  subscriptions = new Subscription()
   searchFormControl = new FormControl('');
-  recipeListInit: Recipe[] = [];
-  recipeList: Recipe[] = [];
+  @Select(RecipesState.filteredRecipes) filteredRecipes$!: Observable<Recipe[]>;
+
 
   constructor(
-      private recipesService: RecipesService,
-      private cdr: ChangeDetectorRef,
-  ) {}
+      private _recipeFacade: RecipesFacade,
+  ) {
+  }
 
-ngOnInit() {
-    this.getRecipes();
-}
+  ngOnInit() {
+    this._recipeFacade.getRecipes()
 
-getRecipes() {
-  this.recipesService.getRecipes()
-      .subscribe((recipes: Recipe[]) => {
-        this.recipeListInit = recipes
-        this.recipeList = recipes
-        this.cdr.detectChanges();
+    this.subscriptions.add(
+      this.searchFormControl.valueChanges.subscribe((searchTerm: string | null) => {
+        this._recipeFacade.updateSearchTerm(searchTerm);
       })
-}
+    )
+  }
 
   trackById(index: number, item: Recipe){
     return item._id;
   }
-  filterRecipes() {
-    this.recipeList = this.recipeListInit.filter((recipe) => {
-      return recipe.name.toLowerCase().includes(<string>this.searchFormControl.value?.toLowerCase())
-    })
+
+  removeItemFromList(recipeId: string) {
+    this._recipeFacade.deleteRecipe(recipeId)
   }
 
-  removeItemFromList($event: string) {
-    console.log($event)
-    this.recipeListInit.filter((recipe) => {
-      return recipe._id !== $event;
-    })
-    this.cdr.detectChanges();
+  ngOnDestroy() {
+    this.subscriptions.unsubscribe()
   }
+
 }

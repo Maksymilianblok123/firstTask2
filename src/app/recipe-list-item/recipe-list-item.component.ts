@@ -4,9 +4,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {ConfirmationModalComponent} from "../shared/components/confirmation-modal/confirmation-modal.component";
 import {Router} from "@angular/router";
-import {RecipesService} from "../services/recipes/recipes.service";
-import {MatSnackBar} from "@angular/material/snack-bar";
 import {MatDialog} from "@angular/material/dialog";
+import {RecipesFacade} from "../state/recipe/recipes.fascade";
 
 @Component({
   selector: 'app-recipe-list-item',
@@ -23,33 +22,28 @@ export class RecipeListItemComponent {
   @Output() onItemRemove = new EventEmitter<string>();
 
   constructor(
-    private router: Router,
-    private recipeService: RecipesService,
-    private _snackBar: MatSnackBar,
-    private dialog: MatDialog
+    private _router: Router,
+    private _dialog: MatDialog,
+    private _recipeFacade: RecipesFacade
   ) {}
 
 
-  removeRecipe(recipe: Recipe) {
-    const dialogRef = this.dialog.open(ConfirmationModalComponent, {
+  removeRecipe(recipe: Recipe, event: MouseEvent) {
+    event.stopPropagation();
+    const dialogRef = this._dialog.open(ConfirmationModalComponent, {
       data: { text: `Are you sure, that you want to delete '${recipe.name}'` },
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-        this.recipeService.deleteRecipe(recipe._id)
-          .subscribe(() => {
-            this._snackBar.open(`Removed element ${recipe.name}`, `OK`)
-            this.onItemRemove.emit(recipe._id)
-          }, () => {
-            this._snackBar.open(`Error while saving`, `OK`)
-          })
+        this._recipeFacade.deleteRecipe(recipe._id)
       }
     });
   }
 
 
-  navigateToEdit(_id: string) {
-    this.router.navigate(['recipe/' + _id +'/edit'])
+  navigateToEdit(_id: string, event: MouseEvent) {
+    event.stopPropagation();
+    this._router.navigate(['recipe/' + _id +'/edit'])
   }
 }

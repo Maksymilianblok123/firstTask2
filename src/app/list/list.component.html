@@ -4,12 +4,11 @@
   <form>
     <mat-form-field>
       <mat-label>Recipe name</mat-label>
-      <input type="text" matInput [formControl]="searchFormControl" (input)="filterRecipes()">
+      <input type="text" matInput [formControl]="searchFormControl">
     </mat-form-field>
   </form>
-
   <div class="list">
-    <div class="list__item" *ngFor="let recipe of recipeList; trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
+    <div class="list__item" *ngFor="let recipe of (filteredRecipes$ | async); trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
       <app-recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></app-recipe-list-item>
     </div>
   </div>
