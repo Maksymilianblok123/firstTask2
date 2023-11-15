@@ -5,20 +5,20 @@ const routes: Routes = [
   {
     path: 'recipe/add',
     loadComponent: () =>
-      import('../libs/feature-recipe-item-add/recipe-item-add.component')
-        .then(m => m.RecipeItemAddComponent)
+      import('../libs/feature-recipe-item-add/src/lib/feature-recipe-item-add/feature-recipe-item-add.component')
+        .then(m => m.FeatureRecipeItemAddComponent)
   },
   {
     path: 'recipe/:id',
     loadComponent: () =>
-      import('../libs/feature-recipe-details/recipe-details.component')
-        .then(m => m.RecipeDetailsComponent)
+      import('../libs/feature-recipe-details/src/lib/feature-recipe-details/feature-recipe-details.component')
+        .then(m => m.FeatureRecipeDetailsComponent)
   },
   {
     path: 'recipe/:id/edit',
     loadComponent: () =>
-      import('../libs/feature-recipe-details-edit/recipe-details-edit.component')
-        .then(m => m.RecipeDetailsEditComponent)
+      import('../libs/feature-recipe-details-edit/src/lib/feature-recipe-details-edit/feature-recipe-details-edit.component')
+        .then(m => m.FeatureRecipeDetailsEditComponent)
   },
   {
     path: '**',

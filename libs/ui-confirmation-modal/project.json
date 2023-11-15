@@ -1,0 +1,27 @@
+{
+  "name": "ui-confirmation-modal",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-confirmation-modal/src",
+  "prefix": "lib",
+  "tags": ["ui"],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui-confirmation-modal/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-confirmation-modal/**/*.ts",
+          "libs/ui-confirmation-modal/**/*.html"
+        ]
+      }
+    }
+  }
+}

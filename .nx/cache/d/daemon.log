@@ -24,3 +24,649 @@
 [NX Daemon Server] - 2023-11-14T13:17:29.991Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
 [NX Daemon Server] - 2023-11-14T13:17:41.551Z - [WATCHER]: Processing file changes in outputs
 [NX Daemon Server] - 2023-11-14T13:17:41.619Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-14T16:39:14.306Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-14T19:39:14.407Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-14T22:39:14.438Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T01:39:14.536Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T04:39:14.637Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T07:39:14.671Z - There are 2 open connections. Reset inactivity timer.
+[NX Daemon Server] - 2023-11-15T08:21:18.754Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:28:01.702Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:28:17.641Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:28:17.642Z - [WATCHER]: 0 file(s) created or restored, 0 file(s) modified, 11 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:28:17.755Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:28:17.755Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:28:17.755Z - [REQUEST]: libs/ui-confirmation-modal,libs/ui-single-list-item,libs/feature-list,libs/ui-recipe-list-item,libs/feature-navbar,libs/feature-recipe-details,libs/data-access-recipes,libs/feature-recipe-item-add,libs/feature-recipe-details-edit,libs/ui-author-dialog,libs/types-recipe
+[NX Daemon Server] - 2023-11-15T08:28:17.791Z - Time taken for 'hash changed files from watcher' 0.10777300596237183ms
+[NX Daemon Server] - 2023-11-15T08:28:18.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:28:18.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:18.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:18.733Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:19.072Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:19.134Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:36.738Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-15T08:29:36.740Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:29:36.741Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2023-11-15T08:29:36.742Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:29:36.742Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:29:36.743Z - Time taken for 'total for creating and serializing project graph' 0.16523000597953796ms
+[NX Daemon Server] - 2023-11-15T08:29:36.744Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:29:36.745Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:29:38.449Z - [WATCHER]: 17 file(s) created or restored, 7 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:29:38.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:29:38.450Z - [WATCHER]: Stopping the watcher for /home/mblok/Documents/NEwProject (sources)
+[NX Daemon Server] - 2023-11-15T08:29:38.450Z - [WATCHER]: Stopping the watcher for /home/mblok/Documents/NEwProject (outputs)
+[NX Daemon Server] - 2023-11-15T08:29:38.451Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2023-11-15T08:31:43.087Z - Started listening on: /tmp/1ba2b2b6a51a865d1945/d.sock
+[NX Daemon Server] - 2023-11-15T08:31:43.088Z - [WATCHER]: Subscribed to changes within: /home/mblok/Documents/NEwProject (native)
+[NX Daemon Server] - 2023-11-15T08:31:43.097Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:31:43.097Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:31:43.099Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:31:43.099Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:31:43.147Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:31:43.147Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:31:43.147Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:31:43.270Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:31:43.271Z - Time taken for 'total for creating and serializing project graph' 170.34020301699638ms
+[NX Daemon Server] - 2023-11-15T08:31:43.272Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:31:43.272Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 171. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:31:43.610Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:31:52.055Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:31:52.057Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:31:52.058Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:31:52.060Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:31:52.060Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:31:52.061Z - Time taken for 'total for creating and serializing project graph' 0.1882210075855255ms
+[NX Daemon Server] - 2023-11-15T08:31:52.063Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:31:52.063Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:31:52.762Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:31:52.804Z - [WATCHER]: 12 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:31:52.807Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:31:52.947Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:31:52.947Z - [REQUEST]: libs/ui-recipe-list-item/src/test-setup.ts,libs/ui-recipe-list-item/tsconfig.json,libs/ui-recipe-list-item/tsconfig.spec.json,libs/ui-recipe-list-item/tsconfig.lib.json,libs/ui-recipe-list-item/project.json,libs/ui-recipe-list-item/.eslintrc.json,libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.css,libs/ui-recipe-list-item/jest.config.ts,libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.ts,libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.spec.ts,libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.html,libs/ui-recipe-list-item/README.md,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:31:52.947Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:31:53.028Z - Time taken for 'hash changed files from watcher' 1.0491009950637817ms
+[NX Daemon Server] - 2023-11-15T08:32:20.608Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:32:20.610Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:32:20.611Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:32:20.612Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:32:20.612Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:32:20.613Z - Time taken for 'total for creating and serializing project graph' 0.12723201513290405ms
+[NX Daemon Server] - 2023-11-15T08:32:20.614Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:32:20.614Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:32:21.321Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:32:21.361Z - [WATCHER]: 11 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:32:21.361Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:32:21.491Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:32:21.491Z - [REQUEST]: libs/ui-confirmation-modal/src/lib/ui-confirmation-modal/ui-confirmation-modal.component.html,libs/ui-confirmation-modal/tsconfig.lib.json,libs/ui-confirmation-modal/tsconfig.spec.json,libs/ui-confirmation-modal/src/lib/ui-confirmation-modal/ui-confirmation-modal.component.spec.ts,libs/ui-confirmation-modal/.eslintrc.json,libs/ui-confirmation-modal/src/lib/ui-confirmation-modal/ui-confirmation-modal.component.ts,libs/ui-confirmation-modal/tsconfig.json,libs/ui-confirmation-modal/README.md,libs/ui-confirmation-modal/jest.config.ts,libs/ui-confirmation-modal/src/test-setup.ts,libs/ui-confirmation-modal/project.json,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:32:21.492Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:32:21.614Z - Time taken for 'hash changed files from watcher' 1.0773670077323914ms
+[NX Daemon Server] - 2023-11-15T08:32:46.790Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:32:46.792Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:32:46.792Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:32:46.794Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:32:46.794Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:32:46.795Z - Time taken for 'total for creating and serializing project graph' 0.11405402421951294ms
+[NX Daemon Server] - 2023-11-15T08:32:46.796Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:32:46.796Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:32:47.513Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:32:47.551Z - [WATCHER]: 12 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:32:47.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:32:47.689Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:32:47.689Z - [REQUEST]: libs/ui-single-list-item/README.md,libs/ui-single-list-item/tsconfig.spec.json,libs/ui-single-list-item/src/lib/ui-single-list-item/ui-single-list-item.component.html,libs/ui-single-list-item/src/lib/ui-single-list-item/ui-single-list-item.component.spec.ts,libs/ui-single-list-item/.eslintrc.json,libs/ui-single-list-item/src/lib/ui-single-list-item/ui-single-list-item.component.css,libs/ui-single-list-item/tsconfig.lib.json,libs/ui-single-list-item/src/test-setup.ts,libs/ui-single-list-item/project.json,libs/ui-single-list-item/src/lib/ui-single-list-item/ui-single-list-item.component.ts,libs/ui-single-list-item/tsconfig.json,libs/ui-single-list-item/jest.config.ts,tsconfig.base.json,libs/ui-single-list-item/src/index.ts
+[NX Daemon Server] - 2023-11-15T08:32:47.690Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:32:47.790Z - Time taken for 'hash changed files from watcher' 1.3186880052089691ms
+[NX Daemon Server] - 2023-11-15T08:33:23.515Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:33:44.789Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:33:44.791Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:33:44.792Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:33:44.793Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:33:44.793Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:33:44.794Z - Time taken for 'total for creating and serializing project graph' 0.17870301008224487ms
+[NX Daemon Server] - 2023-11-15T08:33:44.795Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:33:44.796Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:33:45.500Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:33:45.541Z - [WATCHER]: 12 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:33:45.541Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:33:45.678Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:33:45.678Z - [REQUEST]: libs/types-recipe/README.md,libs/types-recipe/src/lib/types-recipe/types-recipe.component.ts,libs/types-recipe/.eslintrc.json,libs/types-recipe/src/lib/types-recipe/types-recipe.component.css,libs/types-recipe/src/test-setup.ts,libs/types-recipe/tsconfig.lib.json,libs/types-recipe/src/lib/types-recipe/types-recipe.component.spec.ts,libs/types-recipe/tsconfig.json,libs/types-recipe/project.json,libs/types-recipe/tsconfig.spec.json,libs/types-recipe/jest.config.ts,libs/types-recipe/src/lib/types-recipe/types-recipe.component.html,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:33:45.678Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:33:45.772Z - Time taken for 'hash changed files from watcher' 1.1155720055103302ms
+[NX Daemon Server] - 2023-11-15T08:34:21.139Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:34:21.141Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:34:21.142Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:34:21.144Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:34:21.144Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:34:21.144Z - Time taken for 'total for creating and serializing project graph' 0.14938700199127197ms
+[NX Daemon Server] - 2023-11-15T08:34:21.146Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:34:21.146Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:34:21.891Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:34:21.929Z - [WATCHER]: 12 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:34:21.929Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:34:22.062Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:34:22.062Z - [REQUEST]: libs/feature-recipe-item-add/tsconfig.lib.json,libs/feature-recipe-item-add/src/lib/feature-recipe-item-add/feature-recipe-item-add.component.ts,libs/feature-recipe-item-add/src/test-setup.ts,libs/feature-recipe-item-add/src/lib/feature-recipe-item-add/feature-recipe-item-add.component.css,libs/feature-recipe-item-add/tsconfig.spec.json,libs/feature-recipe-item-add/project.json,libs/feature-recipe-item-add/README.md,libs/feature-recipe-item-add/tsconfig.json,libs/feature-recipe-item-add/src/lib/feature-recipe-item-add/feature-recipe-item-add.component.html,libs/feature-recipe-item-add/jest.config.ts,libs/feature-recipe-item-add/src/lib/feature-recipe-item-add/feature-recipe-item-add.component.spec.ts,libs/feature-recipe-item-add/.eslintrc.json,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:34:22.062Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:34:22.127Z - Time taken for 'hash changed files from watcher' 1.2530030012130737ms
+[NX Daemon Server] - 2023-11-15T08:34:49.598Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:34:49.600Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:34:49.600Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:34:49.602Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:34:49.602Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:34:49.603Z - Time taken for 'total for creating and serializing project graph' 0.12606701254844666ms
+[NX Daemon Server] - 2023-11-15T08:34:49.604Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:34:49.604Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:34:50.329Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:34:50.370Z - [WATCHER]: 11 file(s) created or restored, 1 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:34:50.371Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:34:50.510Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:34:50.510Z - [REQUEST]: libs/feature-recipe-details-edit/src/lib/feature-recipe-details-edit/feature-recipe-details-edit.component.spec.ts,libs/feature-recipe-details-edit/.eslintrc.json,libs/feature-recipe-details-edit/src/lib/feature-recipe-details-edit/feature-recipe-details-edit.component.ts,libs/feature-recipe-details-edit/src/lib/feature-recipe-details-edit/feature-recipe-details-edit.component.html,libs/feature-recipe-details-edit/jest.config.ts,libs/feature-recipe-details-edit/tsconfig.json,libs/feature-recipe-details-edit/README.md,libs/feature-recipe-details-edit/tsconfig.lib.json,libs/feature-recipe-details-edit/tsconfig.spec.json,libs/feature-recipe-details-edit/project.json,libs/feature-recipe-details-edit/src/test-setup.ts,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:34:50.510Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:34:50.597Z - Time taken for 'hash changed files from watcher' 1.4133920073509216ms
+[NX Daemon Server] - 2023-11-15T08:35:00.445Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:00.447Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:00.448Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:00.449Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:35:00.449Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:35:00.450Z - Time taken for 'total for creating and serializing project graph' 0.2723209857940674ms
+[NX Daemon Server] - 2023-11-15T08:35:00.451Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:35:00.452Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:35:01.206Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:01.240Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:35:01.241Z - [WATCHER]: 11 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:35:01.361Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:35:01.361Z - [REQUEST]: libs/feature-recipe-details/project.json,libs/feature-recipe-details/README.md,libs/feature-recipe-details/src/test-setup.ts,libs/feature-recipe-details/tsconfig.lib.json,libs/feature-recipe-details/jest.config.ts,libs/feature-recipe-details/src/lib/feature-recipe-details/feature-recipe-details.component.html,libs/feature-recipe-details/src/lib/feature-recipe-details/feature-recipe-details.component.spec.ts,libs/feature-recipe-details/src/lib/feature-recipe-details/feature-recipe-details.component.ts,libs/feature-recipe-details/tsconfig.json,libs/feature-recipe-details/tsconfig.spec.json,libs/feature-recipe-details/.eslintrc.json,libs/feature-recipe-details/src/index.ts,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:35:01.361Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:35:01.468Z - Time taken for 'hash changed files from watcher' 0.6919459998607635ms
+[NX Daemon Server] - 2023-11-15T08:35:10.008Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:10.010Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:10.011Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:10.012Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:35:10.012Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:35:10.013Z - Time taken for 'total for creating and serializing project graph' 0.20785799622535706ms
+[NX Daemon Server] - 2023-11-15T08:35:10.015Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:35:10.015Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:35:10.732Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:10.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:35:10.773Z - [WATCHER]: 12 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:35:10.907Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:35:10.907Z - [REQUEST]: libs/feature-navbar/tsconfig.json,libs/feature-navbar/tsconfig.spec.json,libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.spec.ts,libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.css,libs/feature-navbar/tsconfig.lib.json,libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.ts,libs/feature-navbar/src/test-setup.ts,libs/feature-navbar/jest.config.ts,libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.html,libs/feature-navbar/project.json,libs/feature-navbar/README.md,libs/feature-navbar/.eslintrc.json,tsconfig.base.json,libs/feature-navbar/src/index.ts
+[NX Daemon Server] - 2023-11-15T08:35:10.907Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:35:10.974Z - Time taken for 'hash changed files from watcher' 1.4510550200939178ms
+[NX Daemon Server] - 2023-11-15T08:35:18.424Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:18.426Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:18.427Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:18.428Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:35:18.429Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:35:18.430Z - Time taken for 'total for creating and serializing project graph' 0.13445201516151428ms
+[NX Daemon Server] - 2023-11-15T08:35:18.431Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:35:18.431Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 2.
+[NX Daemon Server] - 2023-11-15T08:35:19.199Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:19.240Z - [WATCHER]: 12 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:35:19.241Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:35:19.380Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:35:19.380Z - [REQUEST]: libs/feature-list/tsconfig.lib.json,libs/feature-list/README.md,libs/feature-list/src/lib/feature-list/feature-list.component.ts,libs/feature-list/.eslintrc.json,libs/feature-list/tsconfig.json,libs/feature-list/src/lib/feature-list/feature-list.component.css,libs/feature-list/src/lib/feature-list/feature-list.component.spec.ts,libs/feature-list/project.json,libs/feature-list/src/lib/feature-list/feature-list.component.html,libs/feature-list/tsconfig.spec.json,libs/feature-list/jest.config.ts,libs/feature-list/src/test-setup.ts,libs/feature-list/src/index.ts,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:35:19.380Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:35:19.467Z - Time taken for 'hash changed files from watcher' 1.472007006406784ms
+[NX Daemon Server] - 2023-11-15T08:35:32.334Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:32.336Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:32.337Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:35:32.339Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:35:32.339Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:35:32.340Z - Time taken for 'total for creating and serializing project graph' 0.3038199841976166ms
+[NX Daemon Server] - 2023-11-15T08:35:32.341Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:35:32.342Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:35:33.057Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:35:33.100Z - [WATCHER]: 11 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:35:33.101Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:35:33.240Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:35:33.240Z - [REQUEST]: libs/data-access-recipes/src/test-setup.ts,libs/data-access-recipes/src/lib/data-access-recipes/data-access-recipes.component.html,libs/data-access-recipes/src/lib/data-access-recipes/data-access-recipes.component.spec.ts,libs/data-access-recipes/tsconfig.json,libs/data-access-recipes/.eslintrc.json,libs/data-access-recipes/README.md,libs/data-access-recipes/tsconfig.spec.json,libs/data-access-recipes/project.json,libs/data-access-recipes/src/lib/data-access-recipes/data-access-recipes.component.ts,libs/data-access-recipes/tsconfig.lib.json,libs/data-access-recipes/jest.config.ts,libs/data-access-recipes/src/index.ts,tsconfig.base.json
+[NX Daemon Server] - 2023-11-15T08:35:33.240Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:35:33.323Z - Time taken for 'hash changed files from watcher' 1.7091220021247864ms
+[NX Daemon Server] - 2023-11-15T08:36:21.333Z - [WATCHER]: apps/app.component.html was modified
+[NX Daemon Server] - 2023-11-15T08:36:21.333Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:21.545Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:36:21.545Z - [REQUEST]: apps/app.component.html
+[NX Daemon Server] - 2023-11-15T08:36:21.545Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:36:21.590Z - Time taken for 'hash changed files from watcher' 0.2677859961986542ms
+[NX Daemon Server] - 2023-11-15T08:36:22.164Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:23.864Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:36:23.864Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:36:23.865Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:36:23.867Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:36:23.867Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:36:23.868Z - Time taken for 'total for creating and serializing project graph' 0.13620799779891968ms
+[NX Daemon Server] - 2023-11-15T08:36:23.870Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:36:23.870Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:36:23.950Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-15T08:36:23.950Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-15T08:36:23.950Z - Handled HASH_TASKS. Handling time: 49. Response time: 0.
+[NX Daemon Server] - 2023-11-15T08:36:24.897Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:36:24.897Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:36:24.898Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:36:24.899Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:36:24.900Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:36:24.900Z - Time taken for 'total for creating and serializing project graph' 0.2570430040359497ms
+[NX Daemon Server] - 2023-11-15T08:36:24.904Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:36:24.904Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 4.
+[NX Daemon Server] - 2023-11-15T08:36:31.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:31.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:31.986Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.158Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.259Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.328Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.454Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.641Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.786Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:32.920Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:33.077Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:33.348Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:33.469Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.341Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.439Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.521Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.598Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.664Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.879Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:34.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.018Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.159Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.241Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.342Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.604Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.743Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:35.796Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.004Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.072Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.208Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.261Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.313Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.365Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.420Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.680Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.737Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.789Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.842Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:36.901Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.075Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.127Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.183Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.238Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.292Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.351Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.409Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.515Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.756Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.834Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:37.891Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:41.559Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:36:41.646Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:22.349Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:22.461Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:22.541Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:36.817Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:37:36.818Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:36.932Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:37:36.932Z - [REQUEST]: apps/app.module.ts,apps/app.component.html
+[NX Daemon Server] - 2023-11-15T08:37:36.932Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:37:37.025Z - Time taken for 'hash changed files from watcher' 0.5425679981708527ms
+[NX Daemon Server] - 2023-11-15T08:37:37.211Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:37.264Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:37.396Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:37.470Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:37:37.532Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:38:34.098Z - [WATCHER]: apps/app.module.ts was modified
+[NX Daemon Server] - 2023-11-15T08:38:34.098Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:38:34.213Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:38:34.312Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:38:34.312Z - [REQUEST]: apps/app.module.ts
+[NX Daemon Server] - 2023-11-15T08:38:34.312Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:38:34.394Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:38:34.394Z - Time taken for 'hash changed files from watcher' 0.2555450201034546ms
+[NX Daemon Server] - 2023-11-15T08:39:22.934Z - [WATCHER]: apps/app.component.ts was modified
+[NX Daemon Server] - 2023-11-15T08:39:22.934Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:23.011Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:23.130Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:23.354Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:39:23.354Z - [REQUEST]: apps/app.component.ts
+[NX Daemon Server] - 2023-11-15T08:39:23.354Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:39:23.416Z - Time taken for 'hash changed files from watcher' 0.3876129984855652ms
+[NX Daemon Server] - 2023-11-15T08:39:49.284Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:39:49.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:49.365Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:49.572Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:49.993Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:39:50.099Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:39:50.099Z - [REQUEST]: apps/app.module.ts,apps/app.component.ts
+[NX Daemon Server] - 2023-11-15T08:39:50.100Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:39:50.168Z - Time taken for 'hash changed files from watcher' 0.337211012840271ms
+[NX Daemon Server] - 2023-11-15T08:40:04.074Z - [WATCHER]: apps/app.module.ts was modified
+[NX Daemon Server] - 2023-11-15T08:40:04.074Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:40:04.141Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:40:04.258Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:40:05.689Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:40:05.689Z - [REQUEST]: apps/app.module.ts
+[NX Daemon Server] - 2023-11-15T08:40:05.689Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:40:05.750Z - Time taken for 'hash changed files from watcher' 0.33289897441864014ms
+[NX Daemon Server] - 2023-11-15T08:41:04.600Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:04.652Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:04.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:04.777Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:42.261Z - [WATCHER]: apps/app-routing.module.ts was modified
+[NX Daemon Server] - 2023-11-15T08:41:42.261Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:42.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:42.768Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:42.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:43.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:41:45.503Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:41:45.503Z - [REQUEST]: apps/app-routing.module.ts
+[NX Daemon Server] - 2023-11-15T08:41:45.504Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:41:45.568Z - Time taken for 'hash changed files from watcher' 0.8787630200386047ms
+[NX Daemon Server] - 2023-11-15T08:42:09.699Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:42:09.699Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:09.813Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:42:09.813Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.actions.ts,libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts,libs/data-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts,libs/data-access-recipes/src/lib/data-access-recipes/state.module.ts
+[NX Daemon Server] - 2023-11-15T08:42:09.813Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:42:09.867Z - Time taken for 'hash changed files from watcher' 0.6541059911251068ms
+[NX Daemon Server] - 2023-11-15T08:42:43.185Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:43.235Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:43.320Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:43.383Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:43.451Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:43.508Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:52.399Z - [WATCHER]: apps/app.module.ts was modified
+[NX Daemon Server] - 2023-11-15T08:42:52.399Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:52.554Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:52.620Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:42:52.620Z - [REQUEST]: apps/app.module.ts
+[NX Daemon Server] - 2023-11-15T08:42:52.620Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:42:52.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:52.773Z - Time taken for 'hash changed files from watcher' 0.4466330111026764ms
+[NX Daemon Server] - 2023-11-15T08:42:52.873Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:52.924Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:42:53.024Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:43:14.910Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts was created or restored
+[NX Daemon Server] - 2023-11-15T08:43:14.911Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:43:15.020Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:43:15.020Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts
+[NX Daemon Server] - 2023-11-15T08:43:15.020Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:43:15.080Z - Time taken for 'hash changed files from watcher' 0.23320898413658142ms
+[NX Daemon Server] - 2023-11-15T08:43:37.905Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:43:37.906Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts was modified
+[NX Daemon Server] - 2023-11-15T08:43:38.128Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:43:38.128Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts
+[NX Daemon Server] - 2023-11-15T08:43:38.128Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:43:38.219Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:43:38.220Z - Time taken for 'hash changed files from watcher' 0.3566089868545532ms
+[NX Daemon Server] - 2023-11-15T08:43:54.267Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:43:54.267Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:43:54.402Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:43:54.402Z - [REQUEST]: libs/types-recipe/src/lib/types-recipe/ingredient.ts,libs/types-recipe/src/lib/types-recipe/recipe.ts
+[NX Daemon Server] - 2023-11-15T08:43:54.402Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:43:54.456Z - Time taken for 'hash changed files from watcher' 1.1480420231819153ms
+[NX Daemon Server] - 2023-11-15T08:44:09.638Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts was modified
+[NX Daemon Server] - 2023-11-15T08:44:09.638Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:44:09.853Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:44:09.853Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts
+[NX Daemon Server] - 2023-11-15T08:44:09.853Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:44:09.940Z - Time taken for 'hash changed files from watcher' 0.3593589961528778ms
+[NX Daemon Server] - 2023-11-15T08:44:09.959Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:44:24.986Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts was modified
+[NX Daemon Server] - 2023-11-15T08:44:24.986Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:44:25.260Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:44:25.404Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:44:25.404Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.state.ts
+[NX Daemon Server] - 2023-11-15T08:44:25.404Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:44:25.510Z - Time taken for 'hash changed files from watcher' 0.3038899898529053ms
+[NX Daemon Server] - 2023-11-15T08:45:07.471Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:45:07.472Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts was modified
+[NX Daemon Server] - 2023-11-15T08:45:07.730Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:45:08.303Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:45:08.303Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts
+[NX Daemon Server] - 2023-11-15T08:45:08.303Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:45:08.360Z - Time taken for 'hash changed files from watcher' 0.8885679841041565ms
+[NX Daemon Server] - 2023-11-15T08:45:08.907Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:46:07.938Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:47:03.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:47:03.002Z - [WATCHER]: apps/.local.env was created or restored
+[NX Daemon Server] - 2023-11-15T08:47:03.114Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:47:03.114Z - [REQUEST]: apps/.local.env
+[NX Daemon Server] - 2023-11-15T08:47:03.114Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:47:03.179Z - Time taken for 'hash changed files from watcher' 0.3355030119419098ms
+[NX Daemon Server] - 2023-11-15T08:48:03.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:48:10.912Z - [WATCHER]: apps/.local.env was deleted
+[NX Daemon Server] - 2023-11-15T08:48:10.913Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:48:11.148Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:48:11.148Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:48:11.149Z - [REQUEST]: apps/.local.env
+[NX Daemon Server] - 2023-11-15T08:48:11.203Z - Time taken for 'hash changed files from watcher' 0.7733269929885864ms
+[NX Daemon Server] - 2023-11-15T08:48:26.936Z - [WATCHER]: apps/src/environment/environment.ts was created or restored
+[NX Daemon Server] - 2023-11-15T08:48:26.936Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:48:27.053Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:48:27.053Z - [REQUEST]: apps/src/environment/environment.ts
+[NX Daemon Server] - 2023-11-15T08:48:27.053Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:48:27.110Z - Time taken for 'hash changed files from watcher' 0.24627500772476196ms
+[NX Daemon Server] - 2023-11-15T08:48:33.972Z - [WATCHER]: apps/src/environment/environment.prod.ts was created or restored
+[NX Daemon Server] - 2023-11-15T08:48:33.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:48:34.082Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:48:34.082Z - [REQUEST]: apps/src/environment/environment.prod.ts
+[NX Daemon Server] - 2023-11-15T08:48:34.082Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:48:34.132Z - Time taken for 'hash changed files from watcher' 0.236471027135849ms
+[NX Daemon Server] - 2023-11-15T08:49:39.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:49:39.914Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:49:40.065Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:49:40.147Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:49:40.147Z - [REQUEST]: apps/src/environment/environment.ts,apps/src/environment/environment.prod.ts
+[NX Daemon Server] - 2023-11-15T08:49:40.147Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:49:40.205Z - Time taken for 'hash changed files from watcher' 1.3061690032482147ms
+[NX Daemon Server] - 2023-11-15T08:49:57.862Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts was modified
+[NX Daemon Server] - 2023-11-15T08:49:57.862Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:49:57.946Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:49:58.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:49:58.282Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:49:58.282Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts
+[NX Daemon Server] - 2023-11-15T08:49:58.282Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:49:58.370Z - Time taken for 'hash changed files from watcher' 0.39192602038383484ms
+[NX Daemon Server] - 2023-11-15T08:50:15.851Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.actions.ts was modified
+[NX Daemon Server] - 2023-11-15T08:50:15.851Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:15.947Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:16.104Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:16.690Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:50:16.690Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.actions.ts
+[NX Daemon Server] - 2023-11-15T08:50:16.690Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:50:16.754Z - Time taken for 'hash changed files from watcher' 0.8794560134410858ms
+[NX Daemon Server] - 2023-11-15T08:50:26.621Z - [WATCHER]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts was modified
+[NX Daemon Server] - 2023-11-15T08:50:26.622Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:26.675Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:26.767Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:26.827Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:28.264Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:50:28.264Z - [REQUEST]: libs/data-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts
+[NX Daemon Server] - 2023-11-15T08:50:28.265Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:50:28.326Z - Time taken for 'hash changed files from watcher' 0.9017070233821869ms
+[NX Daemon Server] - 2023-11-15T08:50:45.252Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:50:45.297Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:50:46.724Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:50:46.724Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-11-15T08:50:46.725Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:50:46.727Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:50:46.727Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:50:46.728Z - Time taken for 'total for creating and serializing project graph' 0.1818380057811737ms
+[NX Daemon Server] - 2023-11-15T08:50:46.730Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:50:46.730Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-11-15T08:50:46.795Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-11-15T08:50:46.795Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-11-15T08:50:46.795Z - Handled HASH_TASKS. Handling time: 39. Response time: 0.
+[NX Daemon Server] - 2023-11-15T08:50:47.073Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:50:47.073Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-11-15T08:50:47.074Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-11-15T08:50:47.075Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-11-15T08:50:47.075Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-11-15T08:50:47.076Z - Time taken for 'total for creating and serializing project graph' 0.14707699418067932ms
+[NX Daemon Server] - 2023-11-15T08:50:47.079Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-11-15T08:50:47.079Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 4.
+[NX Daemon Server] - 2023-11-15T08:50:53.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:50:53.632Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:27.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:27.181Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:36.760Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:36.761Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:51:36.878Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:51:36.878Z - [REQUEST]: apps/app.component.ts,apps/app.module.ts
+[NX Daemon Server] - 2023-11-15T08:51:36.878Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:51:36.957Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:36.958Z - Time taken for 'hash changed files from watcher' 0.33060601353645325ms
+[NX Daemon Server] - 2023-11-15T08:51:36.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:37.445Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:37.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:38.696Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:51.648Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:51.649Z - [WATCHER]: apps/app.module.ts was modified
+[NX Daemon Server] - 2023-11-15T08:51:51.704Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:51.868Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:51:51.868Z - [REQUEST]: apps/app.module.ts
+[NX Daemon Server] - 2023-11-15T08:51:51.869Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:51:51.948Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:51.949Z - Time taken for 'hash changed files from watcher' 0.38473597168922424ms
+[NX Daemon Server] - 2023-11-15T08:51:52.009Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:51:53.345Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:52:52.051Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.038Z - [WATCHER]: libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.ts was modified
+[NX Daemon Server] - 2023-11-15T08:53:26.038Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.093Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.307Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.451Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:53:26.451Z - [REQUEST]: libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.ts
+[NX Daemon Server] - 2023-11-15T08:53:26.451Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:53:26.511Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:26.511Z - Time taken for 'hash changed files from watcher' 0.23443999886512756ms
+[NX Daemon Server] - 2023-11-15T08:53:27.683Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:42.976Z - [WATCHER]: libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.css was modified
+[NX Daemon Server] - 2023-11-15T08:53:42.977Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:43.052Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:43.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:43.241Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:53:43.790Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:53:43.790Z - [REQUEST]: libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.css
+[NX Daemon Server] - 2023-11-15T08:53:43.791Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:53:43.848Z - Time taken for 'hash changed files from watcher' 0.227105975151062ms
+[NX Daemon Server] - 2023-11-15T08:54:23.823Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:54:23.823Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:23.894Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:24.009Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:24.103Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:24.215Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:25.440Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:54:25.440Z - [REQUEST]: libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.ts,libs/feature-navbar/src/lib/feature-navbar/feature-navbar.component.html
+[NX Daemon Server] - 2023-11-15T08:54:25.440Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:54:25.495Z - Time taken for 'hash changed files from watcher' 0.49396800994873047ms
+[NX Daemon Server] - 2023-11-15T08:54:26.116Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:26.191Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:26.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:26.601Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:26.666Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:26.719Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:54:35.410Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:59:19.475Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T08:59:19.475Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:59:19.676Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:59:19.806Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T08:59:22.714Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T08:59:22.714Z - [REQUEST]: libs/ui-author-dialog/src/lib/ui-author-dialog/ui-author-dialog.component.html,libs/ui-author-dialog/src/lib/ui-author-dialog/ui-author-dialog.component.ts
+[NX Daemon Server] - 2023-11-15T08:59:22.714Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T08:59:22.773Z - Time taken for 'hash changed files from watcher' 1.1973440051078796ms
+[NX Daemon Server] - 2023-11-15T08:59:56.776Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:19.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:20.059Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:20.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:20.216Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:20.281Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:49.227Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:49.229Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T09:00:49.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:49.639Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:00:55.661Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:00:55.662Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.html,libs/feature-list/src/lib/feature-list/feature-list.component.ts
+[NX Daemon Server] - 2023-11-15T09:00:55.662Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:00:55.730Z - Time taken for 'hash changed files from watcher' 1.4226000010967255ms
+[NX Daemon Server] - 2023-11-15T09:01:24.442Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:24.443Z - [WATCHER]: libs/feature-list/src/lib/feature-list/feature-list.component.ts was modified
+[NX Daemon Server] - 2023-11-15T09:01:24.503Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:24.780Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:25.990Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:30.875Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:01:30.875Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.ts
+[NX Daemon Server] - 2023-11-15T09:01:30.875Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:01:30.936Z - Time taken for 'hash changed files from watcher' 0.9144880175590515ms
+[NX Daemon Server] - 2023-11-15T09:01:31.118Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:31.119Z - [WATCHER]: libs/feature-list/src/lib/feature-list/feature-list.component.ts was modified
+[NX Daemon Server] - 2023-11-15T09:01:31.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:31.416Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:32.580Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:01:37.540Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:01:37.540Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.ts
+[NX Daemon Server] - 2023-11-15T09:01:37.540Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:01:37.592Z - Time taken for 'hash changed files from watcher' 0.8143710196018219ms
+[NX Daemon Server] - 2023-11-15T09:02:00.764Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T09:02:00.765Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:01.085Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:01.184Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:01.250Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:02.464Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:02.585Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:02.653Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:07.188Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:02:07.189Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.html,libs/feature-list/src/lib/feature-list/feature-list.component.ts
+[NX Daemon Server] - 2023-11-15T09:02:07.189Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:02:07.267Z - Time taken for 'hash changed files from watcher' 0.5145989954471588ms
+[NX Daemon Server] - 2023-11-15T09:02:28.348Z - [WATCHER]: 0 file(s) created or restored, 2 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2023-11-15T09:02:28.348Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:28.635Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:28.685Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:02:34.783Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:02:34.783Z - [REQUEST]: libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.html,libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.ts
+[NX Daemon Server] - 2023-11-15T09:02:34.783Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:02:34.865Z - Time taken for 'hash changed files from watcher' 0.7843649983406067ms
+[NX Daemon Server] - 2023-11-15T09:03:10.968Z - [WATCHER]: libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.ts was modified
+[NX Daemon Server] - 2023-11-15T09:03:10.968Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:11.045Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:11.266Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:11.332Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:12.483Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:12.587Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:12.692Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:17.393Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:03:17.393Z - [REQUEST]: libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.ts
+[NX Daemon Server] - 2023-11-15T09:03:17.393Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:03:17.455Z - Time taken for 'hash changed files from watcher' 0.9290170073509216ms
+[NX Daemon Server] - 2023-11-15T09:03:33.570Z - [WATCHER]: libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.css was modified
+[NX Daemon Server] - 2023-11-15T09:03:33.571Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:33.632Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:33.834Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:33.891Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:40.014Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:03:40.014Z - [REQUEST]: libs/ui-recipe-list-item/src/lib/ui-recipe-list-item/ui-recipe-list-item.component.css
+[NX Daemon Server] - 2023-11-15T09:03:40.014Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:03:40.072Z - Time taken for 'hash changed files from watcher' 0.9524210095405579ms
+[NX Daemon Server] - 2023-11-15T09:03:58.083Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:58.084Z - [WATCHER]: libs/feature-list/src/lib/feature-list/feature-list.component.css was modified
+[NX Daemon Server] - 2023-11-15T09:03:58.148Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:58.318Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:58.402Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:03:59.693Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-15T09:04:04.500Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-11-15T09:04:04.500Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.css
+[NX Daemon Server] - 2023-11-15T09:04:04.500Z - [REQUEST]: 
+[NX Daemon Server] - 2023-11-15T09:04:04.552Z - Time taken for 'hash changed files from watcher' 0.912108987569809ms
+[NX Daemon Server] - 2023-11-15T09:04:58.496Z - [WATCHER]: Processing file changes in outputs

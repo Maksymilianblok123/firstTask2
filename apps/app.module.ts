@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {ListComponent} from "../libs/feature-list/list.component";
-import {NavbarComponent} from "../libs/feature-navbar/navbar.component";
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
@@ -13,9 +11,11 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {NgxsModule} from "@ngxs/store";
-import {RecipesState} from "../libs/data-access-recipes/state/state/recipe/recipes.state";
 import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
-import {RecipesFacade} from "../libs/data-access-recipes/state/state/recipe/recipes.fascade";
+import {FeatureListComponent} from "feature-list";
+import {FeatureNavbarComponent} from "feature-navbar";
+import {RecipesState} from "../libs/data-access-recipes/src/lib/data-access-recipes/recipes.state";
+import {RecipesFacade} from "../libs/data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
 
 @NgModule({
   declarations: [
@@ -25,8 +25,6 @@ import {RecipesFacade} from "../libs/data-access-recipes/state/state/recipe/reci
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    ListComponent,
-    NavbarComponent,
     MatDialogModule,
     MatButtonModule,
     MatIconModule,
@@ -38,7 +36,9 @@ import {RecipesFacade} from "../libs/data-access-recipes/state/state/recipe/reci
     NgxsModule.forRoot([RecipesState], {
       developmentMode: true
     }),
-    NgxsReduxDevtoolsPluginModule.forRoot()
+    NgxsReduxDevtoolsPluginModule.forRoot(),
+    FeatureListComponent,
+    FeatureNavbarComponent
   ],
   providers: [RecipesFacade],
   bootstrap: [AppComponent]
