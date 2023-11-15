@@ -665,8 +665,8 @@
                 "namedChunks": true,
                 "fileReplacements": [
                   {
-                    "replace": "src/environments/environment.ts",
-                    "with": "src/environments/environment.development.ts"
+                    "replace": "apps/src/environment/environment.ts",
+                    "with": "apps/src/environment/environment.prod.ts"
                   }
                 ]
               }
@@ -13389,17 +13389,12 @@
     "data-access-recipes": [
       {
         "source": "data-access-recipes",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "data-access-recipes",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "data-access-recipes",
         "target": "types-recipe",
+        "type": "static"
+      },
+      {
+        "source": "data-access-recipes",
+        "target": "npm:@angular/core",
         "type": "static"
       },
       {
@@ -13410,6 +13405,11 @@
       {
         "source": "data-access-recipes",
         "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "data-access-recipes",
+        "target": "npm:@angular/common",
         "type": "static"
       },
       {
@@ -13572,16 +13572,6 @@
       }
     ],
     "types-recipe": [
-      {
-        "source": "types-recipe",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "types-recipe",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
       {
         "source": "types-recipe",
         "target": "npm:jest-preset-angular",
