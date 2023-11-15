@@ -1896,3 +1896,408 @@
 [1m[31m[39m[22m
 [37m[39m
 [37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m57.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:10:16.625Z[39m[37m[22m - Hash: [1m[37md9bce036e84ed48b[39m[37m[22m - Time: [1m[37m351[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                              [2m | [22m[1mNames[22m                                                                                      [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                                                                          [2m | [22mmain                                                                                       [2m | [22m[96m57.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                       [2m | [22mruntime                                                                                    [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                      [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component[2m | [22m [96m4.32 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:11:40.091Z[39m[37m[22m - Hash: [1m[37m6e146da6c5197631[39m[37m[22m - Time: [1m[37m437[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                              [2m | [22m[1mNames[22m                                                                                      [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                       [2m | [22mruntime                                                                                    [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                      [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component[2m | [22m[96m12.01 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:12:00.063Z[39m[37m[22m - Hash: [1m[37mb1b2a15f65500bfa[39m[37m[22m - Time: [1m[37m368[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                          [2m | [22mruntime                                                                                       [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component[2m | [22m [96m7.07 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:12:53.801Z[39m[37m[22m - Hash: [1m[37m192cdb7b4980f3cd[39m[37m[22m - Time: [1m[37m516[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                          [2m | [22mruntime                                                                                       [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component[2m | [22m[96m14.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:13:30.442Z[39m[37m[22m - Hash: [1m[37mc0743cae74be746e[39m[37m[22m - Time: [1m[37m490[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                          [2m | [22mruntime                                                                                       [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component[2m | [22m[96m14.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:14:37.108Z[39m[37m[22m - Hash: [1m[37m9cc616fde506b860[39m[37m[22m - Time: [1m[37m404[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m [96m9.39 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:15:41.895Z[39m[37m[22m - Hash: [1m[37m87ddb462e976f574[39m[37m[22m - Time: [1m[37m660[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m [96m9.92 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:15:42.241Z[39m[37m[22m - Hash: [1m[37ma74517fcb8813919[39m[37m[22m - Time: [1m[37m307[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m[96m20.18 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:16:08.395Z[39m[37m[22m - Hash: [1m[37mb83296e778da0a2a[39m[37m[22m - Time: [1m[37m438[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m8 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:18:33.129Z[39m[37m[22m - Hash: [1m[37mb83296e778da0a2a[39m[37m[22m - Time: [1m[37m358[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m57.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:18:38.173Z[39m[37m[22m - Hash: [1m[37m58789e67e035cffa[39m[37m[22m - Time: [1m[37m444[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts[39m[31m[0m:[0m[93m1:0-74[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../../../../../src/environments/environment' in '/home/mblok/Documents/NEwProject/libs/data-access-recipes/src/lib/data-access-recipes'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts[0m:[93m5[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../../../src/environments/environment' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m import {environment} from "../../../../../src/environments/environment";[39m[22m
+[1m[31m[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m57.60 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T09:19:00.346Z[39m[37m[22m - Hash: [1m[37mc5b6bbd03508fb90[39m[37m[22m - Time: [1m[37m473[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mapps/app.module.ts[0m:[93m40[0m:[93m5[0m - [91merror[0m[90m NG3004: [0mUnable to import class FeatureListComponent.[39m[22m
+[1m[31m  The module 'feature-list' could not be found.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m     FeatureListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/feature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m13[0m:[93m1[0m[39m[22m
+[1m[31m    [7m 13[0m @Component({[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m 14[0m   selector: 'lib-feature-list',[39m[22m
+[1m[31m    [7m   [0m [96m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    [7m...[0m [39m[22m
+[1m[31m    [7m 51[0m   }[39m[22m
+[1m[31m    [7m   [0m [96m~~~[0m[39m[22m
+[1m[31m    [7m 52[0m }[39m[22m
+[1m[31m    [7m   [0m [96m~[0m[39m[22m
+[1m[31m    The class is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
