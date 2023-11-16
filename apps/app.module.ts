@@ -12,10 +12,10 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {NgxsModule} from "@ngxs/store";
 import {NgxsReduxDevtoolsPluginModule} from "@ngxs/devtools-plugin";
-import {FeatureListComponent} from "feature-list";
-import {FeatureNavbarComponent} from "feature-navbar";
-import {RecipesState} from "../libs/data-access-recipes/src/lib/data-access-recipes/recipes.state";
-import {RecipesFacade} from "../libs/data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
+import {ListComponent} from "feature-list";
+import {NavbarComponent} from "feature-navbar";
+import {RecipesState} from "data-access-recipes";
+import {RecipesFacade} from "data-access-recipes";
 
 @NgModule({
   declarations: [
@@ -37,8 +37,8 @@ import {RecipesFacade} from "../libs/data-access-recipes/src/lib/data-access-rec
       developmentMode: true
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),
-    FeatureListComponent,
-    FeatureNavbarComponent
+    ListComponent,
+    NavbarComponent
   ],
   providers: [RecipesFacade],
   bootstrap: [AppComponent]

@@ -19,13 +19,13 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-feature-recipe-details-edit',
+  selector: 'recipe-details-edit',
   standalone: true,
   imports: [CommonModule, RouterLink, MatInputModule, ReactiveFormsModule, MatButtonModule],
   templateUrl: './feature-recipe-details-edit.component.html',
   styleUrls: ['./feature-recipe-details-edit.component.css'],
 })
-export class FeatureRecipeDetailsEditComponent implements OnInit, OnChanges {
+export class RecipeDetailsEditComponent implements OnInit, OnChanges {
   @Input() id: string = '';
   private ngUnsubscribe = new Subject();
   activeRecipeForm!: FormGroup;

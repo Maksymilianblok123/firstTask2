@@ -1,6 +1,5 @@
-/* eslint-disable */
 export default {
-  displayName: 'ui-recipe-list-item',
+  displayName: 'recipe-list-item',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../coverage/libs/ui-recipe-list-item',

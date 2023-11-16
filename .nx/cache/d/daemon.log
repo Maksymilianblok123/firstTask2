@@ -1523,3 +1523,11 @@
 [NX Daemon Server] - 2023-11-16T08:01:49.180Z - [REQUEST]: 
 [NX Daemon Server] - 2023-11-16T08:01:49.180Z - [REQUEST]: libs/feature-list/src/lib/feature-list/feature-list.component.spec.ts
 [NX Daemon Server] - 2023-11-16T08:01:49.223Z - Time taken for 'hash changed files from watcher' 0.17606601119041443ms
+[NX Daemon Server] - 2023-11-16T08:23:01.050Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T08:33:23.942Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T08:33:53.881Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T08:33:53.882Z - [WATCHER]: package.json was modified
+[NX Daemon Server] - 2023-11-16T08:33:54.474Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-11-16T08:33:54.476Z - [WATCHER]: Stopping the watcher for /home/mblok/Documents/NEwProject (sources)
+[NX Daemon Server] - 2023-11-16T08:33:54.476Z - [WATCHER]: Stopping the watcher for /home/mblok/Documents/NEwProject (outputs)
+[NX Daemon Server] - 2023-11-16T08:33:54.476Z - Server stopped because: "Lock file changed"
