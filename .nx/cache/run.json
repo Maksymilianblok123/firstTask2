@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve",
+    "startTime": "2023-11-15T15:15:17.940Z",
+    "endTime": "2023-11-15T15:57:54.367Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "NEwProject:serve:development",
+      "target": "serve",
+      "projectName": "NEwProject",
+      "hash": "18195515894392927712",
+      "startTime": "2023-11-15T15:15:17.945Z",
+      "endTime": "2023-11-15T15:57:54.364Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

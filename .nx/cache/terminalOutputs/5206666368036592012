@@ -1,0 +1,904 @@
+[32m?[39m [1mPort 4200 is already in use.[22m
+[1mWould you like to use a different port?[22m[0m [0m[2m(Y/n) [22m[46D[46C[2K[1A[2K[G[32m?[39m [1mPort 4200 is already in use.[22m
+[1mWould you like to use a different port?[22m[0m [0m[2m(Y/n) [22my[47D[47C[2K[1A[2K[G[32m?[39m [1mPort 4200 is already in use.[22m
+[1mWould you like to use a different port?[22m[0m [0m[36mYes[39m[43D[43C
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m  [2m | [22m[1mNames[22m        [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m            [2m | [22mvendor       [2m | [22m  [96m4.17 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m         [2m | [22mpolyfills    [2m | [22m[96m333.17 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.css, styles.js[39m[37m[2m | [22mstyles       [2m | [22m[96m315.41 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m              [2m | [22mmain         [2m | [22m [96m10.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m           [2m | [22mruntime      [2m | [22m  [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                    [2m | [22m[1mInitial Total[22m[2m | [22m  [1m4.82 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:36:39.272Z[39m[37m[22m - Hash: [1m[37me20f5f1b0079605e[39m[37m[22m - Time: [1m[37m10185[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m7:0-68[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-list/list.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m8:0-74[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-navbar/navbar.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m17:0-92[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/data-access-recipes/state/state/recipe/recipes.state' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m19:0-95[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/data-access-recipes/state/state/recipe/recipes.fascade' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~[39m[22m[1m[31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'app-navbar' is not a known element:[39m[22m
+[1m[31m1. If 'app-navbar' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <app-navbar></app-navbar>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m3[0m:[93m3[0m - [91merror[0m[90m NG8001: [0m'lib-feature-list' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-list' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'lib-feature-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppre[39m[22m[1m[31mss this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <lib-feature-list></lib-feature-list>[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m5[0m:[93m5[0m - [91merror[0m[90m NG8001: [0m'router-outlet' is not a known element:[39m[22m
+[1m[31m1. If 'router-outlet' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m     <router-outlet></router-outlet>[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m6[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-list/list.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m import {ListComponent} from "../libs/feature-list/list.component";[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m7[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-navbar/navbar.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import {NavbarComponent} from "../libs/feature-navbar/navbar.component";[39m[22m
+[1m[31m[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m16[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/data-access-recipes/state/state/[39m[22m[1m[31mrecipe/recipes.state' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m import {RecipesState} from "../libs/data-access-recipes/state/state/recipe/recipes.state";[39m[22m
+[1m[31m[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m18[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/data-access-recipes/state/state/recipe/recipes.fascade' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m18[0m import {RecipesFacade} from "../libs/data-access-recipes/state/state/recipe/recipes.fascade";[39m[22m
+[1m[31m[7m  [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m24[0m:[93m12[0m - [91merror[0m[90m NG1010: [0mValue[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:35207, open your browser on http://localhost:35207/ **[39m
+[37m[39m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m16.22 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:37:37.403Z[39m[37m[22m - Hash: [1m[37m9639edcf392068d4[39m[37m[22m - Time: [1m[37m586[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m7:0-68[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-list/list.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m8:0-74[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-navbar/navbar.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m17:0-92[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/data-access-recipes/state/state/recipe/recipes.state' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app.module.ts[39m[31m[0m:[0m[93m19:0-95[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/data-access-recipes/state/state/recipe/recipes.fascade' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~[39m[22m[1m[31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'lib-feature-navbar' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-navbar' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'lib-feature-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <lib-feature-navbar></lib-feature-navbar>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m3[0m:[93m3[0m - [91merror[0m[90m NG8001: [0m'lib-feature-list' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-list' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'lib-feature-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the[39m[22m[1m[31m '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <lib-feature-list></lib-feature-list>[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m5[0m:[93m5[0m - [91merror[0m[90m NG8001: [0m'router-outlet' is not a known element:[39m[22m
+[1m[31m1. If 'router-outlet' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m     <router-outlet></router-outlet>[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m6[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-list/list.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m import {ListComponent} from "../libs/feature-list/list.component";[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m7[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-navbar/navbar.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m7[0m import {NavbarComponent} from "../libs/feature-navbar/navbar.component";[39m[22m
+[1m[31m[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m16[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find [39m[22m[1m[31mmodule '../libs/data-access-recipes/state/state/recipe/recipes.state' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m import {RecipesState} from "../libs/data-access-recipes/state/state/recipe/recipes.state";[39m[22m
+[1m[31m[7m  [0m [91m                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m18[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/data-access-recipes/state/state/recipe/recipes.fascade' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m18[0m import {RecipesFacade} from "../libs/data-access-recipes/state/state/recipe/recipes.fascade";[39m[22m
+[1m[31m[7m  [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m26[0m:[93m12[0m - [91merror[0m[90m NG1010: [0mValue[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m14.88 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:38:34.428Z[39m[37m[22m - Hash: [1m[37m8c9f5e8c81e3c0ff[39m[37m[22m - Time: [1m[37m357[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m[22m[1m[31m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'lib-feature-navbar' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-navbar' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'lib-feature-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <lib-feature-navbar></lib-feature-navbar>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m3[0m:[93m3[0m - [91merror[0m[90m NG8001: [0m'lib-feature-list' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-list' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'lib-feature-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <lib-feature-list></lib-feature-list>[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m5[0m:[93m5[0m - [91merror[0m[90m NG8001: [0m'router-outlet' is not a known element:[39m[22m
+[1m[31m1. If 'router-outlet' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m     <router-outlet></router-outlet>[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[[39m[22m[1m[31m0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m22[0m:[93m12[0m - [91merror[0m[90m NG1010: [0mValue[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ListComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     ListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m27[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NavbarComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m27[0m     NavbarComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m36[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesState'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m36[0m     NgxsModule.forRoot([RecipesState], {[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m43[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesFacade'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m43[0m   providers: [RecipesFacade],[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m14.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:39:23.229Z[39m[37m[22m - Hash: [1m[37m4fa1e21c456036e2[39m[37m[22m - Time: [1m[37m320[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m[22m[1m[31m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m1[0m:[93m1[0m - [91merror[0m[90m NG8001: [0m'lib-feature-navbar' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-navbar' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'lib-feature-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m <lib-feature-navbar></lib-feature-navbar>[39m[22m
+[1m[31m[7m [0m [91m~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m3[0m:[93m3[0m - [91merror[0m[90m NG8001: [0m'lib-feature-list' is not a known element:[39m[22m
+[1m[31m1. If 'lib-feature-list' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'lib-feature-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m   <lib-feature-list></lib-feature-list>[39m[22m
+[1m[31m[7m [0m [91m  ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.component.html[0m:[93m5[0m:[93m5[0m - [91merror[0m[90m NG8001: [0m'router-outlet' is not a known element:[39m[22m
+[1m[31m1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m  [39m[22m[1m[31m   <router-outlet></router-outlet>[39m[22m
+[1m[31m[7m [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m../apps/app.component.ts[0m:[93m5[0m:[93m16[0m[39m[22m
+[1m[31m    [7m5[0m   templateUrl: './app.component.html',[39m[22m
+[1m[31m    [7m [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component AppComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m22[0m:[93m12[0m - [91merror[0m[90m NG1010: [0mValue[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m26[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'ListComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m     ListComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m27[0m:[93m5[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NavbarComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m27[0m     NavbarComponent,[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m36[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesState'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m36[0m     NgxsModule.forRoot([RecipesState], {[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m43[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesFacade'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m43[0m   providers: [RecipesFacade],[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m13.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:39:50.107Z[39m[37m[22m - Hash: [1m[37ma84d199f060e1efc[39m[37m[22m - Time: [1m[37m834[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m[22m[1m[31m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m33[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesState'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m33[0m     NgxsModule.forRoot([RecipesState], {[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m40[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesFacade'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m40[0m   providers: [RecipesFacade],[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m13.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m6.52 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:40:04.330Z[39m[37m[22m - Hash: [1m[37m1d11050d100296f6[39m[37m[22m - Time: [1m[37m286[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m6:23-90[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-item-add/recipe-item-add.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m9:23-88[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details/recipe-details.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./apps/app-routing.module.ts[39m[31m[0m:[0m[93m12:23-98[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../libs/feature-recipe-details-edit/recipe-details-edit.component' in '/home/mblok/Documents/NEwProject/apps'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m8[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-item-add/recipe-item-add.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m       import('../libs/feature-recipe-item-add/recipe-item-add.component')[39m[22m
+[1m[31m[7m [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m14[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details/recipe-details.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m       import('../libs/feature-recipe-details/recipe-details.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app-routing.module.ts[0m:[93m20[0m:[93m14[0m - [91merror[0m[90m TS2307: [0mCannot find module '../libs/feature-recipe-details-edit/recipe-details-edit.component' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m20[0m       import('../libs/feature-recipe-details-edit/recipe-details-edit.component')[39m[22m
+[1m[31m[7m  [0m [91m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m[22m[1m[31m~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m32[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesState'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m     NgxsModule.forRoot([RecipesState], {[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m39[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesFacade'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m   providers: [RecipesFacade],[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                                                                                [2m | [22mmain                                                                                                      [2m | [22m[96m14.08 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m [96m2.41 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m   [2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component            [2m | [22m [96m2.33 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m      [2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component               [2m | [22m [96m2.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged c[39m[37mhunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:41:43.164Z[39m[37m[22m - Hash: [1m[37md28fd72bbdc7b4b3[39m[37m[22m - Time: [1m[37m930[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m32[0m:[93m25[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesState'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m32[0m     NgxsModule.forRoot([RecipesState], {[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96m../apps/app.module.ts[0m:[93m39[0m:[93m15[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RecipesFacade'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m   providers: [RecipesFacade],[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m25.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:42:53.159Z[39m[37m[22m - Hash: [1m[37ma77841aced5b1c86[39m[37m[22m - Time: [1m[37m785[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m3[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m3[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m14[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/services/recipe/recipes.service' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m14[0m import {RecipesApiService} from "../../shared/services/recipe/recipes.service";[39m[22m
+[1m[31m[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m NG2003: [0mNo suitable injection token for parameter '_recipesApiService' of class 'RecipesState'.[39m[22m
+[1m[31m  Consider using the @Inject decorator to specify an injection token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0[39m[22m[1m[31mm     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m39[0m:[93m33[0m[39m[22m
+[1m[31m    [7m39[0m     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m    [7m  [0m [96m                                ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    This type does not have a value, so it cannot be used as injection token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m47[0m:[93m28[0m - [91merror[0m[90m TS2322: [0mType 'unknown' is not assignable to type 'Recipe[] | undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m47[0m           ctx.patchState({ recipes });[39m[22m
+[1m[31m[7m  [0m [91m                           ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m22[0m:[93m3[0m[39m[22m
+[1m[31m    [7m22[0m   recipes: Recipe[];[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from property 'recipes' which is declared here on type 'Partial<RecipesStateModel>'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m25.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:43:38.330Z[39m[37m[22m - Hash: [1m[37m02226c50a5db2429[39m[37m[22m - Time: [1m[37m455[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m13[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/services/recipe/recipes.service' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {RecipesApiService} from "../../shared/services/recipe/recipes.service";[39m[22m
+[1m[31m[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m21[0m:[93m12[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m   recipes: Recipe[];[39m[22m
+[1m[31m[7m  [0m [91m           ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m22[0m:[93m17[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m22[0m   activeRecipe: Recipe | null,[39m[22m
+[1m[31m[7m  [0m [91m                ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m38[0m:[93m13[0m - [91merror[0m[90m NG2003: [0mNo suitable injection token for parameter '_recipesAp[39m[22m[1m[31miService' of class 'RecipesState'.[39m[22m
+[1m[31m  Consider using the @Inject decorator to specify an injection token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m38[0m     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m38[0m:[93m33[0m[39m[22m
+[1m[31m    [7m38[0m     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m    [7m  [0m [96m                                ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    This type does not have a value, so it cannot be used as injection token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m46[0m:[93m28[0m - [91merror[0m[90m TS2322: [0mType 'unknown' is not assignable to type 'Recipe[] | undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m46[0m           ctx.patchState({ recipes });[39m[22m
+[1m[31m[7m  [0m [91m                           ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m21[0m:[93m3[0m[39m[22m
+[1m[31m    [7m21[0m   recipes: Recipe[];[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from property 'recipes' which is declared here on type 'Partial<RecipesStateModel>'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m54[0m:[93m20[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m54[0m       tap((recipe: Recipe) => {[39m[22m
+[1m[31m[7m  [0m [91m                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m72[0m:[93m52[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m72[0m             recipes: state.recipes.filter((recipe: Recipe): boolean => {[39m[22m
+[1m[31m[7m  [0m [91m                                                   ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m134[0m:[93m53[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m134[0m   static filteredRecipes([39m[22m[1m[31mstate: RecipesStateModel): Recipe[] {[39m[22m
+[1m[31m[7m   [0m [91m                                                    ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m140[0m:[93m42[0m - [91merror[0m[90m TS2304: [0mCannot find name 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m140[0m     return state.recipes.filter((recipe: Recipe) =>[39m[22m
+[1m[31m[7m   [0m [91m                                         ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m25.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:44:10.033Z[39m[37m[22m - Hash: [1m[37me0afdad4f45aea05[39m[37m[22m - Time: [1m[37m426[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m13[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/services/recipe/recipes.service' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {RecipesApiService} from "../../shared/services/recipe/recipes.service";[39m[22m
+[1m[31m[7m  [0m [91m                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m39[0m:[93m13[0m - [91merror[0m[90m NG2003: [0mNo suitable injection token for parameter '_recipesApiService' of class 'RecipesState'.[39m[22m
+[1m[31m  Consider using the @Inject decorator to specify an injection token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m[7m  [0m [91m            ~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m39[0m:[93m33[0m[39m[22m
+[1m[31m    [7m39[0m     private _recipesApiService: RecipesApiService,[39m[22m
+[1m[31m    [7m  [0m [96m                                ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    This type does not have a value, so it cannot be used as injectio[39m[22m[1m[31mn token.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m47[0m:[93m28[0m - [91merror[0m[90m TS2322: [0mType 'unknown' is not assignable to type 'Recipe[] | undefined'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m47[0m           ctx.patchState({ recipes });[39m[22m
+[1m[31m[7m  [0m [91m                           ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m22[0m:[93m3[0m[39m[22m
+[1m[31m    [7m22[0m   recipes: Recipe[];[39m[22m
+[1m[31m    [7m  [0m [96m  ~~~~~~~[0m[39m[22m
+[1m[31m    The expected type comes from property 'recipes' which is declared here on type 'Partial<RecipesStateModel>'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.state.ts[0m:[93m112[0m:[93m22[0m - [91merror[0m[90m TS2345: [0mArgument of type '(state: RecipesStateModel) => { recipes: unknown[]; activeRecipe: Recipe | null; searchTerm: string | null; getName?: string | (() => string) | undefined; }' is not assignable to parameter of type 'RecipesStateModel | StateOperator<RecipesStateModel>'.[39m[22m
+[1m[31m  Type '(state: RecipesStateModel) => { recipes: unknown[]; activeRecipe: Recipe | null; searchTerm: string | null; getName?: string | (() => string) | undefined; }' is not assignable to type 'StateOperator<RecipesStateModel>'.[39m[22m
+[1m[31m    Call signature return types '{ recipes: unknown[]; activeRecipe: Recipe | null; searchTerm: string | null; getName?: string | (() => string) | undefined; }' and 'RecipesStateModel' are incompatible.[39m[22m
+[1m[31m      The types of 'recipes' are incompatible between these types.[39m[22m
+[1m[31m        Type 'unknown[]' is not assignable to type 'Recipe[]'.[39m[22m
+[1m[31m          Type 'unknown' is not assignable to type 'Recipe'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m112[0m         ctx.setState((state: RecipesStateModel) => {[39m[22m
+[1m[31m[7m   [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m29.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:44:25.361Z[39m[37m[22m - Hash: [1m[37mbc819b4777441936[39m[37m[22m - Time: [1m[37m405[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts[39m[31m[0m:[0m[93m1:0-65[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../../src/environments/environment' in '/home/mblok/Documents/NEwProject/libs/data-access-recipes/src/lib/data-access-recipes'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.service.ts[0m:[93m4[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {Recipe} from "../types-recipe/recipe";[39m[22m
+[1m[31m[7m [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.service.ts[0m:[93m5[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../src/environments/environment' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m5[0m import {environment} from "../../src/environments/environment";[39m[22m
+[1m[31m[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m29.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:45:07.831Z[39m[37m[22m - Hash: [1m[37m0189e5e091ea3ab2[39m[37m[22m - Time: [1m[37m390[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/data-access-recipes/src/lib/data-access-recipes/recipes.service.ts[39m[31m[0m:[0m[93m1:0-65[39m[31m[0m - [0m[91mError: [39m[31m[0mModule not found: Error: Can't resolve '../../src/environments/environment' in '/home/mblok/Documents/NEwProject/libs/data-access-recipes/src/lib/data-access-recipes'[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.service.ts[0m:[93m4[0m:[93m27[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../src/environments/environment' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m import {environment} from "../../src/environments/environment";[39m[22m
+[1m[31m[7m [0m [91m                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m29.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:49:58.202Z[39m[37m[22m - Hash: [1m[37m2395d513d814feb7[39m[37m[22m - Time: [1m[37m367[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.actions.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../shared/interfaces/recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Recipe } from '../../shared/interfaces/recipe/recipe';[39m[22m
+[1m[31m[7m [0m [91m                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m29.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:50:16.157Z[39m[37m[22m - Hash: [1m[37mb5830331cb45e8df[39m[37m[22m - Time: [1m[37m335[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mdata-access-recipes/src/lib/data-access-recipes/recipes.fascade.ts[0m:[93m13[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../../types-recipe/recipe' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m13[0m import {Recipe} from "../../../types-recipe/recipe";[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m29.25 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-15T08:50:27.142Z[39m[37m[22m - Hash: [1m[37m6c2c95cb962c0e81[39m[37m[22m - Time: [1m[37m552[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m

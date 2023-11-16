@@ -1,0 +1,15 @@
+<div class="recipe">
+  <h3>List of recipes</h3>
+  <small [routerLink]="'recipe/add'">Add new recipe</small>
+  <form>
+    <mat-form-field>
+      <mat-label>Recipe name</mat-label>
+      <input type="text" matInput [formControl]="searchFormControl">
+    </mat-form-field>
+  </form>
+  <div class="list">
+    <div class="list__item" *ngFor="let recipe of (recipeFacade.filteredRecipes$ | async); trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
+      <lib-ui-recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></lib-ui-recipe-list-item>
+    </div>
+  </div>
+</div>

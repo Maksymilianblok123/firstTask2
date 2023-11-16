@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "baseUrl": "./",
+    "paths": {
+      "data-access-recipes": ["libs/data-access-recipes/src/index.ts"],
+      "feature-list": ["libs/feature-list/src/index.ts"],
+      "feature-navbar": ["libs/feature-navbar/src/index.ts"],
+      "feature-recipe-details": ["libs/feature-recipe-details/src/index.ts"],
+      "feature-recipe-details-edit": [
+        "libs/feature-recipe-details-edit/src/index.ts"
+      ],
+      "feature-recipe-item-add": ["libs/feature-recipe-item-add/src/index.ts"],
+      "types-recipe": ["libs/types-recipe/src/index.ts"],
+      "ui-author-dialog": ["libs/ui-author-dialog/src/index.ts"],
+      "ui-confirmation-modal": ["libs/ui-confirmation-modal/src/index.ts"],
+      "ui-recipe-list-item": ["libs/ui-recipe-list-item/src/index.ts"],
+      "ui-single-list-item": ["libs/ui-single-list-item/src/index.ts"]
+    }
+  }
+}

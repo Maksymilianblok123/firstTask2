@@ -1,0 +1,27 @@
+{
+  "name": "feature-recipe-item-add",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/feature-recipe-item-add/src",
+  "prefix": "lib",
+  "tags": ["feature"],
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/feature-recipe-item-add/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature-recipe-item-add/**/*.ts",
+          "libs/feature-recipe-item-add/**/*.html"
+        ]
+      }
+    }
+  }
+}
