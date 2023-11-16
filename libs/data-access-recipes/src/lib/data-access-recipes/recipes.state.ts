@@ -11,7 +11,7 @@ import {
   UpdateRecipe
 } from './recipes.actions';
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
+import {Recipe} from "types-recipe";
 import {RecipesApiService} from "./recipes.service";
 
 interface SelectorArg {

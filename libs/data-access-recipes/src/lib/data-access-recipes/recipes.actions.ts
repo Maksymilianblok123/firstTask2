@@ -1,4 +1,4 @@
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
+import {Recipe} from "types-recipe";
 
 export class GetRecipes {
   static readonly type = '[Recipes] Get Recipes';

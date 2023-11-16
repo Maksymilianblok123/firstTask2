@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatInputModule} from "@angular/material/input";
 import {RouterLink} from "@angular/router";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
-import {RecipesFacade} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
+import {Recipe} from "types-recipe";
+import {RecipesFacade} from "data-access-recipes";
 import {Select} from "@ngxs/store";
-import {RecipesState} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.state";
+import {RecipesState} from "data-access-recipes";
 import {Observable, Subscription} from "rxjs";
 import {UiRecipeListItemComponent} from "ui-recipe-list-item";
 
@@ -17,36 +17,33 @@ import {UiRecipeListItemComponent} from "ui-recipe-list-item";
   templateUrl: './feature-list.component.html',
   styleUrls: ['./feature-list.component.css'],
 })
-export class FeatureListComponent {
-  subscriptions = new Subscription()
-  searchFormControl = new FormControl('');
-  @Select(RecipesState.filteredRecipes) filteredRecipes$!: Observable<Recipe[]>;
+export class FeatureListComponent implements OnInit, OnDestroy {
+  subscriptions: Subscription = new Subscription()
+  searchFormControl: FormControl<string | null> = new FormControl('');
 
 
   constructor(
-    private _recipeFacade: RecipesFacade,
-  ) {
-  }
+    public recipeFacade: RecipesFacade,
+  ) {}
 
-  ngOnInit() {
-    this._recipeFacade.getRecipes()
-
+  ngOnInit(): void {
+    this.recipeFacade.getRecipes()
     this.subscriptions.add(
-      this.searchFormControl.valueChanges.subscribe((searchTerm: string | null) => {
-        this._recipeFacade.updateSearchTerm(searchTerm);
+      this.searchFormControl.valueChanges.subscribe((searchTerm: string | null): void => {
+        this.recipeFacade.updateSearchTerm(searchTerm);
       })
     )
   }
 
-  trackById(index: number, item: Recipe){
+  trackById(index: number, item: Recipe): string{
     return item._id;
   }
 
-  removeItemFromList(recipeId: string) {
-    this._recipeFacade.deleteRecipe(recipeId)
+  removeItemFromList(recipeId: string): void {
+    this.recipeFacade.deleteRecipe(recipeId)
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.subscriptions.unsubscribe()
   }
 }

@@ -10,7 +10,7 @@ import {
   UpdateRecipe
 } from './recipes.state';
 import {FilterRecipes} from "./recipes.actions";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
+import {Recipe} from "types-recipe";
 
 @Injectable({
   providedIn: 'root',
@@ -24,6 +24,9 @@ export class RecipesFacade {
 
   @Select((state: { recipes: RecipesStateModel; }) => state.recipes.activeRecipe)
   activeRecipe$!: Observable<Recipe>;
+
+  @Select(RecipesState.filteredRecipes)
+  filteredRecipes$!: Observable<Recipe[]>;
 
   constructor(private _store: Store) {}
 
@@ -50,6 +53,4 @@ export class RecipesFacade {
   updateSearchTerm(searchTerm: string | null): void {
     this._store.dispatch(new FilterRecipes(searchTerm));
   }
-
-  public _recipesFacade!: RecipesFacade;
 }

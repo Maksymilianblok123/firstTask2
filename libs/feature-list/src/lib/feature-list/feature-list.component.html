@@ -8,7 +8,7 @@
     </mat-form-field>
   </form>
   <div class="list">
-    <div class="list__item" *ngFor="let recipe of (filteredRecipes$ | async); trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
+    <div class="list__item" *ngFor="let recipe of (recipeFacade.filteredRecipes$ | async); trackBy: trackById" [routerLink]="'recipe/' + recipe._id">
       <lib-ui-recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></lib-ui-recipe-list-item>
     </div>
   </div>

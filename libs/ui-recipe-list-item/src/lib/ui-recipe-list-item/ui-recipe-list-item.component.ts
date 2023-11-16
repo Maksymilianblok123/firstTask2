@@ -2,11 +2,11 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
-import {RecipesFacade} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
+import {RecipesFacade} from "data-access-recipes";
 import {MatDialog} from "@angular/material/dialog";
 import {Router} from "@angular/router";
 import {UiConfirmationModalComponent} from "ui-confirmation-modal";
+import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
 
 @Component({
   selector: 'lib-ui-recipe-list-item',
@@ -25,14 +25,13 @@ export class UiRecipeListItemComponent {
     private _recipeFacade: RecipesFacade
   ) {}
 
-
-  removeRecipe(recipe: Recipe, event: MouseEvent) {
+  removeRecipe(recipe: Recipe, event: MouseEvent): void {
     event.stopPropagation();
     const dialogRef = this._dialog.open(UiConfirmationModalComponent, {
       data: { text: `Are you sure, that you want to delete '${recipe.name}'` },
     });
 
-    dialogRef.afterClosed().subscribe((result: boolean) => {
+    dialogRef.afterClosed().subscribe((result: boolean): void => {
       if (result) {
         this._recipeFacade.deleteRecipe(recipe._id)
       }
@@ -40,7 +39,7 @@ export class UiRecipeListItemComponent {
   }
 
 
-  navigateToEdit(_id: string, event: MouseEvent) {
+  navigateToEdit(_id: string | undefined, event: MouseEvent): void {
     event.stopPropagation();
     this._router.navigate(['recipe/' + _id +'/edit'])
   }

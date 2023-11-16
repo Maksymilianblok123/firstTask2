@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatDialog} from "@angular/material/dialog";
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 import {UiAuthorDialogComponent} from "ui-author-dialog";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
@@ -17,7 +17,7 @@ export class FeatureNavbarComponent {
   constructor(private _dialog: MatDialog) {
   }
   openAuthorDialog(): void {
-    const dialogRef = this._dialog.open(UiAuthorDialogComponent, {
+    const dialogRef: MatDialogRef<UiAuthorDialogComponent> = this._dialog.open(UiAuthorDialogComponent, {
       width: '300px',
     });
   }

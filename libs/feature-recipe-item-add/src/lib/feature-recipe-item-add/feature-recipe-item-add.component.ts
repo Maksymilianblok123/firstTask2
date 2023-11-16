@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Subject, takeUntil} from "rxjs";
 import {
@@ -11,9 +11,9 @@ import {
   ValidatorFn,
   Validators
 } from "@angular/forms";
-import {RecipesFacade} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
+import {RecipesFacade} from "data-access-recipes";
 import {Actions, ofActionSuccessful} from "@ngxs/store";
-import {AddRecipeSuccess} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.actions";
+import {AddRecipeSuccess} from "data-access-recipes";
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 
@@ -24,7 +24,7 @@ import {MatInputModule} from "@angular/material/input";
   templateUrl: './feature-recipe-item-add.component.html',
   styleUrls: ['./feature-recipe-item-add.component.css'],
 })
-export class FeatureRecipeItemAddComponent {
+export class FeatureRecipeItemAddComponent implements OnInit {
   private ngUnsubscribe = new Subject();
   recipeForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]),
@@ -53,7 +53,7 @@ export class FeatureRecipeItemAddComponent {
         ofActionSuccessful(AddRecipeSuccess),
         takeUntil(this.ngUnsubscribe)
       )
-      .subscribe(() => {
+      .subscribe((): void => {
         this.recipeForm.reset();
         this.recipeForm.markAsUntouched();
         this._cdr.detectChanges();
@@ -71,17 +71,17 @@ export class FeatureRecipeItemAddComponent {
     return (this.recipeForm.get('ingredients') as FormArray).controls;
   }
 
-  addIngredient() {
+  addIngredient(): void {
     const ingredients = this.recipeForm.get('ingredients') as FormArray;
     ingredients.push(this.createIngredientGroup());
   }
 
-  removeIngredient(index: number) {
-    const ingredients = this.recipeForm.get('ingredients') as FormArray;
+  removeIngredient(index: number): void {
+    const ingredients: FormArray = this.recipeForm.get('ingredients') as FormArray;
     ingredients.removeAt(index);
   }
 
-  onSubmit() {
+  onSubmit(): void {
     if (this.recipeForm.valid) {
       this._recipeFacade.addRecipe(this.recipeForm.value)
     }

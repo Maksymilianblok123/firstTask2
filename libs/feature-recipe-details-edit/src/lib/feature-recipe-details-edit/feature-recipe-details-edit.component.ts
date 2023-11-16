@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnChanges, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   AbstractControl,
@@ -9,34 +9,33 @@ import {
   ValidatorFn,
   Validators
 } from "@angular/forms";
-import {Observable, Subject, takeUntil, withLatestFrom} from "rxjs";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
-import {RecipesFacade} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.fascade";
+import {Subject, takeUntil, withLatestFrom} from "rxjs";
+import {RecipesFacade} from "data-access-recipes";
 import {Actions, ofActionSuccessful} from "@ngxs/store";
-import {AddRecipeSuccess} from "../../../../data-access-recipes/src/lib/data-access-recipes/recipes.actions";
-import {Ingredient} from "../../../../types-recipe/src/lib/types-recipe/ingredient";
+import {AddRecipeSuccess} from "data-access-recipes";
+import {Ingredient} from "types-recipe";
 import {RouterLink} from "@angular/router";
 import {MatInputModule} from "@angular/material/input";
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
   selector: 'lib-feature-recipe-details-edit',
   standalone: true,
-  imports: [CommonModule, RouterLink, MatInputModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterLink, MatInputModule, ReactiveFormsModule, MatButtonModule],
   templateUrl: './feature-recipe-details-edit.component.html',
   styleUrls: ['./feature-recipe-details-edit.component.css'],
 })
-export class FeatureRecipeDetailsEditComponent {
+export class FeatureRecipeDetailsEditComponent implements OnInit, OnChanges {
   @Input() id: string = '';
   private ngUnsubscribe = new Subject();
   activeRecipeForm!: FormGroup;
-  activeRecipe$: Observable<Recipe> | undefined
   constructor(
-    private _formBuilder: FormBuilder,
     public recipesFacade: RecipesFacade,
+    private _formBuilder: FormBuilder,
     private _actions$: Actions
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.activeRecipeForm = this._formBuilder.group({
       name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]],
       preparationTimeInMinutes: [0, Validators.required],
@@ -46,12 +45,11 @@ export class FeatureRecipeDetailsEditComponent {
     });
 
     this.recipesFacade.getRecipe(this.id);
-    this.activeRecipe$ = this.recipesFacade.activeRecipe$;
 
     this._actions$
       .pipe(
         ofActionSuccessful(AddRecipeSuccess),
-        withLatestFrom(this.activeRecipe$),
+        withLatestFrom(this.recipesFacade.activeRecipe$),
         takeUntil(this.ngUnsubscribe)
       )
       .subscribe(([action, activeRecipe]) => {
@@ -67,16 +65,16 @@ export class FeatureRecipeDetailsEditComponent {
       });
   }
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     this.recipesFacade.getRecipe(this.id);
   }
 
-  setIngredients(ingredients: Ingredient[]) {
+  setIngredients(ingredients: Ingredient[]): void {
     const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
     ingredientFormArray.clear();
 
     if (ingredients && ingredients.length > 0) {
-      ingredients.forEach((ingredient: Ingredient) => {
+      ingredients.forEach((ingredient: Ingredient): void => {
         ingredientFormArray.push(
           this._formBuilder.group({
             name: [ingredient.name, Validators.required],
@@ -99,16 +97,16 @@ export class FeatureRecipeDetailsEditComponent {
   }
 
   removeIngredient(index: number): void {
-    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    const ingredientFormArray: FormArray = this.activeRecipeForm.get('ingredients') as FormArray;
     ingredientFormArray.removeAt(index);
   }
 
   getIngredientsControls(): AbstractControl[] {
-    const ingredientFormArray = this.activeRecipeForm.get('ingredients') as FormArray;
+    const ingredientFormArray: FormArray = this.activeRecipeForm.get('ingredients') as FormArray;
     return ingredientFormArray.controls;
   }
 
-  save() {
+  save(): void {
     this.recipesFacade.updateRecipe(this.activeRecipeForm.value)
   }
 

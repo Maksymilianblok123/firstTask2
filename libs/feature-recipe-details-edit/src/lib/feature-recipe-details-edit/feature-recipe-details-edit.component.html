@@ -1,6 +1,6 @@
 <div *ngIf="(recipesFacade.activeRecipe$ | async)">
   <form [formGroup]="activeRecipeForm" class="flex-center">
-    <h2>Editing '{{(activeRecipe$ | async)?.name}}'</h2>
+    <h2>Editing '{{(recipesFacade.activeRecipe$ | async)?.name}}'</h2>
     <div>
       <mat-form-field>
         <mat-label>Recipe name</mat-label>
@@ -43,7 +43,7 @@
 
     <div class="buttons">
       <button mat-button (click)="save()" type="button" [disabled]="!activeRecipeForm.valid">Save changes</button>
-      <button mat-button [routerLink]="['../../../recipe/' + (activeRecipe$ | async)?._id]" color="warn" class="warning" type="button">Cancel changes</button>
+      <button mat-button [routerLink]="['../../../recipe/' + (recipesFacade.activeRecipe$ | async)?._id]" color="warn" class="warning" type="button">Cancel changes</button>
     </div>
   </form>
 </div>

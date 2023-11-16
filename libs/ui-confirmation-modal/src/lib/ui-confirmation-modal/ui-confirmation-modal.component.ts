@@ -10,10 +10,11 @@ import {MatButtonModule} from "@angular/material/button";
   templateUrl: './ui-confirmation-modal.component.html',
   styleUrls: ['./ui-confirmation-modal.component.css'],
 })
-export class UiConfirmationModalComponent { constructor(
-  public dialogRef: MatDialogRef<UiConfirmationModalComponent>,
-  @Inject(MAT_DIALOG_DATA) public data: { text: string }
-) {}
+export class UiConfirmationModalComponent {
+  constructor(
+    public dialogRef: MatDialogRef<UiConfirmationModalComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: { text: string }
+  ) {}
 
   onConfirm(): void {
     this.dialogRef.close(true);
