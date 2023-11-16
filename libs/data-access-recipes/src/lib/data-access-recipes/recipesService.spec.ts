@@ -1,12 +1,13 @@
+import { SpectatorService, createServiceFactory } from '@ngneat/spectator';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { TestBed } from '@angular/core/testing';
+import { RecipesApiService } from 'data-access-recipes';
 import { environment } from '../../../../../apps/src/environment/environment';
-import {RecipesApiService} from "data-access-recipes";
+import {Recipe} from "types-recipe";
 
-describe('RecipesApiService', () => {
-  let service: RecipesApiService;
+describe('RecipesApiService', (): void => {
+  let spectator: SpectatorService<RecipesApiService>;
   let httpMock: HttpTestingController;
-  const dummyRecipe = {
+  const dummyRecipe: Recipe = {
     "_id": "65548caff3272103e862c66b",
     "name": "Apple Pie",
     "preparationTimeInMinutes": 60,
@@ -38,37 +39,45 @@ describe('RecipesApiService', () => {
         "quantity": 15
       }
     ]
-  }
-  const dummyRecipes = [dummyRecipe, dummyRecipe]
+  };
+  const dummyRecipes: Recipe[] = [dummyRecipe, dummyRecipe];
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [RecipesApiService]
-    });
-    service = TestBed.inject(RecipesApiService);
-    httpMock = TestBed.inject(HttpTestingController);
+  const createService = createServiceFactory({
+    service: RecipesApiService,
+    imports: [HttpClientTestingModule],
   });
 
-  afterEach(() => {
+  const testSetup = () => {
+    const spectator = createService();
+    const httpMock = spectator.inject(HttpTestingController);
+
+    return { service: spectator.service, spectator, httpMock };
+  };
+
+  beforeEach(() => {
+    const setup = testSetup();
+    spectator = setup.spectator;
+    httpMock = setup.httpMock;
+  });
+
+  afterEach((): void => {
     httpMock.verify();
   });
 
-  it('should retrieve recipes', () => {
-
-    service.getRecipes().subscribe((recipes) => {
+  it('should retrieve recipes', (): void => {
+    spectator.service.getRecipes().subscribe((recipes: Recipe[]): void => {
       expect(recipes).toEqual(dummyRecipes);
     });
 
-    const req = httpMock.expectOne(`${environment.api}`);
+    const req = httpMock.expectOne(environment.api);
     expect(req.request.method).toBe('GET');
     req.flush(dummyRecipes);
   });
 
-  it('should retrieve a recipe by ID', () => {
-    const id = 'some_id';
+  it('should retrieve a recipe by ID', (): void => {
+    const id: string = 'some_id';
 
-    service.getRecipe(id).subscribe((recipe) => {
+    spectator.service.getRecipe(id).subscribe((recipe: Recipe): void => {
       expect(recipe).toEqual(dummyRecipe);
     });
 
@@ -77,17 +86,17 @@ describe('RecipesApiService', () => {
     req.flush(dummyRecipe);
   });
 
-  it('should delete a recipe by ID', () => {
-    const id = 'some_id';
+  it('should delete a recipe by ID', (): void => {
+    const id: string = 'some_id';
 
-    service.deleteRecipe(id).subscribe();
+    spectator.service.deleteRecipe(id).subscribe();
 
     const req = httpMock.expectOne(`${environment.api}/${id}`);
     expect(req.request.method).toBe('DELETE');
   });
 
   it('should update a recipe', () => {
-    service.updateRecipe(dummyRecipe).subscribe((updatedRecipe) => {
+    spectator.service.updateRecipe(dummyRecipe).subscribe((updatedRecipe: Recipe): void => {
       expect(updatedRecipe).toEqual(dummyRecipe);
     });
 
@@ -96,8 +105,8 @@ describe('RecipesApiService', () => {
     req.flush(dummyRecipe);
   });
 
-  it('should add a new recipe', () => {
-    service.addRecipe(dummyRecipe).subscribe((newRecipe) => {
+  it('should add a new recipe', (): void => {
+    spectator.service.addRecipe(dummyRecipe).subscribe((newRecipe: Recipe): void => {
       expect(newRecipe).toEqual(dummyRecipe);
     });
 

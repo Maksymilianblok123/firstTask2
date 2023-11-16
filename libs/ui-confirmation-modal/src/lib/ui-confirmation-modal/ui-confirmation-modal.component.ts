@@ -4,7 +4,7 @@ import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from "@angular/material/
 import {MatButtonModule} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-ui-confirmation-modal',
+  selector: 'recipe-confirmation-modal',
   standalone: true,
   imports: [CommonModule, MatDialogModule, MatButtonModule],
   templateUrl: './ui-confirmation-modal.component.html',

@@ -4,7 +4,7 @@ import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-ui-author-dialog',
+  selector: 'recipe-author-dialog',
   standalone: true,
   imports: [CommonModule, MatDialogModule, MatButtonModule],
   templateUrl: './ui-author-dialog.component.html',

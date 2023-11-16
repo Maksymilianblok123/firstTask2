@@ -6,13 +6,13 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-feature-recipe-details',
+  selector: 'recipe-details',
   standalone: true,
   imports: [CommonModule, MatIconModule, MatButtonModule],
   templateUrl: './feature-recipe-details.component.html',
   styleUrls: ['./feature-recipe-details.component.css'],
 })
-export class FeatureRecipeDetailsComponent implements OnInit, OnChanges {
+export class RecipeDetailsComponent implements OnInit, OnChanges {
   constructor(
     public recipesFacade: RecipesFacade,
     private _router: Router,

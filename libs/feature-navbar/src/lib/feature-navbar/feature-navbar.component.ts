@@ -7,13 +7,13 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 
 @Component({
-  selector: 'lib-feature-navbar',
+  selector: 'recipe-navbar',
   standalone: true,
   imports: [CommonModule, MatToolbarModule, MatIconModule, MatButtonModule],
   templateUrl: './feature-navbar.component.html',
   styleUrls: ['./feature-navbar.component.css'],
 })
-export class FeatureNavbarComponent {
+export class NavbarComponent {
   constructor(private _dialog: MatDialog) {
   }
   openAuthorDialog(): void {

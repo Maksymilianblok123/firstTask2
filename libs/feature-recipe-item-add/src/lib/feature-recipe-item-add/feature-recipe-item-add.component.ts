@@ -18,13 +18,13 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
 
 @Component({
-  selector: 'lib-feature-recipe-item-add',
+  selector: 'recipe-item-add',
   standalone: true,
   imports: [CommonModule, MatButtonModule, ReactiveFormsModule, MatInputModule],
   templateUrl: './feature-recipe-item-add.component.html',
   styleUrls: ['./feature-recipe-item-add.component.css'],
 })
-export class FeatureRecipeItemAddComponent implements OnInit {
+export class RecipeItemAddComponent implements OnInit {
   private ngUnsubscribe = new Subject();
   recipeForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(80)]),

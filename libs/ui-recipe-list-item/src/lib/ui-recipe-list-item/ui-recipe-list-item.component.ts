@@ -6,10 +6,10 @@ import {RecipesFacade} from "data-access-recipes";
 import {MatDialog} from "@angular/material/dialog";
 import {Router} from "@angular/router";
 import {UiConfirmationModalComponent} from "ui-confirmation-modal";
-import {Recipe} from "../../../../types-recipe/src/lib/types-recipe/recipe";
+import {Recipe} from "types-recipe";
 
 @Component({
-  selector: 'lib-ui-recipe-list-item',
+  selector: 'recipe-list-item',
   standalone: true,
   imports: [CommonModule, MatIconModule, MatButtonModule],
   templateUrl: './ui-recipe-list-item.component.html',

@@ -849,3 +849,148 @@
 [37m[0mBuild at: [1m[37m2023-11-15T15:50:34.664Z[39m[37m[22m - Hash: [1m[37mb556807e33a30f96[39m[37m[22m - Time: [1m[37m634[39m[37m[22mms[0m[39m
 [37m[39m
 [37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                                                                                [2m | [22mmain                                                                                                      [2m | [22m[96m60.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m[96m20.02 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m   [2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component            [2m | [22m[96m13.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m      [2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component               [2m | [22m[96m11.87 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged c[39m[37mhunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T08:33:54.868Z[39m[37m[22m - Hash: [1m[37mf3c2e55d3456a952[39m[37m[22m - Time: [1m[37m1016[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m60.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:09:48.204Z[39m[37m[22m - Hash: [1m[37m95f1361f834884bd[39m[37m[22m - Time: [1m[37m1008[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m60.98 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:17:05.347Z[39m[37m[22m - Hash: [1m[37m483e15d154c07318[39m[37m[22m - Time: [1m[37m865[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                 [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                          [2m | [22mruntime                                                                                       [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                         [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m[2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component[2m | [22m[96m13.80 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:28:57.001Z[39m[37m[22m - Hash: [1m[37m60d1f278bb7908ea[39m[37m[22m - Time: [1m[37m428[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m60.47 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:52:57.630Z[39m[37m[22m - Hash: [1m[37mbad9a8896b5a1c7e[39m[37m[22m - Time: [1m[37m531[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                                                                                [2m | [22mmain                                                                                                      [2m | [22m[96m60.35 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m[96m19.91 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m   [2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component            [2m | [22m[96m13.72 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m      [2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component               [2m | [22m[96m11.76 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged c[39m[37mhunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:54:50.561Z[39m[37m[22m - Hash: [1m[37mf4b4e88a1cad2e8d[39m[37m[22m - Time: [1m[37m914[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m47.96 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:56:30.949Z[39m[37m[22m - Hash: [1m[37mc7834b752071f62c[39m[37m[22m - Time: [1m[37m968[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfeature-list/src/lib/feature-list/feature-list.component.html[0m:[93m12[0m:[93m7[0m - [91merror[0m[90m NG8001: [0m'recipe-list-item' is not a known element:[39m[22m
+[1m[31m1. If 'recipe-list-item' is an Angular component, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'recipe-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m       <recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></recipe-list-item>[39m[22m
+[1m[31m[7m  [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfeature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './feature-list.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ListComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfeature-list/src/lib/feature-list/feature-list.component.html[0m:[93m12[0m:[93m25[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'recipe' since it isn't a known property of 'recipe-list-item'.[39m[22m
+[1m[31m1. If 'recipe-list-item' is an Angular component and it has 'recipe' input, then verify that it is included in the '@Component.imports' of this component.[39m[22m
+[1m[31m2. If 'recipe-list-item' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m       <recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></recipe-list-item>[39m[22m
+[1m[31m[7m  [0m [91m                        ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfeature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './feature-list.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               [39m[22m[1m[31m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ListComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mfeature-list/src/lib/feature-list/feature-list.component.html[0m:[93m12[0m:[93m78[0m - [91merror[0m[90m TS2345: [0mArgument of type 'Event' is not assignable to parameter of type 'string'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m       <recipe-list-item [recipe]="recipe" (onItemRemove)="removeItemFromList($event)"></recipe-list-item>[39m[22m
+[1m[31m[7m  [0m [91m                                                                             ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mfeature-list/src/lib/feature-list/feature-list.component.ts[0m:[93m15[0m:[93m16[0m[39m[22m
+[1m[31m    [7m15[0m   templateUrl: './feature-list.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ListComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m✖[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                                                                    [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                                                                                [2m | [22mmain                                                                                                      [2m | [22m[96m60.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                                                                             [2m | [22mruntime                                                                                                   [2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                                                                       [2m | [22m[1mNames[22m                                                                                                     [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details-edit_src_lib_feature-recipe-details-edit_feature-recipe-details-e-6f91ad.js[39m[37m[2m | [22mlibs-feature-recipe-details-edit-src-lib-feature-recipe-details-edit-feature-recipe-details-edit-component[2m | [22m[96m19.90 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-item-add_src_lib_feature-recipe-item-add_feature-recipe-item-add_component_ts.js[39m[37m   [2m | [22mlibs-feature-recipe-item-add-src-lib-feature-recipe-item-add-feature-recipe-item-add-component            [2m | [22m[96m13.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_feature-recipe-details_src_lib_feature-recipe-details_feature-recipe-details_component_ts.js[39m[37m      [2m | [22mlibs-feature-recipe-details-src-lib-feature-recipe-details-feature-recipe-details-component               [2m | [22m[96m11.75 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m3 unchanged c[39m[37mhunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2023-11-16T14:57:52.954Z[39m[37m[22m - Hash: [1m[37ma14c9e97d8983d7a[39m[37m[22m - Time: [1m[37m1003[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m✔[39m[37m Compiled successfully.[39m
